@@ -1,0 +1,240 @@
+<html>
+<head>
+<title>Neptunus</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<!-- styles needed by jScrollPane -->
+<link type="text/css" href="jquery.jscrollpane.css" rel="stylesheet" media="all" />
+</head>
+<body>
+	<h1>Neptunus</h1>
+	
+	
+	
+
+	<table border="1" cellpadding="2" cellspacing="0">
+		<tr>
+			<td rowspan="3"><div id="container"><img id="sourcevid"/></div></td>
+			<td><img id="forward" src="/images/forward.png"></td>
+			<td><img id="rot_cc" src="/images/rot_cc.png"></td>
+			<td><img id="up" src="/images/up.png"></td>
+		</tr>
+		<tr>
+			<td><img id="backward" src="/images/backward.png"></td>
+			<td><img id="rot_c" src="/images/rot_c.png"></td>
+			<td><img id="down" src="/images/down.png"></td>
+
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div class="first-half">
+					
+						Control mode: 
+						<form name="controlModeForm">
+						<input type="radio" name="controlMode" value="Motion" checked>Motion
+						<input type="radio" name="controlMode" value="Manual">Manual 
+						<input type="radio" name="controlMode" value="DP">DP
+						</form> 
+					
+					<br>
+
+					<form id="autoDepthForm">
+						Set auto depth:
+						<input type="text" id="autoDepth">
+						<input type="button" id="autoDepthButton" value="Set">
+						<input type="button" id="autoDepthOff" value="Off">
+						<p id="autoDepthPrint"> Auto depth off </p>
+					</form> 
+
+					<form id="autoHeadingForm">
+						Set auto heading:
+						<input type="text" id="autoHeading">
+						<input type="button" id="autoHeadingButton" value="Set">
+						<input type="button" id="autoHeadingOff" value="Off">
+						<p id="autoHeadingPrint"> Auto heading off </p>
+					</form> 
+					
+					<form id="gainForm">
+						Set gain:
+						<input type="text" id="gain">
+						<input type="button" id="gainButton" value="Set">
+						<p id="gainValue">Gain is: </p>
+					</form>
+
+				</div>
+				
+				<div class="second-half">	
+					
+					 Input mode:
+					<form name="inputModeForm">
+					<input type="radio" name="inputMode" value="Default" checked>Default
+					<input type="radio" name="inputMode" value="Joystick">Joystick
+					<input type="radio" name="inputMode" value="Oculus">Oculus rift
+					</form> 
+				
+					
+					Run mode: 
+					<form name="runModeForm">
+						<input type="radio" name="runMode" value="Normal" checked>Normal
+						<input type="radio" name="runMode" value="Simulator"> Simulator
+					</form>
+
+					<p id="headingValue">Heading is: </p>
+					<p id="depthValue">Depth is: </p>
+
+					
+
+					<form id="lightsForm">
+						Set lights:
+						<input type="text">
+						<input type="button" id="lightsButton" value="Set">
+					</form>
+
+					<form id="laserForm">
+						Set laser:
+						<input type="text">
+						<input type="button" id="laserButton" value="Set">
+					</form> 
+
+					<p> <button id="requestControl">Request control</button>
+					 <button id="toggleDevMode">Toggle dev mode</button>
+					</p>
+
+					
+					
+				</div>
+			</td>
+		</tr>
+	</table>
+
+
+	<div id="devModeContainer">
+			<h2>
+				Dev mode : 
+				
+			</h2>
+		
+		<div class="first-half">
+
+			<p>
+			Plot measurement: 
+			<select id="measurementDropdown">
+				<option>Depth [m]</option>
+				<option>Roll [deg]</option>
+				<option>Pitch [deg]</option>
+				<option>Heading [deg]</option>
+				<option>Voltage [V]</option>
+				<option>Current [mA]</option>
+			</select>
+		
+			Plot command:
+			<select id="commandsDropdown">
+				<option>Port thruster [1000, 2000]</option>
+				<option>Vertical thruster [1000, 2000]</option>
+				<option>Starboard thruster [1000, 2000]</option>
+				<option>Surge [-1, 1]</option>
+				<option>Yaw [-1, 1]</option>
+				<option>Heave [-1, 1]</option>
+			</select>
+
+			Plot estimated state:
+			<select id="estimatedStatesDropdown">
+				<option>Estimated Depth</option>
+				<option>Estimated Roll</option>
+				<option>Estimated Pitch</option>
+				<option>Estimated Heading</option>
+			</select>
+
+			</p>
+
+			<button id="deleteGraphs">Remove graphs</button>
+			<button id="resetGraphs">Reset graphs</button>
+			
+			Plot simulated eta:
+			<select id="etaDropdown">
+				<option>Simulated x [m]</option>
+				<option>Simulated y [m]</option>
+				<option>Simulated depth [m]</option>
+				<option>Simulated heading [rad]</option>
+			</select>
+
+			Plot simulated nu:
+			<select id="nuDropdown">
+				<option>Simulated u [m/s]</option>
+				<option>Simulated w [m/s]</option>
+				<option>Simulated r [rad/s]</option>'
+			</select>
+
+		</div>
+
+		<div class="second-half">
+
+			Add to logger: <select id="scrollPaneContentDropdown"></select>
+
+			Remove: <select id="scrollPaneRemoveDropdown"></select>
+			
+
+			<ul id="scrollPaneContent">
+
+			</ul>
+
+		</div>
+
+
+		<div class="chartBox">			
+
+
+			<div id="chartContainer1" class="chartContainer">
+			</div>
+
+			<div id="chartContainer2" class="chartContainer">
+			</div>
+
+			<div id="chartContainer3" class="chartContainer">
+			</div>
+			
+			<div id="chartContainer4" class="chartContainer">
+			</div>
+
+
+			<div id="chartContainer5" class="chartContainer">
+			</div>
+
+			<div id="chartContainer6" class="chartContainer">
+			</div>
+
+			<div id="chartContainer7" class="chartContainer">
+			</div>
+			
+			<div id="chartContainer8" class="chartContainer">
+			</div>
+
+			<div id="chartContainer9" class="chartContainer">
+			</div>
+
+			<div id="chartContainer10" class="chartContainer">
+			</div>
+
+		</div>
+
+
+		<div class="scroll-pane">
+			<p>
+				Log: 
+			</p>
+		</div>
+	</div>
+
+	
+	<script src="jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="jquery.jscrollpane.min.js"></script>
+	<script type="text/javascript" src="canvasjs.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>	
+	<script src="gamepad.js"></script>
+	<script src="dev_mode.js"></script> 
+	<script src="client.js"></script> <!-- This should be the last script to be executed -->
+	
+
+</body>
+</html>
+
