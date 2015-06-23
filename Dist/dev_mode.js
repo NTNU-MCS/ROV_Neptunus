@@ -1,6 +1,5 @@
 // Dev mode interface
 
-
 var depth = [];
 var heading = [];
 var roll = [];
@@ -11,7 +10,7 @@ var motor = [];
 
 var thr1cmd = [];
 var thr2cmd = [];
-var thr3cmd = []; 
+var thr3cmd = [];
 var surge = [];
 var yaw = [];
 var heave = [];
@@ -23,7 +22,7 @@ var estHeading = [];
 
 var simX = [];
 var simY = [];
-var simDepth = []; 
+var simDepth = [];
 var simHeading = [];
 
 var simU = [];
@@ -31,9 +30,9 @@ var simW = [];
 var simR = [];
 
 var simulatedEta = [simX, simY, simDepth, simHeading];
-var simulatedNu = [simU, simW, simR]; // v is always zero, so not included. 
+var simulatedNu = [simU, simW, simR]; // v is always zero, so not included.
 var measurements = [depth, roll, pitch, heading, voltage, current];
-var commands = [thr1cmd, thr2cmd, thr3cmd, surge, yaw, heave]; 
+var commands = [thr1cmd, thr2cmd, thr3cmd, surge, yaw, heave];
 var estStates = [estDepth, estRoll, estPitch, estHeading];
 var graphs = [];
 
@@ -45,11 +44,11 @@ var scrollPaneContent = [];
 var api;
 var pane;
 
-// 
+//
 
 
 function saveMeasurements(data){
-	
+
 	save(data.deap, depth, "depth");
 	save(data.roll, roll, "degrees");
 	save(data.pitc, pitch, "degrees");
@@ -129,12 +128,12 @@ function setChartsRefresh(){
 
 function makeGraph(datapoints, title, cont){
 	var container = "chartContainer" + (graphs.length+1).toString();
-	
+
 	var chart = new CanvasJS.Chart(container, {
 		title : {text : title},
 		zoomEnabled: true,
 		axisX:{valueFormatString: "m:ss"},
-		data : 
+		data :
 			[{
 				type: "line",
 				markerType: "circle",
@@ -153,7 +152,7 @@ function makeGraphDropDownHandlers(){
 	addDropdown("etaDropdown", simulatedEta);
 	addDropdown("nuDropdown", simulatedNu);
 	// addDropdown("estimatedStatesDropdown", estStates, estStateNames);
-	$("#estimatedStatesDropdown").prop('selectedIndex', -1); // This can be removed if the above line is added. 
+	$("#estimatedStatesDropdown").prop('selectedIndex', -1); // This can be removed if the above line is added.
 }
 
 
@@ -178,7 +177,7 @@ function initDeleteGraphsButton(){
 		event.preventDefault();	// http://stackoverflow.com/questions/18947432/why-is-client-disconnecting-and-reconnecting-in-node-express-socket-io-jad
 		for(var i = 1; i <= graphs.length; i++){
 			var container = "chartContainer" + i.toString();
-			$("#" + container.toString()).html(""); // deleting the reference to the chart held by the container. 
+			$("#" + container.toString()).html(""); // deleting the reference to the chart held by the container.
 		}
 		graphs = [];
 	};
@@ -200,12 +199,12 @@ function initGraphs(){
 	initResetGraphsButton();
 }
 
-/// Scroll pane 
+/// Scroll pane
 
 
 function initScrollPane(){
 	pane = $('.scroll-pane');
-	pane.jScrollPane();  			// pass settings to jScrollPane() if needed. 
+	pane.jScrollPane();  			// pass settings to jScrollPane() if needed.
 	api = pane.data("jsp");
 	populateLogDropdown();
 	makeLogDropdownEventHandlers();
@@ -214,7 +213,7 @@ function initScrollPane(){
 
 function addToScrollPane(content){
 	var date = new Date();
-	var printOut = "[" + date.getMinutes() + ":" + date.getSeconds() + "] " + content; 
+	var printOut = "[" + date.getMinutes() + ":" + date.getSeconds() + "] " + content;
 	if(initialized == "1"){
 		api.getContentPane().append(
 				$('<p />').text(printOut)
@@ -244,7 +243,7 @@ function populateLogDropdown(){
 function makeLogDropdownEventHandlers(){
 	var dropdown = document.getElementById("scrollPaneContentDropdown");
 	dropdown.onchange = function(){
-		var element = dropdown.options[dropdown.selectedIndex].text; 
+		var element = dropdown.options[dropdown.selectedIndex].text;
 		scrollPaneContent.push(element);
 		$("#scrollPaneContent").append("<li>" + element + "</li>");
 	}
@@ -260,11 +259,11 @@ function makeLogDropdownEventHandlers(){
 					$(this).remove();
 				}
 			});
-		} 
+		}
 	};
 }
 
-function clearData(){ // arr = [] will delete references to the array. arr.length = 0 does not. 
+function clearData(){ // arr = [] will delete references to the array. arr.length = 0 does not.
 	depth.length = 0;
 	heading.length = 0;
 	roll.length = 0;
@@ -293,5 +292,4 @@ function clearData(){ // arr = [] will delete references to the array. arr.lengt
 	simU.length = 0;
 	simW.length = 0;
 	simR.length = 0;
-}	
-
+}
