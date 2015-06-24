@@ -1,0 +1,6 @@
+Fri Aug 08 2014 21:12:08 GMT+0000 (UTC): depth: -0.19
+Fri Aug 08 2014 21:12:09 GMT+0000 (UTC): depth: -0.20
+Fri Aug 08 2014 21:12:09 GMT+0000 (UTC): depth: -0.20
+Fri Aug 08 2014 21:12:10 GMT+0000 (UTC): roll: -5.13
+Fri Aug 08 2014 21:12:10 GMT+0000 (UTC): depth: -0.20
+Fri Aug 08 2014 21:12:10 GMT+0000 (UTC): depth: -0.20

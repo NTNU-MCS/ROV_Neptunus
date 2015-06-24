@@ -216,12 +216,13 @@ function handleGainButton(){
 
 
 function displayMeasurement(data){
-	if(!isNaN(parseFloat(data.deap/1))){
+
+	if(data.deap){
 			var depthValueElement = document.getElementById("depthValue");
 			depthValueElement.innerHTML = ("Depth value is : "+ data.deap);
 	}
 
-	if(!isNaN(parseFloat(data.hdgd/1))){
+	if(data.hdgd){
 		var headingValueElement = document.getElementById("headingValue");
 		headingValueElement.innerHTML = ("Heading value is : "+ data.hdgd);
 	}

@@ -1,0 +1,12 @@
+Fri Aug 08 2014 21:27:54 GMT+0000 (UTC): depth: -0.20
+Fri Aug 08 2014 21:27:58 GMT+0000 (UTC): depth: -0.20
+Fri Aug 08 2014 21:28:00 GMT+0000 (UTC): depth: -0.19
+Fri Aug 08 2014 21:28:00 GMT+0000 (UTC): pitch: 0.27
+Fri Aug 08 2014 21:28:01 GMT+0000 (UTC): pitch: 0.27
+Fri Aug 08 2014 21:28:01 GMT+0000 (UTC): voltage: 11.57
+Fri Aug 08 2014 21:28:02 GMT+0000 (UTC): temp: 31.45
+Fri Aug 08 2014 21:28:03 GMT+0000 (UTC): voltage: 11.57
+Fri Aug 08 2014 21:28:03 GMT+0000 (UTC): depth: -0.21
+Fri Aug 08 2014 21:28:04 GMT+0000 (UTC): depth: -0.20
+Fri Aug 08 2014 21:28:05 GMT+0000 (UTC): roll: -5.15
+Fri Aug 08 2014 21:28:07 GMT+0000 (UTC): voltage: 11.57

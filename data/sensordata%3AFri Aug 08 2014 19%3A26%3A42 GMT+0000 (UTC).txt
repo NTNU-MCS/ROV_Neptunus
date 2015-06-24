@@ -1,0 +1,16 @@
+Fri Aug 08 2014 19:26:42 GMT+0000 (UTC): depth: -
+Fri Aug 08 2014 19:26:42 GMT+0000 (UTC): voltage: 0.18
+Fri Aug 08 2014 19:26:42 GMT+0000 (UTC): depth: -0.19
+Fri Aug 08 2014 19:26:42 GMT+0000 (UTC): degrees: -5.09
+Fri Aug 08 2014 19:26:42 GMT+0000 (UTC): depth: pitc
+Fri Aug 08 2014 19:26:42 GMT+0000 (UTC): pitch: 0hr
+Fri Aug 08 2014 19:26:42 GMT+0000 (UTC): degrees: -5.09
+Fri Aug 08 2014 19:26:42 GMT+0000 (UTC): depth: -0.19
+Fri Aug 08 2014 19:26:42 GMT+0000 (UTC): degrees: yaw
+Fri Aug 08 2014 19:26:42 GMT+0000 (UTC): depth: -0.19
+Fri Aug 08 2014 19:26:42 GMT+0000 (UTC): depth: -0.19
+Fri Aug 08 2014 19:26:42 GMT+0000 (UTC): degrees: -5.09
+Fri Aug 08 2014 19:26:42 GMT+0000 (UTC): depth: -0.17
+Fri Aug 08 2014 19:26:42 GMT+0000 (UTC): depth: -0.19
+Fri Aug 08 2014 19:26:42 GMT+0000 (UTC): degrees: -5.08
+Fri Aug 08 2014 19:26:42 GMT+0000 (UTC): voltage: 0.25

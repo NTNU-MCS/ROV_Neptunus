@@ -1,0 +1,12 @@
+Fri Aug 08 2014 21:31:03 GMT+0000 (UTC): depth: -0.20
+Fri Aug 08 2014 21:31:03 GMT+0000 (UTC): roll: -5.14
+Fri Aug 08 2014 21:31:04 GMT+0000 (UTC): depth: -0.20
+Fri Aug 08 2014 21:31:05 GMT+0000 (UTC): heading: 280.77
+Fri Aug 08 2014 21:31:05 GMT+0000 (UTC): voltage: 11.57
+Fri Aug 08 2014 21:31:06 GMT+0000 (UTC): depth: -0.20
+Fri Aug 08 2014 21:31:06 GMT+0000 (UTC): depth: -0.19
+Fri Aug 08 2014 21:31:07 GMT+0000 (UTC): roll: -5.15
+Fri Aug 08 2014 21:31:07 GMT+0000 (UTC): depth: -0.20
+Fri Aug 08 2014 21:31:08 GMT+0000 (UTC): voltage: 11.57
+Fri Aug 08 2014 21:31:08 GMT+0000 (UTC): depth: -0.19
+Fri Aug 08 2014 21:31:08 GMT+0000 (UTC): depth: -0.19

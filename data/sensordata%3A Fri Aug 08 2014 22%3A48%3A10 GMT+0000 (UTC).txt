@@ -1,0 +1,2 @@
+Fri Aug 08 2014 22:48:12 GMT+0000 (UTC): current: 0.19
+Fri Aug 08 2014 22:48:12 GMT+0000 (UTC): heading: 315.80
