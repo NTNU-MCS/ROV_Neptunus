@@ -1,0 +1,152 @@
+body {
+  padding: 1px;
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+
+.videoDiv{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.heading_table{
+  width: auto;
+  height: auto;
+  table-layout: fixed;
+  border-collapse: separate;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.animation_model{
+  position: absolute;
+  background-color: rgba(0, 0, 255, 0.5);
+}
+
+.heading_box{
+  position: absolute;
+}
+
+.heading_arrow_up{
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.heading_arrow_down{
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.depth_box{
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.depth_arrow_rigth{
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.depth_arrow_left{
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.text_paragraph{
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.depth_1{
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 6;
+  line-height: 100%;
+}
+
+.depth_2{
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 14;
+  line-height: 100%;
+}
+
+.depth_3{
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 20;
+  line-height: 100%;
+}
+
+.depth_4{
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 32;
+  line-height: 100%;
+}
+
+.depth_5{
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 20;
+  line-height: 100%;
+}
+
+.depth_6{
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 14;
+  line-height: 100%;
+}
+
+.depth_7{
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 6;
+  line-height: 100%;
+}
+
+.video{
+background-color: red;
+}
+
+table{
+  width: 100%;
+  height: 100%;
+  table-layout: fixed;
+  border-collapse: separate;
+}
+
+td.left{
+  width: 5%;
+}
+
+td.right{
+  width: 5%;
+}
+
+tr.top{
+  height: 5%;
+}
+
+td.middle{
+  width: 90%;
+}
+
+tr.bot{
+  height: 5%;
+}

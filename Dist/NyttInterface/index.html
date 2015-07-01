@@ -1,0 +1,88 @@
+<html>
+
+<head>
+<title>Neptunus</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<!-- styles needed by jScrollPane -->
+<link type="text/css" href="libraryes/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+<link type="text/css" rel="stylesheet" href="libraryes/jquery_ui_11_4/jquery-ui.css">
+</head>
+
+<body>
+	<div class="videoDiv">
+		<table>
+			<tr class="top">
+				<td class="left"> </td>
+				<td class="middle">	</td>
+				<td class="right"> </td>
+			</tr>
+			<tr>
+				<td class="left"> </td>
+				<td class="middle">
+					<div id="container" class="video"><img id="videostream"></div>
+				</td>
+				<td class="right">
+				</td>
+			</tr>
+			<tr class="bot">
+				<td colspan="3"> </td>
+			</tr>
+		</table>
+	</div>
+	<div class="animation_model" id="animation_model">	</div>
+	<div class="heading_box" id="heading_box">
+		<table class="heading_table" id="heading_table">
+			<td class="heading_1" id="heading_1"> </td>
+			<td class="heading_2" id="heading_2"> </td>
+			<td class="heading_3" id="heading_3"> </td>
+			<td class="heading_4" id="heading_4"> </td>
+			<td class="heading_5" id="heading_5"> </td>
+			<td class="heading_6" id="heading_6"> </td>
+			<td class="heading_7" id="heading_7"> </td>
+			<td class="heading_8" id="heading_8"> </td>
+			<td class="heading_9" id="heading_9"> </td>
+			<td class="heading_10" id="heading_10"> </td>
+			<td class="heading_11" id="heading_11"> </td>
+		</table>
+	</div>
+	<div class="depth_box" id="depth_box" style="display: table;">
+		<div style="display: table-cell; vertical-align: middle;">
+       <div>
+				<p class="depth_1" id="depth_1"> </p>
+				<p class="depth_2" id="depth_2"> </p>
+				<p class="depth_3" id="depth_3"> </p>
+				<p class="depth_4" id="depth_4"> </p>
+				<p class="depth_5" id="depth_5"> </p>
+				<p class="depth_6" id="depth_6"> </p>
+				<p class="depth_7" id="depth_7"> </p>
+       </div>
+     </div>
+	</div>
+	<div class="depth_arrow_rigth" id="depth_arrow_rigth"> <img src="images/arrow-right.png"> </div>
+	<div class="depth_arrow_left" id="depth_arrow_rigth"> <img src="images/arrow-left.png"> </div>
+	<div class="heading_arrow_up" id="heading_arrow_up"> <img src="images/arrow-up.png"> </div>
+	<div class="heading_arrow_down" id="heading_arrow_down"> <img src="images/arrow-down.png"> </div>
+
+
+
+
+
+
+
+	<script src="libraryes/jquery.min.js"></script>
+	<script src="libraryes/jquery_ui_11_4/jquery-ui.min.js"></script>
+	<script src="libraryes/three.min.js"></script>
+	<script type="text/javascript" src="libraryes/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="libraryes/jquery.jscrollpane.min.js"></script>
+	<script type="text/javascript" src="libraryes/canvasjs.min.js"></script>
+	<script src="libraryes//socket.io.js"></script>
+	<script src="libraryes/gamepad.js"></script>
+	<script src="dev_mode.js"></script>
+	<script src="animasjon.js"></script>
+	<script src="client.js"></script> <!-- This should be the last script to be executed -->
+
+
+
+</body>
+
+</html>
