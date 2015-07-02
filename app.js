@@ -24,7 +24,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(app.router);
-app.use(express.static(path.join(__dirname, 'Dist'))); // her settes "client"
+app.use(express.static(path.join(__dirname, 'Dist/NyttInterface'))); // her settes "client"
 
 //app.get('/index', routes.index);
 //app.get('/users', users.list); // trengs ikke
@@ -48,13 +48,9 @@ navigation.setControl(control);
 control.setNavigation(navigation);
 serialHandler.setNavigation(navigation);
 
-
-
 statusEmitter.on("toClient", function(data){
     app.io.broadcast("msg", data);
 });
-
-
 
 function isInControl(ip){
     if(ip != masterIP){

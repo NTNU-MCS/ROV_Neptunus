@@ -5,7 +5,6 @@ var mouse = { x: 0, y: 0 };
 var scene, camera, animationContainer, renderer, button_Texture, button_material, cube;
 
 function handleAnimation(){
-
 		var container = document.getElementById("animation_model");
 		scene = new THREE.Scene();
 

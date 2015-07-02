@@ -8,31 +8,6 @@ var displayDevMode = true;
 var epsilon = 0.1;
 
 
-function initKeyPressHandler(){
-	var validKeys = [65, 68, 69, 81, 83, 87];
-
-	// make table and store values of key presses
-	// if key up is triggered, check it is already triggered
-	// if window is blurred, clear table
-	$("body").on("keydown keyup", function(keyPressedEvent){
-		if(inputMode == "default"){
-			var keyNumber = keyPressedEvent.which;
-			var eventType = keyPressedEvent.type;
-			if($.inArray(keyNumber, validKeys) > -1){
-				if(eventType == "keyup"){
-					keysPressed[$.inArray(keyNumber, validKeys)] = false;
-					handleKeyPress(keyNumber, eventType);
-				}
-				else if(keysPressed[$.inArray(keyNumber, validKeys)] === false){
-					keysPressed[$.inArray(keyNumber, validKeys)] = true;
-					handleKeyPress(keyNumber, eventType);
-				}
-			}
-		}
-	});
-}
-
-
 // ########################
 //
 // Handle x-box-control input
@@ -101,6 +76,13 @@ function initXBOXControllerHandler(){
         alert("Controller unsupported. Get latest Google Chrome of Firefox if you want to use gamepad input");
 
     }
+}
+
+function displayInScrollWindow(command){
+	return;
+	//if($.inArray(command.logType, scrollPaneContent) > -1){
+	//	addToScrollPane(command.data);
+	//}
 }
 
 function processStickInput(e){
@@ -239,8 +221,36 @@ function handleShoulderButtons(e, keydown){
 	}
 }
 
+// ########################
+//
+// Handle keyboard input
+//
+// ########################
 
 
+function initKeyPressHandler(){
+	var validKeys = [65, 68, 69, 81, 83, 87];
+
+	// make table and store values of key presses
+	// if key up is triggered, check it is already triggered
+	// if window is blurred, clear table
+	$("body").on("keydown keyup", function(keyPressedEvent){
+		if(inputMode == "default"){
+			var keyNumber = keyPressedEvent.which;
+			var eventType = keyPressedEvent.type;
+			if($.inArray(keyNumber, validKeys) > -1){
+				if(eventType == "keyup"){
+					keysPressed[$.inArray(keyNumber, validKeys)] = false;
+					handleKeyPress(keyNumber, eventType);
+				}
+				else if(keysPressed[$.inArray(keyNumber, validKeys)] === false){
+					keysPressed[$.inArray(keyNumber, validKeys)] = true;
+					handleKeyPress(keyNumber, eventType);
+				}
+			}
+		}
+	});
+}
 
 function handleKeyPress(keyValue, pressType){
 	var value;
@@ -320,38 +330,47 @@ function handleKeyPress(keyValue, pressType){
 	}
 }
 
+function displayMeasurement(data){
 
+	if(data.deap){
+		var depth = Number(data.deap);
+			handleDepthValue(depth);
+
+	}
+
+	if(data.hdgd){
+			var heading = Number(data.hdgd);
+			handleHeadingValue(heading);
+	}
+}
 
 function initIOHandle(){
 	io.on("msg", function(data){
 		switch(data.type){
 			case "measurement":
 				displayMeasurement(data.content);
-				saveMeasurements(data.content);
+				//saveMeasurements(data.content);
 				break;
 			case "command":
-				saveCommand(data.content);
+				//saveCommand(data.content);
 				break;
 			case "estimated-states":
 				// placeholder
 				break;
 			case "sim-measurement":
-				saveSimulatedStates(data.content);
+				//saveSimulatedStates(data.content);
 				break;
 			case "log":
-				displayInScrollWindow(data.content);
+				//displayInScrollWindow(data.content);
 				break;
 		}
 	});
 }
 
-
-
-
 function handleVideo(){
 
 		var videoElement = document.getElementById('videostream');
-		var adress = "images/underwater.jpg";
+		var adress = "http://192.168.0.12:3031/?action=stream";
 		videoElement.setAttribute("src", adress);
 
 		if(videoElement && videoElement.style) {
@@ -378,7 +397,6 @@ function setUp_animation_window(){
 	$(".animation_model").css("left", (window.innerWidth-(window.innerWidth/100*10)-(window.innerHeight/2)));
 	$(".animation_model").css("height", (window.innerHeight/2) + "px");
 	$(".animation_model").css("width", (window.innerHeight/2) + "px");
-	console.log("hei")
 }
 
 function setUp_heading_window(){
@@ -409,7 +427,6 @@ function handleDepthValue(depth){
 		if (!(depth_presize<0.5)) {
 			depth_presize-=1;
 		}
-		console.log(depth_presize);
 		document.getElementById("depth_1").innerHTML = ((Math.round(depth-3)).toString());
 		document.getElementById("depth_2").innerHTML = ((Math.round(depth-2)).toString());
 		document.getElementById("depth_3").innerHTML = ((Math.round(depth-1)).toString());
@@ -457,6 +474,22 @@ function writeHeading(headingElementID, number, font_size){
 	$("."+headingElementID).css("font-size", font_size);
 }
 
+function initTransferOfControl(){
+
+	io.on("requesting-control", function(data){
+		if(confirm("Do you want to give control to machine with IP : " + data)){
+			io.emit("giving-control");
+			displayInScrollWindow({logType:"Transfer of control", data: "[Transfer of control] Giving control."});
+		}else{
+			displayInScrollWindow({logType:"Transfer of control", data: "[Transfer of control] Denied request for control."});
+		}
+	});
+
+	io.on("gotcontrol", function(){
+		alert("you have control");
+		displayInScrollWindow({logType:"Transfer of control", data: "[Transfer of control] Recieved control."});
+	});
+}
 
 function initInputHandlers(){
 	//makeTouchEventHandlers();
@@ -482,16 +515,16 @@ window.onload = function(){
 	//handleDepthAutopilotButton();
 	//handleHeadingAutopilotButton();
 	handleAnimation();
-	//progressbar();
 	handleVideo();
 	setUpWindow();
-	//initInputHandlers();
+	initInputHandlers();
 	//initDevMode();
 	//initTransferOfControl();
+	initIOHandle();
 	handleHeadingValue(0);
 	handleDepthValue(0);
 
-	console.log('clientloaded');
+	io.emit('clientloaded');
 
 	initialized = 1;
 };
@@ -499,4 +532,4 @@ window.onload = function(){
 io = io.connect();
 
 // Send the ready event.
-console.log('clientconnected'); 	// Det er denne som triggerer routen i server.
+io.emit('clientconnected'); 	// Det er denne som triggerer routen i server.
