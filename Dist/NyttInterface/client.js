@@ -330,7 +330,24 @@ function handleKeyPress(keyValue, pressType){
 	}
 }
 
+// ########################
+//
+// Handle display
+//
+// ########################
+
 function displayMeasurement(data){
+	if(data.pitc){
+		var pitch = Number(data.pitc);
+			updateNeptunusPitch(pitch);
+
+	}
+
+	if(data.roll){
+		var roll = Number(data.roll);
+			updateNeptunusRoll(roll);
+
+	}
 
 	if(data.deap){
 		var depth = Number(data.deap);
@@ -341,6 +358,7 @@ function displayMeasurement(data){
 	if(data.hdgd){
 			var heading = Number(data.hdgd);
 			handleHeadingValue(heading);
+			updateComass3DModel(heading);
 	}
 }
 
@@ -373,17 +391,18 @@ function handleVideo(){
 		var adress = "http://192.168.0.12:3031/?action=stream";
 		videoElement.setAttribute("src", adress);
 
-		if(videoElement && videoElement.style) {
-	    videoElement.style.height = window.innerHeight/100*90;
-	    videoElement.style.width = window.innerWidth/100*90;
-		}
-
 		var videoContainer = document.getElementById("container");
-		videoElement.style.MozTransform = "rotate(360deg)";
-		videoElement.style.WebkitTransform ="rotate(360deg)";
-		videoElement.style.oTransform = "rotate(360deg)";
-		videoElement.style.transform = "rotate(360deg)";
-		videoElement.style.msTransform = "rotate(360deg)";
+/*
+		if(videoElement && videoElement.style) {
+			videoElement.style.MozTransform = "rotate(270deg)";
+			videoElement.style.WebkitTransform ="rotate(270deg)";
+			videoElement.style.oTransform = "rotate(270deg)";
+			videoElement.style.transform = "rotate(270deg)";
+			videoElement.style.msTransform = "rotate(270deg)";
+//			videoContainer.style.height = window.innerWidth/100*90;
+//			videoContainer.style.width = window.innerHeight/100*90;
+		}
+*/
 }
 
 function setUpWindow(){
