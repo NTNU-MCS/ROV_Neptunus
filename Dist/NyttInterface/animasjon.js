@@ -2,6 +2,8 @@
 
 var scene, camera, animationContainer, renderer, neptunus, compass;
 var rotation_matrix;
+var Xaxis = new THREE.Vector3(1,0,0);
+var forrigeRoll = 0;
 
 function handleAnimation(){
 
@@ -64,18 +66,22 @@ function handleAnimation(){
 
 function updateNeptunusRoll(roll){
 	if(neptunus){
-	 neptunus.rotation.z=(roll/360*Math.PI*2);
-	 console.log(roll);
-	 console.log(roll/360*Math.PI*2);
+	 //neptunus.rotation.z=(roll/360*Math.PI*2);
+
+	 var diff = - (forrigeRoll - roll/360*Math.PI*2);
+	 neptunus.rotateOnAxis( Xaxis	, diff);
+	 forrigeRoll = roll/360*Math.PI*2;
+	 console.log("roll " + roll);
+	 console.log(diff);
 	}
 
 }
 
 function updateNeptunusPitch(pitch){
 	if(neptunus){
-		neptunus.rotation.x=(Math.PI/2-pitch/360*Math.PI*2);
-		console.log(pitch);
-		console.log(neptunus.rotation.x);
+		neptunus.rotation.x=(-pitch/360*Math.PI*2);
+		console.log("pitch " + pitch);
+		console.log(-pitch/360*Math.PI*2);
 	}
 
 }
