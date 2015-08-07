@@ -1,80 +1,49 @@
 body {
-  padding: 0px;
-  margin: 0;
+  padding: 1px;
   font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-.top-bar{
-  background-color: rgba(0, 0, 0, 0.6);
-  height: 45px;
+
+.videoDiv{
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.top-table{
-  background-color: rgba(0, 255, 0, 0.3);
-  border: 0px;
-  text-align: center;
-  margin: 0 auto;
-  height: inherit;
-}
-
-.td_top_bar{
-  color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  border: 2px solid white;
-}
-.videoDiv{
-  position: absolute;
-}
-
 .heading_table{
-  background-color: rgba(0, 255, 0, 0.0);
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  border: 0px;
-  text-align: center;
-  margin: 0 auto
-}
-
-.heading_inni{
-  color: white;
+  width: auto;
+  height: auto;
   table-layout: fixed;
   border-collapse: separate;
+  margin: 0 auto;
   text-align: center;
-  padding: 0;
-  height:36;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-
 
 .animation_model{
   position: absolute;
+  background-color: rgba(0, 0, 255, 0.5);
 }
 
 .heading_box{
   position: absolute;
 }
 
-img.arrow_img{
-  width: 32px;
-  height: 32px;
-}
-
-img.videostream{
-  width: 32px;
-  height: 32px;
-}
-
 .heading_arrow_up{
   position: absolute;
   width: 32px;
   height: 32px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .heading_arrow_down{
   position: absolute;
   width: 32px;
   height: 32px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .depth_box{
@@ -83,25 +52,23 @@ img.videostream{
   vertical-align: middle;
 }
 
-.buttion_box{
-  position: absolute;
-  text-align: center;
-}
-
-.buttion_inni{
-  background-color: rgba(0, 0, 256, 0.5);
-}
-
 .depth_arrow_rigth{
   position: absolute;
   width: 32px;
   height: 32px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .depth_arrow_left{
   position: absolute;
   width: 32px;
   height: 32px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.text_paragraph{
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .depth_1{
@@ -109,8 +76,6 @@ img.videostream{
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   font-size: 6;
   line-height: 100%;
-  margin: 0 auto;
-  padding: 10px;
 }
 
 .depth_2{
@@ -118,8 +83,6 @@ img.videostream{
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   font-size: 14;
   line-height: 100%;
-  margin: 0 auto;
-  padding: 10px;
 }
 
 .depth_3{
@@ -127,8 +90,6 @@ img.videostream{
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   font-size: 20;
   line-height: 100%;
-  margin: 0 auto;
-  padding: 10px;
 }
 
 .depth_4{
@@ -136,19 +97,13 @@ img.videostream{
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   font-size: 32;
   line-height: 100%;
-  margin: 0 auto;
-  padding: 10px;
 }
-
-
 
 .depth_5{
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   font-size: 20;
   line-height: 100%;
-  margin: 0 auto;
-  padding: 10px;
 }
 
 .depth_6{
@@ -156,8 +111,6 @@ img.videostream{
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   font-size: 14;
   line-height: 100%;
-  margin: 0 auto;
-  padding: 10px;
 }
 
 .depth_7{
@@ -165,6 +118,35 @@ img.videostream{
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   font-size: 6;
   line-height: 100%;
-  margin: 0 auto;
-  padding: 10px;
+}
+
+.video{
+background-color: red;
+}
+
+table{
+  width: 100%;
+  height: 100%;
+  table-layout: fixed;
+  border-collapse: separate;
+}
+
+td.left{
+  width: 5%;
+}
+
+td.right{
+  width: 5%;
+}
+
+tr.top{
+  height: 5%;
+}
+
+td.middle{
+  width: 90%;
+}
+
+tr.bot{
+  height: 5%;
 }

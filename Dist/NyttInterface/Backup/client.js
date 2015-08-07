@@ -6,8 +6,7 @@ var joystickValue = {RIGHT_STICK_X: 2, RIGHT_STICK_Y: 2, LEFT_STICK_Y: 2};
 var initialized = 0;
 var displayDevMode = true;
 var epsilon = 0.1;
-var lastcontrolmode="motion";
-var time = new Date();
+
 
 // ########################
 //
@@ -358,7 +357,6 @@ function displayMeasurement(data){
 
 	if(data.hdgd){
 			var heading = Number(data.hdgd);
-			console.log("heading " + heading);
 			handleHeadingValue(heading);
 			updateComass3DModel(heading);
 	}
@@ -394,42 +392,24 @@ function handleVideo(){
 		videoElement.setAttribute("src", adress);
 
 		var videoContainer = document.getElementById("container");
-
+/*
 		if(videoElement && videoElement.style) {
-			//videoElement.style.MozTransform = "rotate(270deg)";
-			//videoElement.style.WebkitTransform ="rotate(270deg)";
-			//videoElement.style.oTransform = "rotate(270deg)";
-			//videoElement.style.transform = "rotate(270deg)";
-			//videoElement.style.msTransform = "rotate(270deg)";
-			videoElement.style.width = window.innerWidth;
-			videoElement.style.height = window.innerHeight;
-			$(".videostream").css("width", (window.innerWidth) + "px");
-			$(".videostream").css("height", (window.innerHeight) + "px");
+			videoElement.style.MozTransform = "rotate(270deg)";
+			videoElement.style.WebkitTransform ="rotate(270deg)";
+			videoElement.style.oTransform = "rotate(270deg)";
+			videoElement.style.transform = "rotate(270deg)";
+			videoElement.style.msTransform = "rotate(270deg)";
+//			videoContainer.style.height = window.innerWidth/100*90;
+//			videoContainer.style.width = window.innerHeight/100*90;
 		}
+*/
 }
 
 function setUpWindow(){
 	setUp_animation_window();
 	setUp_heading_window();
 	setUp_depth_window();
-	setUp_button_window();
-	setUp_top_bar();
-	handle_info_buttion();
 }
-
-function setUp_top_bar(){
-	$(".top-bar").css("width", (window.innerWidth) + "px");
-}
-
-function setUp_button_window(){
-	$(".buttion_box").css("top", (window.innerHeight-window.innerHeight/100*10));
-	$(".buttion_box").css("left", (window.innerWidth/100*5));
-	$(".buttion_box").css("width", (window.innerWidth/100*88) + "px");
-	$(".buttion_inni").css("width", (window.innerWidth/100*88) + "px");
-	$(".show_options_b_div").css("height", (window.innerHeight/100*5) + "px");
-	$("button").css("height", (window.innerHeight/100*10) + "px");
-}
-
 
 function setUp_animation_window(){
 	$(".animation_model").css("top", (window.innerHeight/100*10));
@@ -439,13 +419,13 @@ function setUp_animation_window(){
 }
 
 function setUp_heading_window(){
-	$(".heading_box").css("top", (window.innerHeight/100*10) + 45);
+	$(".heading_box").css("top", (window.innerHeight/100*10));
 	$(".heading_box").css("left", (window.innerWidth/100*15));
 	$(".heading_box").css("height", (window.innerHeight/100*10) + "px");
 	$(".heading_box").css("width", (window.innerWidth/2) + "px");
-	$(".heading_arrow_up").css("top", (window.innerHeight/100*10) + 40 + 45);
+	$(".heading_arrow_up").css("top", (window.innerHeight/100*10) + 40  );
 	$(".heading_arrow_up").css("left", (window.innerWidth/100*15) + (window.innerWidth/2)/2 - 32/2 );
-	$(".heading_arrow_down").css("top", (window.innerHeight/100*10) - 32 + 45);
+	$(".heading_arrow_down").css("top", (window.innerHeight/100*10) - 32 );
 	$(".heading_arrow_down").css("left", (window.innerWidth/100*15) + (window.innerWidth/2)/2 - 32/2 );
 }
 
@@ -529,25 +509,6 @@ function initTransferOfControl(){
 		displayInScrollWindow({logType:"Transfer of control", data: "[Transfer of control] Recieved control."});
 	});
 }
-
-function handle_info_buttion(){
-	$(function(){
-		console.log("her");
-		var hided = true;
-		$(".buttion_inni").hide();
-		$("div.buttion_box").mouseover(function() {
-			if(hided){
-				$("#buttion_inni").show("clip");
-				hided=false;
-			}
-			setTimeout(function() {
-		    $("#buttion_inni").hide("clip");
-		 	 	hided = true;
-			}, 15000 );
-		});
-	});
-}
-
 
 function initInputHandlers(){
 	//makeTouchEventHandlers();
