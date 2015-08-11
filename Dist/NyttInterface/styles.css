@@ -2,8 +2,45 @@ body {
   padding: 0px;
   margin: 0;
   font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+/* video */
+
+.video_container{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.videostream{
+  -ms-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -webkit-transform-origin: 43% 64%;
+  transform-origin: 0 0;
+  top: 100%;
+  position: absolute;
+}
+
+/* Paragraph */
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Thruster info box */
+
+.Thruster_info{
+  background-color: rgba(0, 0, 256, 0.6);
+  position: absolute;
+}
+
+
+/* Top info box */
 .top-bar{
   background-color: rgba(0, 0, 0, 0.6);
   height: 45px;
@@ -21,24 +58,25 @@ body {
 }
 
 .td_top_bar{
-  color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   border: 2px solid white;
 }
-.videoDiv{
+
+.lights_info{
+  width: 100;
+}
+
+/* Heading update "wheel" */
+.heading_box{
   position: absolute;
 }
 
 .heading_table{
-  background-color: rgba(0, 255, 0, 0.0);
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   border: 0px;
   text-align: center;
   margin: 0 auto
 }
 
 .heading_inni{
-  color: white;
   table-layout: fixed;
   border-collapse: separate;
   text-align: center;
@@ -46,124 +84,47 @@ body {
   height:36;
 }
 
+/* Animation box */
 
 .animation_model{
   position: absolute;
+  background-color: rgba(256, 0, 256, 0.1);
 }
 
-.heading_box{
-  position: absolute;
-}
 
+/* arrows */
 img.arrow_img{
   width: 32px;
   height: 32px;
 }
 
-img.videostream{
-  width: 32px;
-  height: 32px;
-}
-
-.heading_arrow_up{
+.arrow_div{
   position: absolute;
-  width: 32px;
-  height: 32px;
 }
 
-.heading_arrow_down{
+/* Dissapering buttion bar */
+.bottom_box{
   position: absolute;
-  width: 32px;
-  height: 32px;
+  text-align: center;
 }
 
+button{
+  color: black;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.bottom_inni{
+  background-color: rgba(0, 0, 256, 0.5);
+}
+
+/* Depth update "wheel" */
 .depth_box{
   position: absolute;
   text-align: center;
   vertical-align: middle;
 }
 
-.buttion_box{
-  position: absolute;
-  text-align: center;
-}
-
-.buttion_inni{
-  background-color: rgba(0, 0, 256, 0.5);
-}
-
-.depth_arrow_rigth{
-  position: absolute;
-  width: 32px;
-  height: 32px;
-}
-
-.depth_arrow_left{
-  position: absolute;
-  width: 32px;
-  height: 32px;
-}
-
-.depth_1{
-  color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  font-size: 6;
-  line-height: 100%;
-  margin: 0 auto;
-  padding: 10px;
-}
-
-.depth_2{
-  color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  font-size: 14;
-  line-height: 100%;
-  margin: 0 auto;
-  padding: 10px;
-}
-
-.depth_3{
-  color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  font-size: 20;
-  line-height: 100%;
-  margin: 0 auto;
-  padding: 10px;
-}
-
-.depth_4{
-  color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  font-size: 32;
-  line-height: 100%;
-  margin: 0 auto;
-  padding: 10px;
-}
-
-
-
-.depth_5{
-  color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  font-size: 20;
-  line-height: 100%;
-  margin: 0 auto;
-  padding: 10px;
-}
-
-.depth_6{
-  color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  font-size: 14;
-  line-height: 100%;
-  margin: 0 auto;
-  padding: 10px;
-}
-
-.depth_7{
-  color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  font-size: 6;
+.depth_p{
   line-height: 100%;
   margin: 0 auto;
   padding: 10px;

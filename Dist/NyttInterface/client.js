@@ -6,8 +6,6 @@ var joystickValue = {RIGHT_STICK_X: 2, RIGHT_STICK_Y: 2, LEFT_STICK_Y: 2};
 var initialized = 0;
 var displayDevMode = true;
 var epsilon = 0.1;
-var lastcontrolmode="motion";
-var time = new Date();
 
 // ########################
 //
@@ -390,21 +388,24 @@ function initIOHandle(){
 function handleVideo(){
 
 		var videoElement = document.getElementById('videostream');
+		var videoContainer = document.getElementById('video_container')
+
 		var adress = "http://192.168.0.12:3031/?action=stream";
 		videoElement.setAttribute("src", adress);
 
-		var videoContainer = document.getElementById("container");
+		videoContainer.style.height = window.innerHeight;
+		videoContainer.style.width = window.innerWidth;
 
-		if(videoElement && videoElement.style) {
+		if(videoElement && videoElement.style){
+
+			videoElement.style.width = window.innerHeight;
+			videoElement.style.height = window.innerWidth;
+
 			//videoElement.style.MozTransform = "rotate(270deg)";
 			//videoElement.style.WebkitTransform ="rotate(270deg)";
 			//videoElement.style.oTransform = "rotate(270deg)";
 			//videoElement.style.transform = "rotate(270deg)";
 			//videoElement.style.msTransform = "rotate(270deg)";
-			videoElement.style.width = window.innerWidth;
-			videoElement.style.height = window.innerHeight;
-			$(".videostream").css("width", (window.innerWidth) + "px");
-			$(".videostream").css("height", (window.innerHeight) + "px");
 		}
 }
 
@@ -412,25 +413,30 @@ function setUpWindow(){
 	setUp_animation_window();
 	setUp_heading_window();
 	setUp_depth_window();
-	setUp_button_window();
+	setUp_bottom_window();
 	setUp_top_bar();
-	handle_info_buttion();
 }
+
+//Loading top bar
 
 function setUp_top_bar(){
 	$(".top-bar").css("width", (window.innerWidth) + "px");
 }
 
-function setUp_button_window(){
-	$(".buttion_box").css("top", (window.innerHeight-window.innerHeight/100*10));
-	$(".buttion_box").css("left", (window.innerWidth/100*5));
-	$(".buttion_box").css("width", (window.innerWidth/100*88) + "px");
-	$(".buttion_inni").css("width", (window.innerWidth/100*88) + "px");
-	$(".show_options_b_div").css("height", (window.innerHeight/100*5) + "px");
-	$("button").css("height", (window.innerHeight/100*10) + "px");
+function setUp_bottom_window(){
+	$(".bottom_box").css("top", (window.innerHeight-40));
+	$(".bottom_box").css("left", (window.innerWidth/100*5));
+	$(".bottom_box").css("width", (window.innerWidth/100*88) + "px");
+	$(".bottom_inni").css("width", (window.innerWidth/100*88) + "px");
+	$(".bottom_box").css("height", 40 + "px");
+	$("button").css("height", (40) + "px");
+	document.getElementById("pressure_button").style.background='#00FF00'
+	document.getElementById("dvl_button").style.background='#00FF00'
+	document.getElementById("imu_button").style.background='#00FF00'
 }
 
 
+//Loading the animation window
 function setUp_animation_window(){
 	$(".animation_model").css("top", (window.innerHeight/100*10));
 	$(".animation_model").css("left", (window.innerWidth-(window.innerWidth/100*10)-(window.innerHeight/2)));
@@ -438,6 +444,7 @@ function setUp_animation_window(){
 	$(".animation_model").css("width", (window.innerHeight/2) + "px");
 }
 
+//Loading the heading window
 function setUp_heading_window(){
 	$(".heading_box").css("top", (window.innerHeight/100*10) + 45);
 	$(".heading_box").css("left", (window.innerWidth/100*15));
@@ -449,6 +456,7 @@ function setUp_heading_window(){
 	$(".heading_arrow_down").css("left", (window.innerWidth/100*15) + (window.innerWidth/2)/2 - 32/2 );
 }
 
+//Loading the depth window
 function setUp_depth_window(){
 	$(".depth_box").css("top", (window.innerHeight/100*22));
 	$(".depth_box").css("left", (window.innerWidth/100*8));
@@ -460,6 +468,87 @@ function setUp_depth_window(){
 	$(".depth_arrow_left").css("left", ((window.innerWidth/100*8) + (window.innerHeight/100*10)));
 }
 
+//Handle the buttons on the bottom bar
+function handle_bottom_window(){
+
+	var lights = "off";
+	document.getElementById('lights_button').onclick=function(){
+		if(lights=="off"){
+			document.getElementById('lights_info').innerHTML=("Light ON");
+			document.getElementById('lights_button').innerHTML=("Light ON");
+			document.getElementById('lights_button').style.background='#FFCC00'
+			document.getElementById('lights_info').style.background='#FFCC00'
+			lights = "on";
+			io.emit("command", {type:"set-lights", setPoint:250});
+			console.log("Setting lights, value is : " + 250);
+		}
+		else if(lights=="on"){
+			document.getElementById('lights_info').innerHTML=("Light OFF");
+			document.getElementById('lights_button').innerHTML=("Light OFF");
+			document.getElementById('lights_button').style.background='#000000'
+			document.getElementById('lights_info').style.background='#000000'
+			lights = "off";
+			io.emit("command", {type:"set-lights", setPoint:0});
+			console.log("Setting lights, value is : " + 0);
+		}
+	};
+
+	document.getElementById('controlMode_selecter').onchange = function(){
+		 console.log(controlMode_selecter.value);
+		 document.getElementById('controlMode_info').innerHTML=("Control Mode: " + controlMode_selecter.value);
+	 }
+
+	var pressure="on";
+	document.getElementById('pressure_button').onclick=function(){
+		if(pressure=="on"){
+			document.getElementById('pressure_button').innerHTML=("Pressure OFF");
+			document.getElementById("pressure_button").style.background='#FF0000'
+			pressure="off";
+		}
+		else if(pressure="off"){
+			document.getElementById('pressure_button').innerHTML=("Pressure ON");
+			document.getElementById("pressure_button").style.background='#00FF00'
+			pressure="on";
+		}
+	}
+
+	var dvl="on";
+	document.getElementById('dvl_button').onclick=function(){
+		if(dvl=="on"){
+			document.getElementById('dvl_button').innerHTML=("DVL OFF");
+			document.getElementById("dvl_button").style.background='#FF0000'
+			dvl="off";
+		}
+		else if(dvl="off"){
+			document.getElementById('dvl_button').innerHTML=("DVL ON");
+			document.getElementById("dvl_button").style.background='#00FF00'
+			dvl="on";
+		}
+	}
+
+	var imu="on";
+	document.getElementById('imu_button').onclick=function(){
+		if(imu=="on"){
+			document.getElementById('imu_button').innerHTML=("IMU OFF");
+			document.getElementById("imu_button").style.background='#FF0000'
+			imu="off";
+		}
+		else if(imu="off"){
+			document.getElementById('imu_button').innerHTML=("IMU ON");
+			document.getElementById("imu_button").style.background='#00FF00'
+			imu="on";
+		}
+	}
+}
+
+//Handle the Thust window
+function handleThust_info(){
+	$(".Thruster_info").css("top", (window.innerHeight/100*15));
+	$(".Thruster_info").css("left", (window.innerWidth-(window.innerWidth/100*10)));
+	$(".Thruster_info").css("width", (window.innerWidth/100*10));
+}
+
+//Handle depth Value change, "rotating" the depth "wheel"
 function handleDepthValue(depth){
 	//if(data.deap){
 		var depth_presize = ((depth % 1));
@@ -483,6 +572,7 @@ function handleDepthValue(depth){
 	//}
 }
 
+//Handle heading value change, "rotating" the heading "wheel"
 function handleHeadingValue(heading){
 	var headingRound = Math.round(heading/5)*5;
 	var heading_presize = (((heading + 2.5) % 5) - 2.5)/2.5;
@@ -499,6 +589,7 @@ function handleHeadingValue(heading){
 	writeHeading("heading_11", (headingRound + 25), 6 + 6*heading_presize);
 }
 
+//fuction called from handleHeadingValue that writes the heading value
 function writeHeading(headingElementID, number, font_size){
 	var string_H = new String;
 	if(number > 360){
@@ -511,6 +602,28 @@ function writeHeading(headingElementID, number, font_size){
 	document.getElementById(headingElementID).innerHTML = string_H;
 	$("."+headingElementID).css("width", font_size*2.5 + "px");
 	$("."+headingElementID).css("font-size", font_size);
+}
+
+//handle the bottom box dissapering
+function handle_bottom_box_dissapering(){
+	$(function(){
+		var hided = false;
+		//$(".bottom_inni").hide();
+		$("div.bottom_box").mouseover(function() {
+			if(hided){
+				$("#bottom_inni").show("scale");
+				hided=false;
+			setTimeout(function() {
+		    $("#bottom_inni").hide("scale");
+		 	 	hided = true;
+			}, 15000 );
+		}
+		});
+		setTimeout(function() {
+			$("#bottom_inni").hide("scale");
+			hided = true;
+		}, 15000 );
+	});
 }
 
 function initTransferOfControl(){
@@ -527,24 +640,6 @@ function initTransferOfControl(){
 	io.on("gotcontrol", function(){
 		alert("you have control");
 		displayInScrollWindow({logType:"Transfer of control", data: "[Transfer of control] Recieved control."});
-	});
-}
-
-function handle_info_buttion(){
-	$(function(){
-		console.log("her");
-		var hided = true;
-		$(".buttion_inni").hide();
-		$("div.buttion_box").mouseover(function() {
-			if(hided){
-				$("#buttion_inni").show("clip");
-				hided=false;
-			}
-			setTimeout(function() {
-		    $("#buttion_inni").hide("clip");
-		 	 	hided = true;
-			}, 15000 );
-		});
 	});
 }
 
@@ -575,6 +670,9 @@ window.onload = function(){
 	handleAnimation();
 	handleVideo();
 	setUpWindow();
+	handle_bottom_window();
+	handleThust_info();
+	handle_bottom_box_dissapering();
 	initInputHandlers();
 	//initDevMode();
 	//initTransferOfControl();

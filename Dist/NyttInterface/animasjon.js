@@ -1,18 +1,19 @@
 
+//load and control the 3d model of neptunus and the compass
 
-var scene, camera, animationContainer, renderer, neptunus, compass;
-var rotation_matrix;
-var Xaxis = new THREE.Vector3(1,0,0);
-var forrigeRoll = 0;
+var scene, camera, renderer, neptunus, compass;
+var zaxis = new THREE.Vector3(0,0,1);
 
 function handleAnimation(){
 
 		var container = document.getElementById("animation_model");
 		scene = new THREE.Scene();
 
+		//Camera
 		camera = new THREE.PerspectiveCamera( 50, (window.innerHeight/2)/(window.innerHeight/2), 0.1, 1000 );
 		camera.position.z = 18;
 
+		//Renderer
 		renderer = new THREE.WebGLRenderer({ alpha: true });
 		renderer.setSize((window.innerHeight/2),(window.innerHeight/2));
 		container.appendChild( renderer.domElement );
@@ -22,7 +23,7 @@ function handleAnimation(){
     light.position.set(0,0,100);
     scene.add(light);
 
-		//neptunus
+		//neptunus 3d model build with blender
 		var loader = new THREE.JSONLoader();
 		loader.load( 'images/neptunus2.json', function ( geometry ) {
 			var neptunus_material = new THREE.MeshLambertMaterial( { color: 0xffff00 } );
@@ -35,7 +36,7 @@ function handleAnimation(){
 							scene.add( neptunus );
 		});
 
-		//compass
+		//compass 3d model build with blender
 		var loader_compass = new THREE.JSONLoader();
 		loader_compass.load( 'images/Compas.json', function ( geometry ) {
 			var compass_material = new THREE.MeshLambertMaterial( { color: 0x996633 } );
@@ -51,41 +52,31 @@ function handleAnimation(){
 
 		render();
 
-
-
-
     // Rendering function
     function render() {
 	        requestAnimationFrame(render);
-
 	        renderer.autoClear = false;
 	        renderer.clear();
 	        renderer.render(scene, camera);
     };
 }
 
+
+//Update 3d model in roll
 function updateNeptunusRoll(roll){
 	if(neptunus){
-	 //neptunus.rotation.z=(roll/360*Math.PI*2);
-
-	 var diff = - (forrigeRoll - roll/360*Math.PI*2);
-	 neptunus.rotateOnAxis( Xaxis	, diff);
-	 forrigeRoll = roll/360*Math.PI*2;
-	 console.log("roll " + roll);
-	 console.log(diff);
+	 neptunus.rotateOnAxis( zaxis	, neptunus.rotation.z + roll/360*Math.PI*2);
 	}
-
 }
 
+//Update 3d model in pitch
 function updateNeptunusPitch(pitch){
 	if(neptunus){
-		neptunus.rotation.x=(-pitch/360*Math.PI*2);
-		console.log("pitch " + pitch);
-		console.log(-pitch/360*Math.PI*2);
+		neptunus.rotation.x=(Math.PI/2-pitch/360*Math.PI*2);
 	}
-
 }
 
+//Update "compass" model in heading
 function updateComass3DModel(heading){
 		if(compass){
 			compass.rotation.y = (Math.PI/2+ heading/360*Math.PI*2);

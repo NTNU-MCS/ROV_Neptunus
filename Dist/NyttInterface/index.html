@@ -1,99 +1,125 @@
 <html>
 
 <head>
-<title>Neptunus</title>
+	<title>Neptunus</title>
 
-<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-<meta content="utf-8" http-equiv="encoding">
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
 
-<link href="styles.css" rel="stylesheet" type="text/css">
-<!-- styles needed by jScrollPane -->
-<link type="text/css" href="libraryes/jquery.jscrollpane.css" rel="stylesheet" media="all" />
-<link type="text/css" rel="stylesheet" href="libraryes/jquery_ui_11_4/jquery-ui.css">
+
+	<!-- styles needed by jScrollPane -->
+	<link type="text/css" href="libraryes/jquery.jscrollpane.css" rel="stylesheet" media="all" >
+	<link type="text/css" rel="stylesheet" href="libraryes/jquery_ui_11_4/jquery-ui.css">
+
+
+	<link href="styles.css" rel="stylesheet" type="text/css">
+
+
 </head>
 
+<body>
 
-	<div class="videoDiv">
-		<div  id="container" class="video">
-					<img id="videostream" class="videostream"> </img>
-		</div>
-	</div>
-	<div class="animation_model" id="animation_model">	</div>
-	<div class="heading_box" id="heading_box">
-		<table class="heading_table" id="heading_table">
-			<td class="heading_1 heading_inni" id="heading_1"> </td>
-			<td class="heading_2 heading_inni" id="heading_2"> </td>
-			<td class="heading_3 heading_inni" id="heading_3"> </td>
-			<td class="heading_4 heading_inni" id="heading_4"> </td>
-			<td class="heading_5 heading_inni" id="heading_5"> </td>
-			<td class="heading_6 heading_inni" id="heading_6"> </td>
-			<td class="heading_7 heading_inni" id="heading_7"> </td>
-			<td class="heading_8 heading_inni" id="heading_8"> </td>
-			<td class="heading_9 heading_inni" id="heading_9"> </td>
-			<td class="heading_10 heading_inni" id="heading_10"> </td>
-			<td class="heading_11 heading_inni" id="heading_11"> </td>
-		</table>
-	</div>
-
-	<div class="depth_box" id="depth_box" style="display: table;">
-		<div style="display: table-cell; vertical-align: middle;">
-       <div>
-				<p class="depth_1" id="depth_1"> </p>
-				<p class="depth_2" id="depth_2"> </p>
-				<p class="depth_3" id="depth_3"> </p>
-				<p class="depth_4" id="depth_4"> </p>
-				<p class="depth_5" id="depth_5"> </p>
-				<p class="depth_6" id="depth_6"> </p>
-				<p class="depth_7" id="depth_7"> </p>
-       </div>
-     </div>
-	</div>
-	<div class="depth_arrow_rigth" id="depth_arrow_rigth">
-		<img class="arrow_img" src="images/arrow-right.png">
-	</div>
-	<div class="depth_arrow_left" id="depth_arrow_rigth">
-		<img class="arrow_img" src="images/arrow-left.png">
-	</div>
-	<div class="heading_arrow_up" id="heading_arrow_up">
-		<img class="arrow_img" src="images/arrow-up.png">
-	</div>
-	<div class="heading_arrow_down" id="heading_arrow_down">
-		<img class="arrow_img" src="images/arrow-down.png">
-	</div>
-
-	<div class="top-bar">
-		<table class="top-table">
-
-			<td class="td_top_bar"> battery left: ?? </td>
-			<td class="td_top_bar"> thruster saturation: ?? </td>
-			<td class="td_top_bar"> lights on: ?? </td>
-			<td class="td_top_bar"> op. time </td>
-			<td class="td_top_bar"> left time </td>
-		</table>
-	</div>
-
-	<div class="buttion_box" id="buttion_box">
-		<div class="show_options_b_div" id="show_options_b_div">
-			<div class="buttion_inni" id="buttion_inni">
-					<button>light</button>
-					<button>mode</button>
-					<button>??</button>
-					<button>??</button>
-
-						<label for="controlMode_selecter">Control mode:</label>
-						<select name="controlMode_selecter" id="controlMode_selecter">
-							<option>keyboard</option>
-							<option selected="selected">X-box controller</option>
-							<option>touchpad</option>
-						</select>
+		<!-- Background video -->
+		<div class="videoDiv">
+			<div  id="video_container" class="video_container">
+						<img id="videostream" class="videostream"> 
 			</div>
 		</div>
-	</div>
+
+		<!-- Div with neptunus and compass 3d models -->
+		<div class="animation_model" id="animation_model">	</div>
+
+		<!-- Div with heading "wheel" -->
+		<div class="heading_box" id="heading_box">
+			<table class="heading_table" id="heading_table">
+				<td class="heading_1 heading_inni" id="heading_1"> </td>
+				<td class="heading_2 heading_inni" id="heading_2"> </td>
+				<td class="heading_3 heading_inni" id="heading_3"> </td>
+				<td class="heading_4 heading_inni" id="heading_4"> </td>
+				<td class="heading_5 heading_inni" id="heading_5"> </td>
+				<td class="heading_6 heading_inni" id="heading_6"> </td>
+				<td class="heading_7 heading_inni" id="heading_7"> </td>
+				<td class="heading_8 heading_inni" id="heading_8"> </td>
+				<td class="heading_9 heading_inni" id="heading_9"> </td>
+				<td class="heading_10 heading_inni" id="heading_10"> </td>
+				<td class="heading_11 heading_inni" id="heading_11"> </td>
+			</table>
+		</div>
+
+		<!-- Div with depth wheel -->
+		<div class="depth_box" id="depth_box" style="display: table;">
+			<div style="display: table-cell; vertical-align: middle;">
+	       <div>
+					<p class="depth_1 depth_p" id="depth_1"> </p>
+					<p class="depth_2 depth_p" id="depth_2"> </p>
+					<p class="depth_3 depth_p" id="depth_3"> </p>
+					<p class="depth_4 depth_p" id="depth_4"> </p>
+					<p class="depth_5 depth_p" id="depth_5"> </p>
+					<p class="depth_6 depth_p" id="depth_6"> </p>
+					<p class="depth_7 depth_p" id="depth_7"> </p>
+	       </div>
+	     </div>
+		</div>
+
+		<!-- Heading and depth arrow pictures -->
+		<div class="depth_arrow_rigth arrow_div" id="depth_arrow_rigth">
+			<img class="arrow_img" src="images/arrow-right.png">
+		</div>
+		<div class="depth_arrow_left arrow_div" id="depth_arrow_rigth">
+			<img class="arrow_img" src="images/arrow-left.png">
+		</div>
+		<div class="heading_arrow_up arrow_div" id="heading_arrow_up">
+			<img class="arrow_img" src="images/arrow-up.png">
+		</div>
+		<div class="heading_arrow_down arrow_div" id="heading_arrow_down">
+			<img class="arrow_img" src="images/arrow-down.png">
+		</div>
+
+		<!-- Div with Thruster info -->
+		<div class="Thruster_info" id="Thruster_info">
+				<p> Port: 0% </p>
+				<p> Strb: 0% </p>
+				<p> Heave: 0% </p>
+		</div>
+
+		<!-- Top bar with info -->
+		<div class="top-bar">
+			<table class="top-table">
+				<td class="td_top_bar"> battery left: ?? </td>
+				<td class="td_top_bar"> thruster saturation: ?? </td>
+				<td class="td_top_bar lights_info" id="lights_info"> Light OFF </td>
+				<td class="td_top_bar"> op. time </td>
+				<td class="td_top_bar"> left time </td>
+				<td class="td_top_bar controlMode_info" id="controlMode_info"> Control Mode: joystick</td>
+			</table>
+		</div>
+
+		<!-- Dissapering bottom bar with buttons -->
+		<div class="bottom_box" id="bottom_box">
+			<div class="bottom_inni" id="bottom_inni">
+				<button id="lights_button">Light</button>
+
+				<button>mode</button>
+
+				<button id="imu_button"> IMU ON </button>
+
+	      <button id="dvl_button"> DVL ON </button>
+
+	      <button id="pressure_button"> Pressure ON </button>
+
+				<label for="controlMode_selecter">Control mode: </label>
+				<select name="controlMode_selecter" id="controlMode_selecter">
+					<option value="default">keyboard</option>
+					<option value="joystick" selected="selected">X-box controller</option>
+					<option value="default">touchpad</option>
+				</select>
+			</div>
+		</div>
 
 
 
 
-
+	<!-- Load packages and js files -->
 
 	<script src="libraryes/jquery.min.js"></script>
 	<script src="libraryes/jquery_ui_11_4/jquery-ui.min.js"></script>
