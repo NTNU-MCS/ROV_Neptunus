@@ -35,7 +35,6 @@ p {
 /* Thruster info box */
 
 .Thruster_info{
-  background-color: rgba(0, 0, 256, 0.6);
   position: absolute;
 }
 
@@ -88,7 +87,6 @@ p {
 
 .animation_model{
   position: absolute;
-  background-color: rgba(256, 0, 256, 0.1);
 }
 
 
