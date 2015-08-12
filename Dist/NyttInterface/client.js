@@ -419,11 +419,7 @@ function setUpWindow(){
 }
 
 //display thust
-
 function displayThrustInfo(content){
-	console.log("Test1:" + content.thr1);
-	console.log("Test2:" + content.thr2);
-	console.log("Test3:" + content.thr3);
 	document.getElementById('Port_thrust').innerHTML=("Port: " + - Math.round((content.thr1-1500)/5) + "%");
 	document.getElementById('Strb_thrust').innerHTML=("Strb: " + Math.round((content.thr3-1500)/5) + "%");
 	document.getElementById('Heave_thrust').innerHTML=("Heave: " + Math.round((content.thr2-1500)/5) + "%");
