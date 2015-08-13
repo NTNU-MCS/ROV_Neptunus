@@ -367,17 +367,17 @@ function initIOHandle(){
 		switch(data.type){
 			case "measurement":
 				displayMeasurement(data.content);
-				saveMeasurements(data.content);
+				//saveMeasurements(data.content);
 				break;
 			case "command":
-				saveCommand(data.content);
+				//saveCommand(data.content);
 				displayThrustInfo(data.content);
 				break;
 			case "estimated-states":
 				// placeholder
 				break;
 			case "sim-measurement":
-				saveSimulatedStates(data.content);
+				//saveSimulatedStates(data.content);
 				break;
 			case "log":
 				displayInScrollWindow(data.content);
