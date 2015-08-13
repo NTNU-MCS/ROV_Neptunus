@@ -367,20 +367,20 @@ function initIOHandle(){
 		switch(data.type){
 			case "measurement":
 				displayMeasurement(data.content);
-				//saveMeasurements(data.content);
+				saveMeasurements(data.content);
 				break;
 			case "command":
-				//saveCommand(data.content);
+				saveCommand(data.content);
 				displayThrustInfo(data.content);
 				break;
 			case "estimated-states":
 				// placeholder
 				break;
 			case "sim-measurement":
-				//saveSimulatedStates(data.content);
+				saveSimulatedStates(data.content);
 				break;
 			case "log":
-				//displayInScrollWindow(data.content);
+				displayInScrollWindow(data.content);
 				break;
 		}
 	});
@@ -719,7 +719,12 @@ function initInputHandlers(){
 	console.log("initialized!");
 }
 
+function initDevMode(){
+	initIOHandle();
 
+	initScrollPane();
+	initGraphs();
+}
 
 window.onload = function(){
 	//handleDepthAutopilotButton();
@@ -731,7 +736,7 @@ window.onload = function(){
 	handleThust_info();
 	handle_bottom_box_dissapering();
 	initInputHandlers();
-	//initDevMode();
+	initDevMode();
 	//initTransferOfControl();
 	initIOHandle();
 	handleHeadingValue(0);
