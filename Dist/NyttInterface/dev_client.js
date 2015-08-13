@@ -326,7 +326,11 @@ function initIOHandle(){
 window.onload = function(){
 
 	initIOHandle();
-
 	initScrollPane();
 	initGraphs();
 }
+
+io = io.connect();
+
+// Send the ready event.
+io.emit('clientconnected');
