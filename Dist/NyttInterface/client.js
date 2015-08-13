@@ -719,13 +719,6 @@ function initInputHandlers(){
 	console.log("initialized!");
 }
 
-function initDevMode(){
-	initIOHandle();
-
-	initScrollPane();
-	initGraphs();
-}
-
 window.onload = function(){
 	//handleDepthAutopilotButton();
 	//handleHeadingAutopilotButton();
@@ -736,7 +729,7 @@ window.onload = function(){
 	handleThust_info();
 	handle_bottom_box_dissapering();
 	initInputHandlers();
-	initDevMode();
+	//initDevMode();
 	//initTransferOfControl();
 	initIOHandle();
 	handleHeadingValue(0);
