@@ -426,7 +426,6 @@ function displayThrustInfo(content){
 }
 
 //Loading top bar
-
 function setUp_top_bar(){
 	$(".top-bar").css("width", (window.innerWidth) + "px");
 }
@@ -441,6 +440,9 @@ function setUp_bottom_window(){
 	document.getElementById("pressure_button").style.background='#00FF00'
 	document.getElementById("dvl_button").style.background='#00FF00'
 	document.getElementById("imu_button").style.background='#00FF00'
+	document.getElementById('lights_button').style.background='#000000'
+	document.getElementById('lights_info').style.background='#000000'
+	hide_show();
 }
 
 
@@ -475,6 +477,53 @@ function setUp_depth_window(){
 	$(".depth_arrow_left").css("top", (window.innerHeight/100*22) + (window.innerHeight/100*50)/2 -32/2 );
 	$(".depth_arrow_left").css("left", ((window.innerWidth/100*8) + (window.innerHeight/100*10)));
 }
+
+
+//hide/show buttons
+function hide_show(){
+	var hide_panels=false;
+	var hide_info=false;
+	document.getElementById('hide_show_panels').onclick=function(){
+		if(hide_panels){
+			$("#animation_model").show()
+			$("#top-bar").show()
+			document.getElementById('hide_show_panels').innerHTML=("Hide Panels");
+			hide_panels=false;
+		}
+		else{
+			$("#animation_model").hide()
+			$("#top-bar").hide()
+			document.getElementById('hide_show_panels').innerHTML=("Show Panels");
+			hide_panels=true;
+		}
+	}
+	document.getElementById('hide_show_info').onclick=function(){
+		if(hide_info){
+			$("#heading_box").show()
+			$("#depth_box").show()
+			$("#depth_arrow_rigth").show()
+			$("#depth_arrow_left").show()
+			$("#heading_arrow_up").show()
+			$("#heading_arrow_down").show()
+			$("#Thruster_info").show()
+			document.getElementById('hide_show_info').innerHTML=("Hide Info");
+			hide_info=false;
+		}
+		else{
+			$("#heading_box").hide()
+			$("#depth_box").hide()
+			$("#depth_arrow_rigth").hide()
+			$("#depth_arrow_left").hide()
+			$("#heading_arrow_up").hide()
+			$("#heading_arrow_down").hide()
+			$("#Thruster_info").hide()
+			document.getElementById('hide_show_info').innerHTML=("Show Info");
+			hide_info=true;
+		}
+	}
+
+}
+
 
 //Handle the buttons on the bottom bar
 function handle_bottom_window(){

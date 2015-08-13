@@ -97,23 +97,29 @@
 		<!-- Dissapering bottom bar with buttons -->
 		<div class="bottom_box" id="bottom_box">
 			<div class="bottom_inni" id="bottom_inni">
-				<button id="lights_button">Light</button>
+			<button id="lights_button">Light OFF</button>
 
-				<button>mode</button>
+			<a href="dev_page.html" target="_blank">
+				<button id="dev_page_button"> Dev Page</button>
+			</a>
 
-				<button id="imu_button"> IMU ON </button>
+			<button id="imu_button"> IMU ON </button>
 
-	      <button id="dvl_button"> DVL ON </button>
+      <button id="dvl_button"> DVL ON </button>
 
-	      <button id="pressure_button"> Pressure ON </button>
+      <button id="pressure_button"> Pressure ON </button>
 
-				<label for="controlMode_selecter">Control mode: </label>
-				<select name="controlMode_selecter" id="controlMode_selecter">
-					<option value="default">keyboard</option>
-					<option value="joystick" selected="selected">X-box controller</option>
-					<option value="default">touchpad</option>
-				</select>
-			</div>
+			<button id="hide_show_panels"> Hide Panels </button>
+
+			<button id="hide_show_info">Hide Info</button>
+
+			<label for="controlMode_selecter">Control mode: </label>
+			<select name="controlMode_selecter" id="controlMode_selecter" class="controlMode_selecter">
+				<option value="default">keyboard</option>
+				<option value="joystick" selected="selected">X-box controller</option>
+				<option value="default">touchpad</option>
+			</select>
+		</div>
 		</div>
 
 
@@ -130,6 +136,7 @@
 
 	<script src="/socket.io/socket.io.js"></script>
 	<script src="libraryes/gamepad.js"></script>
+	<script src="dev_mode.js"></script>
 	<script src="animasjon.js"></script>
 	<script src="client.js"></script> <!-- This should be the last script to be executed -->
 
