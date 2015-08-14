@@ -331,6 +331,8 @@ function handleKeyPress(keyValue, pressType){
 //
 // ########################
 
+
+//display in HMI
 function displayMeasurement(data){
 	if(data.pitc){
 		var pitch = Number(data.pitc);
@@ -352,12 +354,12 @@ function displayMeasurement(data){
 
 	if(data.hdgd){
 			var heading = Number(data.hdgd);
-			console.log("heading " + heading);
 			handleHeadingValue(heading);
 			updateComass3DModel(heading);
 	}
 }
 
+//handle data from neptunus
 function initIOHandle(){
 	io.on("msg", function(data){
 		switch(data.type){
@@ -382,6 +384,7 @@ function initIOHandle(){
 	});
 }
 
+//handle vidoestream
 function handleVideo(){
 
 		var videoElement = document.getElementById('videostream');
@@ -425,6 +428,7 @@ function displayThrustInfo(content){
 //Loading top bar
 function setUp_top_bar(){
 	$(".top-bar").css("width", (window.innerWidth) + "px");
+	document.getElementById('lights_info').style.background='#000000'
 }
 
 //Load bottom bar
@@ -435,11 +439,13 @@ function setUp_bottom_window(){
 	$(".bottom_inni").css("width", (window.innerWidth/100*88) + "px");
 	$(".bottom_box").css("height", 40 + "px");
 	$("button").css("height", (40) + "px");
-	document.getElementById("pressure_button").style.background='#00FF00'
-	document.getElementById("dvl_button").style.background='#00FF00'
-	document.getElementById("imu_button").style.background='#00FF00'
+
+	//not implemented
+	//document.getElementById("pressure_button").style.background='#00FF00'
+	//document.getElementById("dvl_button").style.background='#00FF00'
+	//document.getElementById("imu_button").style.background='#00FF00'
+
 	document.getElementById('lights_button').style.background='#000000'
-	document.getElementById('lights_info').style.background='#000000'
 	hide_show();
 	dev_page();
 }
@@ -490,7 +496,6 @@ function setUp_depth_window(){
 	$(".depth_arrow_left").css("left", ((window.innerWidth/100*8) + (window.innerHeight/100*10)));
 }
 
-
 //hide/show buttons
 function hide_show(){
 	var hide_panels=false;
@@ -536,7 +541,6 @@ function hide_show(){
 
 }
 
-
 //Handle the buttons on the bottom bar
 function handle_bottom_window(){
 
@@ -567,6 +571,15 @@ function handle_bottom_window(){
 		 document.getElementById('controlMode_info').innerHTML=("Control Mode: " + controlMode_selecter.value);
 	 }
 
+	document.getElementById('controlMode_selecter').onchange = function(){
+		inputMode = controlMode_selecter.value;
+		io.emit("command", {type:"stop"});
+		displayInScrollWindow({logType:"Stop", data: "Input mode changed. Stopping."});
+	}
+
+	//not implemented, placeholder
+
+	/*
 	var pressure="on";
 	document.getElementById('pressure_button').onclick=function(){
 		if(pressure=="on"){
@@ -608,6 +621,7 @@ function handle_bottom_window(){
 			imu="on";
 		}
 	}
+	*/
 }
 
 //Handle the Thust window
@@ -695,6 +709,7 @@ function handle_bottom_box_dissapering(){
 	});
 }
 
+/* Not implemented
 function initTransferOfControl(){
 
 	io.on("requesting-control", function(data){
@@ -711,18 +726,12 @@ function initTransferOfControl(){
 		displayInScrollWindow({logType:"Transfer of control", data: "[Transfer of control] Recieved control."});
 	});
 }
-
+*/
 
 function initInputHandlers(){
-	//makeTouchEventHandlers();
 	initKeyPressHandler();
-	//handleLightsToggle();
-	//handleLaserToggle();
-	//handleGainButton();
 	initXBOXControllerHandler();
 	//handleControlModeChange();
-	//handleInputModeChange();
-	//handleRunModeChange();
 	document.onblur = function(){
 		keysPressed = [false, false, false, false, false, false];
 		io.emit("command", {type:"stop"});
@@ -738,8 +747,6 @@ function initDevMode(){
 	}
 
 window.onload = function(){
-	//handleDepthAutopilotButton();
-	//handleHeadingAutopilotButton();
 	handleAnimation();
 	handleVideo();
 	setUpWindow();
@@ -748,7 +755,6 @@ window.onload = function(){
 	handle_bottom_box_dissapering();
 	initInputHandlers();
 	initDevMode();
-	//initTransferOfControl();
 	initIOHandle();
 	handleHeadingValue(0);
 	handleDepthValue(0);
