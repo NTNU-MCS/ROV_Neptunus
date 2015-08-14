@@ -452,8 +452,8 @@ function setUp_bottom_window(){
 
 //Hide/show the dev_page
 function dev_page(){
-	$(".devModeContainer").css("width", (window.innerWidth) + "px");
-	$(".devModeContainer").css("width", (window.innerWidth) + "px");
+	//$(".devModeContainer").css("width", (window.innerWidth) + "px");
+	//$(".devModeContainer").css("width", (window.innerWidth) + "px");
 
 	$("#devModeContainer").hide();
 	document.getElementById('dev_page_button').onclick=function(){
