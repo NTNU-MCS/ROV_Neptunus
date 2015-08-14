@@ -16,11 +16,14 @@ body {
 
 /* dev mode*/
 
+h2{
+  width: 100;
+}
+
 .devModeContainer{
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 1);
   color: black;
   text-shadow: 0 0 black, 0 0 black, 0 0 black, 0 0 black;
 }
@@ -45,16 +48,22 @@ a {
 .first-half {
     float: left;
     width: 60%;
+    color: black;
+    text-shadow: 0 0 black, 0 0 black, 0 0 black, 0 0 black;
 }
 
 .second-half {
     float: right;
     width: 40%;
+    color: black;
+    text-shadow: 0 0 black, 0 0 black, 0 0 black, 0 0 black;
 }
 
 .chartBox{
   width: 1050px;
   float:left;
+  color: black;
+  text-shadow: 0 0 black, 0 0 black, 0 0 black, 0 0 black;
 }
 
 
@@ -63,6 +72,8 @@ a {
   height:300px;
   width: 1050px;
   float:left;
+  color: black;
+  text-shadow: 0 0 black, 0 0 black, 0 0 black, 0 0 black;
 }
 
 .scroll-pane{
@@ -70,6 +81,8 @@ a {
   height: 1000px;
   overflow: auto;
   float: right;
+  color: black;
+  text-shadow: 0 0 black, 0 0 black, 0 0 black, 0 0 black;
 }
 
 /* video */
