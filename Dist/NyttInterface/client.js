@@ -1,3 +1,9 @@
+/*
+client.js controlls everything in the HMI
+All the positions and sizes of the elements are set,
+the controlls are done, the buttons controlls...
+*/
+
 var inputMode = "joystick"; // {"default", "joystick", "oculus"}. default is keyboard or touchpad.
 var controlMode = "motion"; // {"motion", "manual", "DP", "Lever"}
 var runMode = "normal"; // {"normal", "simulation"};
@@ -12,8 +18,6 @@ var epsilon = 0.1;
 // Handle x-box-control input
 //
 // ########################
-
-
 
 function initXBOXControllerHandler(){
 	var gamepad = new Gamepad();
@@ -76,19 +80,6 @@ function initXBOXControllerHandler(){
 
     }
 }
-
-
-/*
-function displayInScrollWindow(command){
-
-
-
-	return;
-	//if($.inArray(command.logType, scrollPaneContent) > -1){
-	//	addToScrollPane(command.data);
-	//}
-}
-*/
 
 function processStickInput(e){
 
@@ -231,7 +222,6 @@ function handleShoulderButtons(e, keydown){
 // Handle keyboard input
 //
 // ########################
-
 
 function initKeyPressHandler(){
 	var validKeys = [65, 68, 69, 81, 83, 87];
@@ -416,6 +406,7 @@ function handleVideo(){
 		}
 }
 
+//load the window
 function setUpWindow(){
 	setUp_animation_window();
 	setUp_heading_window();
@@ -436,6 +427,7 @@ function setUp_top_bar(){
 	$(".top-bar").css("width", (window.innerWidth) + "px");
 }
 
+//Load bottom bar
 function setUp_bottom_window(){
 	$(".bottom_box").css("top", (window.innerHeight-40));
 	$(".bottom_box").css("left", (window.innerWidth/100*5));
@@ -452,6 +444,7 @@ function setUp_bottom_window(){
 	dev_page();
 }
 
+//Hide/show the dev_page
 function dev_page(){
 	$(".devModeContainer").css("width", (window.innerWidth) + "px");
 	$(".devModeContainer").css("width", (window.innerWidth) + "px");
