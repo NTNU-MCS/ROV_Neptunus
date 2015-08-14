@@ -567,14 +567,11 @@ function handle_bottom_window(){
 	};
 
 	document.getElementById('controlMode_selecter').onchange = function(){
-		 console.log(controlMode_selecter.value);
-		 document.getElementById('controlMode_info').innerHTML=("Control Mode: " + controlMode_selecter.value);
-	 }
-
-	document.getElementById('controlMode_selecter').onchange = function(){
 		inputMode = controlMode_selecter.value;
 		io.emit("command", {type:"stop"});
 		displayInScrollWindow({logType:"Stop", data: "Input mode changed. Stopping."});
+		console.log(controlMode_selecter.value);
+		document.getElementById('controlMode_info').innerHTML=("Control Mode: " + controlMode_selecter.value);
 	}
 
 	//not implemented, placeholder
