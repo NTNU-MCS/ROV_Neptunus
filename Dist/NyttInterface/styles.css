@@ -6,6 +6,52 @@ body {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+/* dev mode*/
+
+.devModeContainer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+a {
+  color: #00B7FF;
+}
+
+.return_button{
+  height: 50;
+  width: 100;
+}
+
+.first-half {
+    float: left;
+    width: 60%;
+}
+
+.second-half {
+    float: right;
+    width: 40%;
+}
+
+.chartBox{
+  width: 1050px;
+  float:left;
+}
+
+.chartContainer{
+  height:300px;
+  width: 1050px;
+  float:left;
+}
+
+.scroll-pane{
+  width: 500px;
+  height: 1000px;
+  overflow: auto;
+  float: right;
+}
+
 /* video */
 
 .video_container{

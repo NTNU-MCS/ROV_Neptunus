@@ -97,30 +97,146 @@
 		<!-- Dissapering bottom bar with buttons -->
 		<div class="bottom_box" id="bottom_box">
 			<div class="bottom_inni" id="bottom_inni">
-			<button id="lights_button">Light OFF</button>
 
-			<a href="dev_page.html" target="_blank">
+				<button id="lights_button">Light OFF</button>
+
 				<button id="dev_page_button"> Dev Page</button>
-			</a>
 
-			<button id="imu_button"> IMU ON </button>
+				<button id="imu_button"> IMU ON </button>
 
-      <button id="dvl_button"> DVL ON </button>
+	      <button id="dvl_button"> DVL ON </button>
 
-      <button id="pressure_button"> Pressure ON </button>
+	      <button id="pressure_button"> Pressure ON </button>
 
-			<button id="hide_show_panels"> Hide Panels </button>
+				<button id="hide_show_panels"> Hide Panels </button>
 
-			<button id="hide_show_info">Hide Info</button>
+				<button id="hide_show_info">Hide Info</button>
 
-			<label for="controlMode_selecter">Control mode: </label>
-			<select name="controlMode_selecter" id="controlMode_selecter" class="controlMode_selecter">
-				<option value="default">keyboard</option>
-				<option value="joystick" selected="selected">X-box controller</option>
-				<option value="default">touchpad</option>
-			</select>
+				<label for="controlMode_selecter">Control mode: </label>
+				<select name="controlMode_selecter" id="controlMode_selecter" class="controlMode_selecter">
+					<option value="default">keyboard</option>
+					<option value="joystick" selected="selected">X-box controller</option>
+					<option value="default">touchpad</option>
+				</select>
+			</div>
 		</div>
+
+		<div id="devModeContainer">
+				<button id="return_button" class="return_button"> Return </button>
+
+				<h2>Dev mode :</h2>
+
+			<div class="first-half">
+
+				<p>
+				Plot measurement:
+				<select id="measurementDropdown">
+					<option>Depth [m]</option>
+					<option>Roll [deg]</option>
+					<option>Pitch [deg]</option>
+					<option>Heading [deg]</option>
+					<option>Voltage [V]</option>
+					<option>Current [mA]</option>
+				</select>
+
+				Plot command:
+				<select id="commandsDropdown">
+					<option>Port thruster [1000, 2000]</option>
+					<option>Vertical thruster [1000, 2000]</option>
+					<option>Starboard thruster [1000, 2000]</option>
+					<option>Surge [-1, 1]</option>
+					<option>Yaw [-1, 1]</option>
+					<option>Heave [-1, 1]</option>
+				</select>
+
+				Plot estimated state:
+				<select id="estimatedStatesDropdown">
+					<option>Estimated Depth</option>
+					<option>Estimated Roll</option>
+					<option>Estimated Pitch</option>
+					<option>Estimated Heading</option>
+				</select>
+
+				</p>
+
+				<button id="deleteGraphs">Remove graphs</button>
+				<button id="resetGraphs">Reset graphs</button>
+
+				Plot simulated eta:
+				<select id="etaDropdown">
+					<option>Simulated x [m]</option>
+					<option>Simulated y [m]</option>
+					<option>Simulated depth [m]</option>
+					<option>Simulated heading [rad]</option>
+				</select>
+
+				Plot simulated nu:
+				<select id="nuDropdown">
+					<option>Simulated u [m/s]</option>
+					<option>Simulated w [m/s]</option>
+					<option>Simulated r [rad/s]</option>'
+				</select>
+
+			</div>
+
+			<div class="second-half">
+
+				Add to logger: <select id="scrollPaneContentDropdown"></select>
+
+				Remove: <select id="scrollPaneRemoveDropdown"></select>
+
+
+				<ul id="scrollPaneContent">
+
+				</ul>
+
+			</div>
+
+
+			<div class="chartBox">
+
+
+				<div id="chartContainer1" class="chartContainer">
+				</div>
+
+				<div id="chartContainer2" class="chartContainer">
+				</div>
+
+				<div id="chartContainer3" class="chartContainer">
+				</div>
+
+				<div id="chartContainer4" class="chartContainer">
+				</div>
+
+
+				<div id="chartContainer5" class="chartContainer">
+				</div>
+
+				<div id="chartContainer6" class="chartContainer">
+				</div>
+
+				<div id="chartContainer7" class="chartContainer">
+				</div>
+
+				<div id="chartContainer8" class="chartContainer">
+				</div>
+
+				<div id="chartContainer9" class="chartContainer">
+				</div>
+
+				<div id="chartContainer10" class="chartContainer">
+				</div>
+
+			</div>
+
+
+			<div class="scroll-pane">
+				<p>
+					Log:
+				</p>
+			</div>
 		</div>
+
 
 
 
@@ -137,6 +253,7 @@
 	<script src="/socket.io/socket.io.js"></script>
 	<script src="libraryes/gamepad.js"></script>
 	<script src="animasjon.js"></script>
+	<script src="dev_client.js"></script>
 	<script src="client.js"></script> <!-- This should be the last script to be executed -->
 
 

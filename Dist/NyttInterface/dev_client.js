@@ -298,39 +298,3 @@ function clearData(){ // arr = [] will delete references to the array. arr.lengt
 	simW.length = 0;
 	simR.length = 0;
 }
-
-function initIOHandle(){
-	io.on("msg", function(data){
-		switch(data.type){
-			case "measurement":
-				//displayMeasurement(data.content);
-				saveMeasurements(data.content);
-				break;
-			case "command":
-				saveCommand(data.content);
-				//displayThrustInfo(data.content);
-				break;
-			case "estimated-states":
-				// placeholder
-				break;
-			case "sim-measurement":
-				saveSimulatedStates(data.content);
-				break;
-			case "log":
-				displayInScrollWindow(data.content);
-				break;
-		}
-	});
-}
-
-window.onload = function(){
-
-	initIOHandle();
-	initScrollPane();
-	initGraphs();
-}
-
-io = io.connect();
-
-// Send the ready event.
-io.emit('clientconnected');

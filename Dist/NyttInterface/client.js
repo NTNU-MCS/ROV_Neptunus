@@ -77,12 +77,18 @@ function initXBOXControllerHandler(){
     }
 }
 
+
+/*
 function displayInScrollWindow(command){
+
+
+
 	return;
 	//if($.inArray(command.logType, scrollPaneContent) > -1){
 	//	addToScrollPane(command.data);
 	//}
 }
+*/
 
 function processStickInput(e){
 
@@ -367,17 +373,17 @@ function initIOHandle(){
 		switch(data.type){
 			case "measurement":
 				displayMeasurement(data.content);
-				//saveMeasurements(data.content);
+				saveMeasurements(data.content);
 				break;
 			case "command":
-				//saveCommand(data.content);
+				saveCommand(data.content);
 				displayThrustInfo(data.content);
 				break;
 			case "estimated-states":
 				// placeholder
 				break;
 			case "sim-measurement":
-				//saveSimulatedStates(data.content);
+				saveSimulatedStates(data.content);
 				break;
 			case "log":
 				displayInScrollWindow(data.content);
@@ -443,8 +449,21 @@ function setUp_bottom_window(){
 	document.getElementById('lights_button').style.background='#000000'
 	document.getElementById('lights_info').style.background='#000000'
 	hide_show();
+	dev_page();
 }
 
+function dev_page(){
+	$(".devModeContainer").css("width", (window.innerWidth) + "px");
+	$(".devModeContainer").css("width", (window.innerWidth) + "px");
+
+	$("#devModeContainer").hide();
+	document.getElementById('dev_page_button').onclick=function(){
+		$("#devModeContainer").show()
+	}
+	document.getElementById('return_button').onclick=function(){
+		$("#devModeContainer").hide()
+	}
+}
 
 //Loading the animation window
 function setUp_animation_window(){
@@ -719,6 +738,12 @@ function initInputHandlers(){
 	console.log("initialized!");
 }
 
+function initDevMode(){
+		initIOHandle();
+		initScrollPane();
+		initGraphs();
+	}
+
 window.onload = function(){
 	//handleDepthAutopilotButton();
 	//handleHeadingAutopilotButton();
@@ -729,7 +754,7 @@ window.onload = function(){
 	handleThust_info();
 	handle_bottom_box_dissapering();
 	initInputHandlers();
-	//initDevMode();
+	initDevMode();
 	//initTransferOfControl();
 	initIOHandle();
 	handleHeadingValue(0);
