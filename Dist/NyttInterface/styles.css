@@ -2,7 +2,7 @@
 styles for index.html
 Here the text color, some sizes, and some positions is set.
 Allmost all the sizes and plazements of the divs in index.html
-are set dynamicly in client.js depending on the size of the window. 
+are set dynamicly in client.js depending on the size of the window.
 
 */
 
@@ -43,19 +43,23 @@ a {
 }
 
 .chartBox{
-  float: left;
-  width: 60%;
+  width: 1050px;
+  float:left;
 }
 
+
+
 .chartContainer{
-  float: left;
-  width: 60%;
+  height:300px;
+  width: 1050px;
+  float:left;
 }
 
 .scroll-pane{
-  float: right;
-  width: 40%;
+  width: 500px;
+  height: 1000px;
   overflow: auto;
+  float: right;
 }
 
 /* video */
