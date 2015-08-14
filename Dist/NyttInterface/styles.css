@@ -17,7 +17,7 @@ body {
 /* dev mode*/
 
 h2{
-  width: 100;
+  width: 300;
 }
 
 .devModeContainer{
@@ -28,7 +28,7 @@ h2{
   text-shadow: 0 0 black, 0 0 black, 0 0 black, 0 0 black;
 }
 
-.devModeContainer button{
+.first-half button{
   color: black;
   text-shadow: 0 0 white, 0 0 white, 0 0 white, 0 0 white;
   border-radius: 0;
@@ -60,7 +60,7 @@ a {
 }
 
 .chartBox{
-  width: 1050px;
+  width: 800px;
   float:left;
   color: black;
   text-shadow: 0 0 black, 0 0 black, 0 0 black, 0 0 black;
@@ -70,7 +70,7 @@ a {
 
 .chartContainer{
   height:300px;
-  width: 1050px;
+  width: 800px;
   float:left;
   color: black;
   text-shadow: 0 0 black, 0 0 black, 0 0 black, 0 0 black;
