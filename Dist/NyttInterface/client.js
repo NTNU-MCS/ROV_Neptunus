@@ -6,13 +6,14 @@ var joystickValue = {RIGHT_STICK_X: 2, RIGHT_STICK_Y: 2, LEFT_STICK_Y: 2};
 var initialized = 0;
 var displayDevMode = true;
 var epsilon = 0.1;
-var dev_initialized = 0;
 
 // ########################
 //
 // Handle x-box-control input
 //
 // ########################
+
+
 
 function initXBOXControllerHandler(){
 	var gamepad = new Gamepad();
@@ -77,10 +78,6 @@ function initXBOXControllerHandler(){
 }
 
 function displayInScrollWindow(command){
-	if(dev_initialized){
-		displayInScrollWindow_div();
-	}
-
 	return;
 	//if($.inArray(command.logType, scrollPaneContent) > -1){
 	//	addToScrollPane(command.data);
@@ -229,6 +226,7 @@ function handleShoulderButtons(e, keydown){
 //
 // ########################
 
+
 function initKeyPressHandler(){
 	var validKeys = [65, 68, 69, 81, 83, 87];
 
@@ -369,14 +367,10 @@ function initIOHandle(){
 		switch(data.type){
 			case "measurement":
 				displayMeasurement(data.content);
-				if(dev_initialized){
-					saveMeasurements(data.content);
-				}
+				//saveMeasurements(data.content);
 				break;
 			case "command":
-				if(dev_initialized){
-					saveCommand(data.content);
-				}
+				//saveCommand(data.content);
 				displayThrustInfo(data.content);
 				break;
 			case "estimated-states":
@@ -451,6 +445,7 @@ function setUp_bottom_window(){
 	hide_show();
 }
 
+
 //Loading the animation window
 function setUp_animation_window(){
 	$(".animation_model").css("top", (window.innerHeight/100*10));
@@ -482,6 +477,7 @@ function setUp_depth_window(){
 	$(".depth_arrow_left").css("top", (window.innerHeight/100*22) + (window.innerHeight/100*50)/2 -32/2 );
 	$(".depth_arrow_left").css("left", ((window.innerWidth/100*8) + (window.innerHeight/100*10)));
 }
+
 
 //hide/show buttons
 function hide_show(){
@@ -527,6 +523,7 @@ function hide_show(){
 	}
 
 }
+
 
 //Handle the buttons on the bottom bar
 function handle_bottom_window(){
@@ -703,6 +700,7 @@ function initTransferOfControl(){
 	});
 }
 
+
 function initInputHandlers(){
 	//makeTouchEventHandlers();
 	initKeyPressHandler();
@@ -721,48 +719,25 @@ function initInputHandlers(){
 	console.log("initialized!");
 }
 
-function check_index_or_dev(){
-	var dev_elem = document.getElementById('devModeContainer');
-	if (dev_elem==null){
-		initialized=1;
-	}
-	else {
-		dev_initialized=1
-	}
-}
-
-
 window.onload = function(){
 	//handleDepthAutopilotButton();
 	//handleHeadingAutopilotButton();
-	check_index_or_dev();
-
-	if(initialized){
-		handleAnimation();
-		handleVideo();
-		setUpWindow();
-		handle_bottom_window();
-		handleThust_info();
-		handle_bottom_box_dissapering();
-		initInputHandlers();
-		//initDevMode();
-		//initTransferOfControl();
-		handleHeadingValue(0);
-		handleDepthValue(0);
-	}
-
+	handleAnimation();
+	handleVideo();
+	setUpWindow();
+	handle_bottom_window();
+	handleThust_info();
+	handle_bottom_box_dissapering();
+	initInputHandlers();
+	//initDevMode();
+	//initTransferOfControl();
 	initIOHandle();
-
-	if(dev_initialized){
-		initScrollPane();
-		initGraphs();
-		document.getElementById('return_button').onclick=function(){
-			window.close();
-		}
-	}
-
+	handleHeadingValue(0);
+	handleDepthValue(0);
 
 	io.emit('clientloaded');
+
+	initialized = 1;
 };
 
 io = io.connect();
