@@ -1,0 +1,230 @@
+/*
+styles for index.html
+Here the text color, some sizes, and some positions is set.
+Allmost all the sizes and plazements of the divs in index.html
+are set dynamicly in client.js depending on the size of the window.
+
+*/
+
+body {
+  padding: 0px;
+  margin: 0;
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/* dev mode*/
+
+h2{
+  width: 300;
+}
+
+.devModeContainer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: black;
+  text-shadow: 0 0 black, 0 0 black, 0 0 black, 0 0 black;
+}
+
+.first-half button{
+  color: black;
+  text-shadow: 0 0 white, 0 0 white, 0 0 white, 0 0 white;
+  border-radius: 0;
+  border-color: rgba(0, 0, 0, 1);
+  height: 20;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.return_button{
+  height: 50;
+  width: 100;
+}
+
+.first-half {
+    float: left;
+    width: 60%;
+    color: black;
+    text-shadow: 0 0 black, 0 0 black, 0 0 black, 0 0 black;
+    font-size: 15px;
+}
+
+.second-half {
+    float: right;
+    width: 40%;
+    color: black;
+    text-shadow: 0 0 black, 0 0 black, 0 0 black, 0 0 black;
+    font-size: 15px;
+}
+
+.chartBox{
+  width: 800px;
+  float:left;
+  color: black;
+  text-shadow: 0 0 black, 0 0 black, 0 0 black, 0 0 black;
+}
+
+
+
+.chartContainer{
+  height:300px;
+  width: 800px;
+  float:left;
+  color: black;
+  text-shadow: 0 0 black, 0 0 black, 0 0 black, 0 0 black;
+}
+
+.scroll-pane{
+  width: 500px;
+  height: 1000px;
+  overflow: auto;
+  float: right;
+  color: black;
+  text-shadow: 0 0 black, 0 0 black, 0 0 black, 0 0 black;
+}
+
+/* video */
+
+.video_container{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.videostream{
+  -ms-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  top: 100%;
+  position: absolute;
+}
+
+/* Paragraph */
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Thruster info box */
+
+.Thruster_info{
+  position: absolute;
+}
+
+
+/* Top info box */
+.top-bar{
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 45px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.top-table{
+  background-color: rgba(0, 255, 0, 0.3);
+  border: 0px;
+  text-align: center;
+  margin: 0 auto;
+  height: inherit;
+}
+
+.td_top_bar{
+  border: 2px solid white;
+}
+
+.lights_info{
+  width: 100;
+}
+
+/* Heading update "wheel" */
+.heading_box{
+  position: absolute;
+}
+
+.heading_table{
+  border: 0px;
+  text-align: center;
+  margin: 0 auto
+}
+
+.heading_inni{
+  table-layout: fixed;
+  border-collapse: separate;
+  text-align: center;
+  padding: 0;
+  height:36;
+}
+
+/* Animation box */
+
+.animation_model{
+  position: absolute;
+}
+
+
+/* arrows */
+img.arrow_img{
+  width: 32px;
+  height: 32px;
+}
+
+.arrow_div{
+  position: absolute;
+}
+
+/* Dissapering buttion bar */
+.bottom_box{
+  position: absolute;
+  text-align: center;
+  height: 40;
+}
+
+.controlMode_selecter{
+  border-radius: 10px;
+  border-color: rgba(255, 255, 255, 0);
+  height: 40;
+}
+
+button{
+  color: black;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  border-radius: 10px;
+  border-color: rgba(255, 255, 255, 0);
+  height: 40;
+}
+
+.bottom_inni{
+  background-color: rgba(0, 0, 256, 0.5);
+}
+
+.dev_button{
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  color: initial;
+  height: 40;
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+/* Depth update "wheel" */
+.depth_box{
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.depth_p{
+  line-height: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}

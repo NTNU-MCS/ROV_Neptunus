@@ -1,0 +1,5 @@
+Fri Aug 08 2014 19:33:17 GMT+0000 (UTC): depth: -0.19
+Fri Aug 08 2014 19:33:17 GMT+0000 (UTC): depth: -0.29
+Fri Aug 08 2014 19:33:17 GMT+0000 (UTC): depth: -0
+Fri Aug 08 2014 19:33:18 GMT+0000 (UTC): current: 11
+Fri Aug 08 2014 19:33:18 GMT+0000 (UTC): depth: -0.12ar

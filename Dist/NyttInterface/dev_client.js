@@ -1,4 +1,6 @@
 // Dev mode interface
+//controlls everything in the dev mode.
+// This is made by Josten Munz master theeses. 
 
 var depth = [];
 var heading = [];
@@ -45,6 +47,10 @@ var api;
 var pane;
 
 //
+
+document.getElementById('return_button').onclick=function(){
+  window.close();
+}
 
 
 function saveMeasurements(data){

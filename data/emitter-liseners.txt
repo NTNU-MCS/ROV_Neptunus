@@ -1,0 +1,10 @@
+at WriteStream.EventEmitter.addListener (events.js:160:15)
+at WriteStream.EventEmitter.once (events.js:185:8)
+at writetofile (/opt/scripts/serverapp_dev/lib/Navigation.js:31:10)
+at updateStates (/opt/scripts/serverapp_dev/lib/Navigation.js:20:3)
+at SerialPort.<anonymous> (/opt/scripts/serverapp_dev/lib/SerialHandler.js:64:15)
+at SerialPort.EventEmitter.emit (events.js:95:17)
+at /opt/scripts/serverapp_dev/node_modules/serialport/parsers.js:25:17
+at Array.forEach (native)
+at Object.parser (/opt/scripts/serverapp_dev/node_modules/serialport/parsers.js:24:13)
+at Object.SerialPort.options.dataCallback (/opt/scripts/serverapp_dev/node_modules/serialport/serialport.js:179:15)

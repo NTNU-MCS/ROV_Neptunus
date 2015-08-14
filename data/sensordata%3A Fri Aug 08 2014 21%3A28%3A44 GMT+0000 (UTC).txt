@@ -1,0 +1,12 @@
+Fri Aug 08 2014 21:28:45 GMT+0000 (UTC): depth: -0.20
+Fri Aug 08 2014 21:28:46 GMT+0000 (UTC): temp: 31.45
+Fri Aug 08 2014 21:28:46 GMT+0000 (UTC): depth: -0.19
+Fri Aug 08 2014 21:28:47 GMT+0000 (UTC): depth: -0.19
+Fri Aug 08 2014 21:28:47 GMT+0000 (UTC): depth: -0.19
+Fri Aug 08 2014 21:28:48 GMT+0000 (UTC): temp: 31.44
+Fri Aug 08 2014 21:28:49 GMT+0000 (UTC): pitch: 05.15
+Fri Aug 08 2014 21:28:50 GMT+0000 (UTC): depth: -0.20
+Fri Aug 08 2014 21:28:51 GMT+0000 (UTC): temp: 31.44
+Fri Aug 08 2014 21:28:51 GMT+0000 (UTC): pitch: 0.25
+Fri Aug 08 2014 21:28:53 GMT+0000 (UTC): depth: -0.20
+Fri Aug 08 2014 21:28:54 GMT+0000 (UTC): temp: 31.43

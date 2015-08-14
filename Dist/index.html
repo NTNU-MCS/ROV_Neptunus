@@ -8,8 +8,7 @@
 <body>
 	<h1>Neptunus</h1>
 	
-	
-	
+
 
 	<table border="1" cellpadding="2" cellspacing="0">
 		<tr>
@@ -27,14 +26,14 @@
 		<tr>
 			<td colspan="3">
 				<div class="first-half">
-					
-						Control mode: 
+
+						Control mode:
 						<form name="controlModeForm">
 						<input type="radio" name="controlMode" value="Motion" checked>Motion
-						<input type="radio" name="controlMode" value="Manual">Manual 
+						<input type="radio" name="controlMode" value="Manual">Manual
 						<input type="radio" name="controlMode" value="DP">DP
-						</form> 
-					
+						</form>
+
 					<br>
 
 					<form id="autoDepthForm">
@@ -43,7 +42,7 @@
 						<input type="button" id="autoDepthButton" value="Set">
 						<input type="button" id="autoDepthOff" value="Off">
 						<p id="autoDepthPrint"> Auto depth off </p>
-					</form> 
+					</form>
 
 					<form id="autoHeadingForm">
 						Set auto heading:
@@ -51,8 +50,8 @@
 						<input type="button" id="autoHeadingButton" value="Set">
 						<input type="button" id="autoHeadingOff" value="Off">
 						<p id="autoHeadingPrint"> Auto heading off </p>
-					</form> 
-					
+					</form>
+
 					<form id="gainForm">
 						Set gain:
 						<input type="text" id="gain">
@@ -61,18 +60,18 @@
 					</form>
 
 				</div>
-				
-				<div class="second-half">	
-					
+
+				<div class="second-half">
+
 					 Input mode:
 					<form name="inputModeForm">
 					<input type="radio" name="inputMode" value="Default" checked>Default
 					<input type="radio" name="inputMode" value="Joystick">Joystick
 					<input type="radio" name="inputMode" value="Oculus">Oculus rift
-					</form> 
-				
-					
-					Run mode: 
+					</form>
+
+
+					Run mode:
 					<form name="runModeForm">
 						<input type="radio" name="runMode" value="Normal" checked>Normal
 						<input type="radio" name="runMode" value="Simulator"> Simulator
@@ -81,7 +80,7 @@
 					<p id="headingValue">Heading is: </p>
 					<p id="depthValue">Depth is: </p>
 
-					
+
 
 					<form id="lightsForm">
 						Set lights:
@@ -93,14 +92,14 @@
 						Set laser:
 						<input type="text">
 						<input type="button" id="laserButton" value="Set">
-					</form> 
+					</form>
 
 					<p> <button id="requestControl">Request control</button>
 					 <button id="toggleDevMode">Toggle dev mode</button>
 					</p>
 
-					
-					
+
+
 				</div>
 			</td>
 		</tr>
@@ -109,14 +108,14 @@
 
 	<div id="devModeContainer">
 			<h2>
-				Dev mode : 
-				
+				Dev mode :
+
 			</h2>
-		
+
 		<div class="first-half">
 
 			<p>
-			Plot measurement: 
+			Plot measurement:
 			<select id="measurementDropdown">
 				<option>Depth [m]</option>
 				<option>Roll [deg]</option>
@@ -125,7 +124,7 @@
 				<option>Voltage [V]</option>
 				<option>Current [mA]</option>
 			</select>
-		
+
 			Plot command:
 			<select id="commandsDropdown">
 				<option>Port thruster [1000, 2000]</option>
@@ -148,7 +147,7 @@
 
 			<button id="deleteGraphs">Remove graphs</button>
 			<button id="resetGraphs">Reset graphs</button>
-			
+
 			Plot simulated eta:
 			<select id="etaDropdown">
 				<option>Simulated x [m]</option>
@@ -171,7 +170,7 @@
 			Add to logger: <select id="scrollPaneContentDropdown"></select>
 
 			Remove: <select id="scrollPaneRemoveDropdown"></select>
-			
+
 
 			<ul id="scrollPaneContent">
 
@@ -180,7 +179,7 @@
 		</div>
 
 
-		<div class="chartBox">			
+		<div class="chartBox">
 
 
 			<div id="chartContainer1" class="chartContainer">
@@ -191,7 +190,7 @@
 
 			<div id="chartContainer3" class="chartContainer">
 			</div>
-			
+
 			<div id="chartContainer4" class="chartContainer">
 			</div>
 
@@ -204,7 +203,7 @@
 
 			<div id="chartContainer7" class="chartContainer">
 			</div>
-			
+
 			<div id="chartContainer8" class="chartContainer">
 			</div>
 
@@ -219,22 +218,21 @@
 
 		<div class="scroll-pane">
 			<p>
-				Log: 
+				Log:
 			</p>
 		</div>
 	</div>
 
-	
+
 	<script src="jquery.min.js"></script>
 	<script type="text/javascript" src="jquery.mousewheel.js"></script>
 	<script type="text/javascript" src="jquery.jscrollpane.min.js"></script>
 	<script type="text/javascript" src="canvasjs.min.js"></script>
-	<script src="/socket.io/socket.io.js"></script>	
+	<script src="/socket.io/socket.io.js"></script>
 	<script src="gamepad.js"></script>
-	<script src="dev_mode.js"></script> 
+	<script src="dev_mode.js"></script>
 	<script src="client.js"></script> <!-- This should be the last script to be executed -->
-	
+
 
 </body>
 </html>
-

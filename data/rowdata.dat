@@ -1,0 +1,1811 @@
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:neg. dir:surge. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1500, 1500}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:pos. dir:yaw. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 1, 0}
+Ordering thrust {thr1, thr2, thr3}: {1000, 1500, 1000}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:neg. dir:yaw. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1500, 1500}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:neg. dir:surge. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {-1, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {2000, 1500, 1000}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:pos. dir:yaw. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {-1, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {2000, 1500, 1000}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:neg. dir:yaw. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {-1, -1, 0}
+Ordering thrust {thr1, thr2, thr3}: {2000, 1500, 1500}
+Control mode is : motion
+3.38;fthr:-9.0,1500,1500,0);
+BRDT:56.61;SC1I:0.05;SC2I:0.hdgd:23.38;deap:-0.21;pitc:0.90;roll:-4.26;yaw:23.38;fthr:-9.00;
+Processing command. Input:default. controlmode:motion. Value:neg. dir:surge. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, -1, 0}
+Ordering thrust {thr1, thr2, thr3}: {2000, 1500, 2000}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:neg. dir:yaw. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1500, 1500}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:pos. dir:yaw. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 1, 0}
+Ordering thrust {thr1, thr2, thr3}: {1000, 1500, 1000}
+Control mode is : motion
+Order Temperature in Degrees C is 31.41
+SmotorAttached:1;
+se229577.00;
+pres:996.85;temp:31.35;
+Processing command. Input:default. controlmode:motion. Value:pos. dir:surge. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {1, 1, 0}
+Ordering thrust {thr1, thr2, thr3}: {1000, 1500, 1500}
+Control mode is : motion
+dlms:0|252361|59442|1otors:1541,1500,1377;
+mtarg:10hdgd:23.38;deap:-0.19;pitc:0.9:23.38;fthr:-9.00;
+Processing command. Input:default. controlmode:motion. Value:pos. dir:yaw. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {1, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1000, 1500, 2000}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:pos. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {1, 0, 1}
+Ordering thrust {thr1, thr2, thr3}: {1000, 2000, 2000}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:pos. dir:surge. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 1}
+Ordering thrust {thr1, thr2, thr3}: {1500, 2000, 1500}
+Control mode is : motion
+hdgd:23.3;roll:-4..00;
+Processing command. Input:default. controlmode:motion. Value:neg. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, -1}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1000, 1500}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:pos. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1500, 1500}
+Control mode is : motion
+cmd:go(1500,1500,1500,0);
+fthr:0.00;
+Processing command. Input:default. controlmode:motion. Value:neg. dir:surge. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {-1, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {2000, 1500, 1000}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:neg. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {-1, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {2000, 1500, 1000}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:neg. dir:yaw. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {-1, -1, 0}
+Ordering thrust {thr1, thr2, thr3}: {2000, 1500, 1500}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:neg. dir:surge. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, -1, 0}
+Ordering thrust {thr1, thr2, thr3}: {2000, 1500, 2000}
+Control mode is : motion
+2000,1500,1hdgd:23.38;deap:-0.19;pitc:0.91;roll:-4.26;yaw:23.38;fhdgd:23.38;deap:-0.19;pitc:0.91;roll:-4.25;yaw:23.38;fthr:12.00;
+Processing command. Input:default. controlmode:motion. Value:pos. dir:yaw. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 1, 0}
+Ordering thrust {thr1, thr2, thr3}: {1000, 1500, 1000}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:neg. dir:yaw. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1500, 1500}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:pos. dir:surge. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {1, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1000, 1500, 2000}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:pos. dir:yaw. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {1, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1000, 1500, 2000}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:pos. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {1, 0, 1}
+Ordering thrust {thr1, thr2, thr3}: {1000, 2000, 2000}
+Control mode is : motion
+cmd:go(1500,1500hdgd:23.38;deap:-0.19;pitc:0.92;roldeap:-0.19;pitc:0.92;roll:-4.26;yaw:232000,2000,0);
+1000,2000,2000;
+Processing command. Input:default. controlmode:motion. Value:pos. dir:surge. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 1}
+Ordering thrust {thr1, thr2, thr3}: {1500, 2000, 1500}
+Control mode is : motion
+-0.19;pitc.26;yaw:23.38;fthr:4.00;
+Processing command. Input:default. controlmode:motion. Value:neg. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, -1}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1000, 1500}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:pos. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1500, 1500}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:pos. dir:surge. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {1, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1000, 1500, 2000}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:neg. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {1, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1000, 1500, 2000}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:pos. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {1, 0, 1}
+Ordering thrust {thr1, thr2, thr3}: {1000, 2000, 2000}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:pos. dir:surge. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 1}
+Ordering thrust {thr1, thr2, thr3}: {1500, 2000, 1500}
+Control mode is : motion
+23.38;fthr:0,0);-0.19;pitc:0.91;roll:-4.25;yaw:23.38;fthr:4.00;
+hdgd:23.38;deap::23.38;fthr:0.00;
+Processing command. Input:default. controlmode:motion. Value:pos. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1500, 1500}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:neg. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, -1}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1000, 1500}
+Control mode is : motion
+cmd:go(1500,1000,1500,0);
+Processing command. Input:default. controlmode:motion. Value:pos. dir:surge. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {1, 0, -1}
+Ordering thrust {thr1, thr2, thr3}: {1000, 1000, 2000}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:neg. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {1, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1000, 1500, 2000}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:pos. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {1, 0, 1}
+Ordering thrust {thr1, thr2, thr3}: {1000, 2000, 2000}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:pos. dir:surge. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 1}
+Ordering thrust {thr1, thr2, thr3}: {1500, 2000, 1500}
+Control mode is : motion
+cmd:go(1000o(1000,2000,cmd:go(1500,2000,150l:-4.24;yaw:2hed:1;
+servo:158.00;
+pres:995.71;temp:31.36;
+Processing command. Input:default. controlmode:motion. Value:pos. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1500, 1500}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:neg. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, -1}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1000, 1500}
+Control mode is : motion
+dlms:0|252441|59852|10cmd:go(1500,1000,1500,0);
+
+Processing command. Input:default. controlmode:motion. Value:pos. dir:surge. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {1, 0, -1}
+Ordering thrust {thr1, thr2, thr3}: {1000, 1000, 2000}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:neg. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {1, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1000, 1500, 2000}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:pos. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {1, 0, 1}
+Ordering thrust {thr1, thr2, thr3}: {1000, 2000, 2000}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:pos. dir:surge. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 1}
+Ordering thrust {thr1, thr2, thr3}: {1500, 2000, 1500}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:pos. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1500, 1500}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:neg. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, -1}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1000, 1500}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:pos. dir:surge. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {1, 0, -1}
+Ordering thrust {thr1, thr2, thr3}: {1000, 1000, 2000}
+Control mode is : motion
+hdgd:23.38;deap:-0.20;pitc:0.92;roll:-4.24;yahdgd:23.38;deap:-0.20;pitc:0.92;roll:-4.24;yaw:23.3cmd:go(1000,1000,2000,0);
+Processing command. Input:default. controlmode:motion. Value:neg. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {1, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1000, 1500, 2000}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:pos. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {1, 0, 1}
+Ordering thrust {thr1, thr2, thr3}: {1000, 2000, 2000}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:pos. dir:surge. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 1}
+Ordering thrust {thr1, thr2, thr3}: {1500, 2000, 1500}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:pos. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1500, 1500}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:neg. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, -1}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1000, 1500}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:pos. dir:surge. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {1, 0, -1}
+Ordering thrust {thr1, thr2, thr3}: {1000, 1000, 2000}
+Control mode is : motion
+cmd:go(hdgd:23.3.BRDT:56.61;SC1I:0.80;SC2I:0.41;SC3I:0.31;BRDI:0.30;BT1I:0.93;BT2I:0.9,1000,1500,0)hdgd:23.3r Temperature in Degreeshdgd:23.38;deap:-0.18;pitc:0.91;roll:-4.25;yaw:23.38;fthr:0.00;
+Processing command. Input:default. controlmode:motion. Value:pos. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {1, 0, 1}
+Ordering thrust {thr1, thr2, thr3}: {1000, 2000, 2000}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:neg. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {1, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1000, 1500, 2000}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:pos. dir:surge. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1500, 1500}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:pos. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1500, 1500}
+Control mode is : motion
+cmd:go(1000,08;fthr:0.0dgd:23.38;deap:-0.18;pitc:0.91;roll:-4.25;yaw:23thr:0.00;
+25;yaw:23.38;thr:0.00;
+.25;yaw:230.00;
+hdgd:23.37;deap:-0.18;pitc:0.90;roll:-4.26;yaw:23.37;fthr:0.00;
+hdgd:23.37;deap:-0.18;pitc:0.90;roll:-4.25;yaw:23.37;fthr:0.00;
+BRDT:56.61;SC1I:0.05;SC2I:0.20;SC3I:0.05;BRDI:0.30;BT1I:0.33;BT2I:0.33;BRDV:11.52;AVCC:5001;
+3.37;fthr:0.00;
+First-Ordern Degrees C is 3re in Degrees C is 31.35
+:1500;starg:1500;
+fmem:4369.00;v0;
+pres:996.28;temp:31.35;
+dlms:0|2525:1500,1500,1500;
+aw:23.37;ft-4.25;yaw:23.37;fthr0.00;
+23.37;fthr:0.00;
+.24;yaw:23.37ll:-400;
+37;fthr:0.00;
+3.37;fthr:0.00;
+hdgd:23.37;deap:-0.19;pitc:0ond-Order Tempegrees C is 31.35
+hdgd:23.37:4369.00;vout:11.5:0.00;ver:bcac663b531e6c9c8cmpd620.00;
+prhdgd:23.37;deap:-0.19;pitc:0.90;roll:-4.24;yaw:23.37;fthr:0.00;
+motors:1500,1500,1500;
+mtarg:23.37;fthr3.35;fth;
+00.29;BT1I:0.32;BT2I:0.32;BRDV:11.52;AVCC:5001;
+yaw:21.19;fthr:0.00;
+Second-Order Temperature in Degrees C is 31.36
+hdgd:1;yaw:17.45;fthr:0.ched:1;
+servo:;temp:31.36;
+dlms:0|252601|60632|101713|991246.54;yaw:10.51;fhr:0.00;
+5;fthr:0.00;
+3.27.07;yaw:-4.3:-2.90;yaw:-6.57BRDT:56.61;SC1I:0.04;SC2I:0.20;SC3I:0.0I:0.32;BRDV:11.52;AV
+aw:-7.97;fnd-Order Te 31.36
+hdgd:35c:22.03;roll:-7.98;y.55;fthr:0.00;
+motorAttached:1;
+servo:;cmime:3236671.00;
+pres:996.86;temp:31.36;8;yaw:-8.tors:1500,1500,1500;
+mtarg:15:-8.17;yaw:.39;fthr:0.00;04;yaw:-0.83;fthr:T:56.61;SC1I:0.05;SC2I:0.21;SC3I:0.05;BRDI1.52;;fthr:0.ure in Degrees C is 3re in Degrees C is 31.35
+9;pitc:26.55;rol;
+motorAttached:1;
+:0|252701|61162|101763|99184|324625|218366|83357|566448|43041;
+alps:456;
+1500,1500;
+-4.36;yaw:8.445;fthr:0.00;
+deap:-0.19;roll:-4.54;yaw:13.05;BRDI:0.29;BT1I:I:0.31;BRDV:11.52:5001;
+12thr:0.00;
+1.90;fthr0.00;
+First-Order Temperature in Degrees C is 31.42
+Second-Order Temperature in Degrees C0.29;acac663b531e6c9c8ce2e37595a2bbbd  -;cmpd:Jun014, 18:37:48, 4.7.2
+;tioll:-10.81;yaw:13.02;fthr:0.00500,1500;
+aw:18.28;fthr:0
+t0.69;yaw:19.95;ftT1I:0.43;.41
+Second-Order Tem;starg:1500;
+fmem:4369.00;vout:11.53;iout:0.30;atmp:0.00;ver:bcac663b531e6c9c8ce2e37595a88f52b852bbbd  -;cmpd:Jun 29 2014, 18:37:48, 4.7.2
+;time:3239651.00;
+pres:996.56;temp:31.35;
+dlms
+.50;deap:-0.19;pitc:27.54;;
+:18.920.46;fthr:0.00;
+yaw:21.06;ftBRDT:56.61;SI:0.2I:0.32;BRDV:11.52;CC:5001;
+34;fthr:02
+Secondhdgd:20.08;deap:-0.19;pi3b531e6c9c8ce2e37595a88f52b852bbbd  -;cmp7.2
+hdgd:1.42;roll:-7.5.69;fthr:0.00;
+motors:1500,15500,1.59;f0;
+;pitc:35.32;roll:-0.71;yaw:22.49;fthr:0.00;
+00;
+0;yaw:24.41;fthr:0.00;
+thr:0w:24.BRDT:56.61;SC1I:0.05;SC2I:0.20;SC3I:0.05;BRDI:0.30;BT1I:0.31;BT2I:0.31aw:24.29;.00;
+ Degrees C is 31.35
+hdgd:23.94;deap:-0.:16.30;roll:-8.94;yaw:23.94;fthr:000;
+1;
+servo, 18:37:48, 4.7.2
+aw:24.69;ft50;yaw:26.21;fthr:0.00;
+w:26.10;fthr:0.00;
+30.15;fthr:0.00;C2I:0.20;SC3hrature in Degrees C is 31.36
+motorAttached:1temp:31.36;
+dlms:0|253031|62412|101983|99354|327255|218646|83480;
+hdgd:3fthr:0.00;
+hrw:33.47;fthr:0.00;
+thr:0.30;BT1I:0.31;BT2I:0.;
+:-0.19;pitc:19First-Order Temperature in Degrees C is 31.42
+Sec00;starg:1500;
+fme
+pres:996.86;temp:31.37;
+dlms:0|253071|62662|102033|99384|32783pr:0.00;
+aw:34.33;fthr:0.;yaw:32.60;fthr:0.00;yaw:30.32;fthr:0.00;
+.99;roll:-fT1I:0.32;BT2I:0.32;BRDV:11.52;AVCC:50
+.00;deap:-0.18;p0.00;
+der Temperaarg:1500;
+fmem:4365|218806|83517|620908|43288;
+hdgd:-7.21500;
+mta.00;
+aw:24.18;f
+hdgd:21.31;deap:-0.19;pitc:21.53;roll:-2.59;yaw:21.31;fthr:0.00;
+roll:-4.01;yaw:19.91;ft:0.00;
+BRDT:56.61;SC1I:0.05;SCDRDV:11.52;AVCaw:20.27;fthr:0.00;
+hdgd:24.21;deap:-0.19;pitc:11.42;ro.21;fthr:0.500;
+fmem:4369.00;vout:11.53;
+pres:996.86;temp:31.36;
+dlms:0|253171|63012|i26.08;fthr:0.00;
+motors:1500,150
+5;ft9;yaw:25.41;fthr:0.00;
+6;deap:-0.19;pitc:0.91;roll:-4.94;y-4.27;yaw:25.42;fthw:25.44;fthr:0.00;
+T2I:0.31;BRDV:11.52;AVCC:5001;
+53;yaw:25.43;fthr:0.00;
+31.42
+Sehdgd:25.42;deap:-0.20;pitc:1motorAttached:1;
+servo:1500;stes:995.71;temp:31.36;
+dlms:0|253221|63212|102113|99474|329305|218966|8354:1500,1500,1500;
+42;fthr:0.00;
+:0.00;
+fthr:0.00;
+8;yaw:25.42;fthr:0.00.0.00;ftC1I:2;1.5thr:0.00;
+irst-Order Temperature in Degrees C is 31.42
+Second-Order Temperatur:25.42;fthed:1;
+servo:1500;starg:s:995.99;temp:31.36;
+dlms:0|253281|63422|102123|99514|329835|219026arg:1500,1500,1500;
+hdgd:25.42;dea1.03;roll:-4.34;yaw:25.42;fthr:.00;
+aw:25.42;ft:25.41;fthr:0.00;
+th25.41;fthr;yaw:25.41;ft.33;yaw:25.41;fthr:0.00;
+5;BRDI:0DV:11.52;AVCC:5001;
+grees C is 31.42
+Se369.00;vout:11.52;iout:0.28;atmp:0.00;:37:48, 4.7.2
+;time:3248667.00;
+pre0.19;pitc:1.04;roll:-:25.40;fthr:0.00;
+:25.41;fthr:0.00;
+yaw:25.40;fth.40;fthr:0.00;
+5.40;fthr:0.00;
+25.40;fthr:0.05;BRDI:0.29;BT1I:0.31;BT2I:0.32;BRDV:11.52;AVCC:5001;
+rder Tems 31.35
+hdgd:25.40;deap:vo:1500;starg:1500;
+fmem:43p:31.35;
+dlms:0|253391|63822|1021hdgd:25.40;deap:-0.19;pitc:1.04;roll:-4.2;yaw:25.40;fthr,1500;
+.404.32;yaw:25.39;fthr:0.00;
+fthr:0.00fthrhdgd:25.40;deap:-0.19;pitc:1.04;rol40;fthr:0.00;
+31;y.42
+Secohdgd:25.40;deap:-0.19;pitc:1.04motorAttached:1;
+servo:996.57;temp:31.36;
+dlms:0|253451|64002|102233|99564|331375|2192c:1.04;roll:-4.31;yaw:25.40;fthr:0.00;
+motors:1500,1500,100,1500,1500;
+w:25.40;fthr:w:25.40;fthr:0.0;roll:-4.31;yaw:25.40;ft00;
+-4.31;yaw:25.40;fyaw:25.39;fBRDT:5;BT1I:2;AVCC:50oll:-4.31Second-Order Temperature in Degrees C is 31.36
+;deap:-0.19;pitc:1.03;.00;
+motorAttached:1;
+servo:1500;w:25.40;ftmotors:1500,1500,1500;
+mt
+9;fthr:0.00;
+thr:0.00;
+hdgd:25.39;deap:-0.19;pitc:1.03;roll:-4.30;yaw:25.39;fth0;
+;1;SC1I:0.05;SC2I:0.20;SC3I:0.05;BRDI:0:-4.30;yaw:25.39;fths 31.42
+Second-hdgd:25.39;d9motorAttacharg:1500;
+fmem:4369.00;vout:11.52;iout:0.29;atmp:0s:996.00;temp:31.37;
+dlms:0|253521|64442|102293|99624|33235.39;fthr:0.00;
+:0.0
+.39;deap:-0.19;pitc:1.03;roll-4.30;yaw:25.39;fthr:0.00;
+3I:0.05;BRDI:0.30;BT1I:0.3211.52;AVCC:5001;
+39;deap:-0.19;pitFirst-Order Temperature in D369.00;vout:11.
+pres:996.56;temp:31.35;
+dl:1500,1500,1500;
+:1.03;roll:-4.00;
+38;fthr:0.00;
+Processing command. Input:default. controlmode:motion. Value:pos. dir:surge. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {1, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1000, 1500, 2000}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:pos. dir:surge. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1500, 1500}
+Control mode is : motion
+yaw:25.38;hdgd:25.38;droll:-4w:25.38;fthr:0.BRDT:56..22;S1.01;.25.38;fthr:0.00;
+Processing command. Input:default. controlmode:motion. Value:pos. dir:yaw. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 1, 0}
+Ordering thrust {thr1, thr2, thr3}: {1000, 1500, 1000}
+Control mode is : motion
+der Temperature in Degrees C is 31.36
+hdgd:2t:10.69;iout:0.29;atmp:0.00;ver:bcac663b531e6c9c8ce2e37595a8f52b852bbbd  -;cmpd:Jun 29 2014, 18:7.2
+Processing command. Input:default. controlmode:motion. Value:pos. dir:yaw. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1500, 1500}
+Control mode is : motion
+;time:hdgd:25.38;deap:-0.19;pitc:1.03;roll:ors:1213,1500,1459;
+mtarg:1500,1500,1500;
+Processing command. Input:default. controlmode:motion. Value:pos. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 1}
+Ordering thrust {thr1, thr2, thr3}: {1500, 2000, 1500}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:pos. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1500, 1500}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:neg. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, -1}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1000, 1500}
+Control mode is : motion
+fth1500,1000,1500,0);
+Processing command. Input:default. controlmode:motion. Value:neg. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1500, 1500}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:pos. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 1}
+Ordering thrust {thr1, thr2, thr3}: {1500, 2000, 1500}
+Control mode is : motion
+38;fthr:0.0hdgd:25.38;deap:-0.19;pitc:cmd:go(1500,2000,1500,0);
+38;fthr:0.00;
+5.38;fthr:0.00;
+Processing command. Input:default. controlmode:motion. Value:pos. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1500, 1500}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:neg. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, -1}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1000, 1500}
+Control mode is : motion
+BRDV:11.57;AVCC:5001;yaw:25.38;econd-Order Temperature in Degrees C is 31.34
+Processing command. Input:default. controlmode:motion. Value:neg. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1500, 1500}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:pos. dir:surge. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {1, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1000, 1500, 2000}
+Control mode is : motion
+hdgd:25.38;deap:-0.19;atmp:0.00;ver:bcac663b531e6c9c8ce2e37595a88f52b852bbbd  -;cmpd
+pres99774|333925|219696|83787|52248|43657;
+alps:455;hdgd:25.38;deap:-0.19;pitc:38;fthr:0.00;
+Processing command. Input:default. controlmode:motion. Value:pos. dir:surge. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1500, 1500}
+Control mode is : motion
+14,1500,20hdgd:25.38;deap:-0.19;pitc:1.03;roll:-4.31;yaw:25.38;fthr:0.00;
+hdgd:25.38;deap:-0.19;pitc:1.03;roll:-4.31;yaw:25.38;fthr:0.00;
+hdgd:25.38;deap:-0.19;pitc:1.03;roll:-4.30;yaw:25.38;fthr:0.00;
+r:0.00;
+Processing command. Input:default. controlmode:motion. Value:neg. dir:surge. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {-1, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {2000, 1500, 1000}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:neg. dir:surge. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1500, 1500}
+Control mode is : motion
+hdgd:25.38;deap:-0.19;pitc:1.05;roll:-4.29;yaw:25.38hr:0.00;
+BRDT:56.61;SC1I:0.05;SC2I:0.21;SC3I:0.05;0.32;BT2I:hdgd:25.39;deap:-0.19;pitc:1.06;roll:-4.30;yaw:25.39;fthr:0.00;
+First-Order Temperature in Degrees C is 31.40
+Second-Order Temperature in Degrees C is 31.35
+hdgd:25.39;deap:-0.19;pitc:1.06;roll:-4.30;yaw:25.39;fthr:0.00;
+motorAttached:1;
+servo:1500;starg:16.84;temp:31.35;
+Processing command. Input:default. controlmode:motion. Value:pos. dir:surge. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {1, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1000, 1500, 2000}
+Control mode is : motion
+dlms:0|253761|65432|102453|997hdgd:25.39;deap:-0.19;pitc:1.08;roll:-4.30;yaw:25.39;fthr:0.00;
+,2000;
+Processing command. Input:default. controlmode:motion. Value:pos. dir:surge. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1500, 1500}
+Control mode is : motion
+0;yaw:25.39;fthr:0.00;
+.39;fth00;
+dgd:25.39;deap:-0.1;fthr:0.00;
+Processing command. Input:default. controlmode:motion. Value:neg. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, -1}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1000, 1500}
+Control mode is : motion
+39;fthr:0.00;39;deap:-0.19;pitc:1.08;
+56.61;SC1I:0.05;SC2I:1.37;SC3I:0.03;BRDI:0.32;BTVCC:5001;
+.39
+Processing command. Input:default. controlmode:motion. Value:neg. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1500, 1500}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:pos. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 1}
+Ordering thrust {thr1, thr2, thr3}: {1500, 2000, 1500}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:pos. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1500, 1500}
+Control mode is : motion
+Processing command. Input:default. controlmode:motion. Value:pos. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 1}
+Ordering thrust {thr1, thr2, thr3}: {1500, 2000, 1500}
+Control mode is : motion
+Second-Order Temperature em:4369.00;vout:10.77;iout:0.31;atmp:0.00;ver:bcac6;cmcmd:go(1500motorsarg:1500,2000,15hdgd:25.40;deap:-;roll:-4.30;yaw:25.40;fthr:0.fthr:hdgd:25.40;deap.00;
+40;deap:-0.20;pitc:1.11;25.40;fthr:0.00BRDI:0.32;5.40;deap:-0.20;pit
+
+Processing command. Input:default. controlmode:motion. Value:pos. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1500, 1500}
+Control mode is : motion
+Second-O64|335305|219846|83867|76128|43756;
+alhdgd:25.40;deap:-0.20;pitc:1.11;roll:-4.31;yaw:25.40;fthr:0.00;
+;
+25.40;fthr:0
+yaw:25.40;fthr:0.00;
+Processing command. Input:default. controlmode:motion. Value:neg. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, -1}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1000, 1500}
+Control mode is : motion
+w:fthr:0.00;
+Processing command. Input:default. controlmode:motion. Value:neg. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1500, 1500}
+Control mode is : motion
+rol.41;fthr:0.00;
+roll:-4.32;yaw:2541;fthr:0.00;
+Processing command. Input:default. controlmode:motion. Value:neg. dir:surge. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {-1, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {2000, 1500, 1000}
+Control mode is : motion
+BRDT:56.61;SC1I:0.05;SC2I:0.20;SC3I:0.05;BRDI:0.30;BT1I:0.31;BT2I:0.31;BRDV:11.53;AVCC:5001;
+w:25.41;fthr:0.00;
+ond-Order Te37
+Processing command. Input:default. controlmode:motion. Value:neg. dir:surge. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1500, 1500}
+Control mode is : motion
+:-4.31;fmem:4369.00;voutac663b531e6c9c8ce2e3bbbd  -;cmpd:Junhdgd:25.42;deap:-0.18;pitc:1.11;roll:-4.30;motors:166336;
+mtarg:1500,1500,1500;
+Processing command. Input:default. controlmode:motion. Value:neg. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, -1}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1000, 1500}
+Control mode is : motion
+fthr:hdgd:25.42;deap:-0.18;pitc:1.11;roll:-4.30;yaw:25.42;fthr:0.00;
+w:25.42;fthr:000;
+.30;yaw:25.42;fthr:0.;
+w:25.42;fthr:0.00;
+:25.42;BRDT:56.61;SC1I:0.04;SC2I:1.02;SC3I:0.;BT1;
+42;fthr:0.00;
+yaw:25.42;fthr:0.00;
+motorAttached:1;
+servo:1500;time:.37;
+dlms:0|254021|66r:0.00;
+mo;fthr:0.00;
+:25.425.4hdgd:25:25.43;fthr:0.00;
+6.61;SC1I:0.0BRDV:11.05;AVCC:5001;
+w:25.43;First-Order Temperature in Degrees C n Degrees C is 31.34
+0;vout:11.03:37:48, 4964|336895|220016|25.43;deap:-0.19;pitc:1.14;roll:-4.31;yaw:25.43;fthr:0.00;
+Processing command. Input:default. controlmode:motion. Value:neg. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1500, 1500}
+Control mode is : motion
+hdgd:25.44;deap:-0.19;pitc:1.13;roll:-4.0;
+Processing command. Input:default. controlmode:motion. Value:pos. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 1}
+Ordering thrust {thr1, thr2, thr3}: {1500, 2000, 1500}
+Control mode is : motion
+-4.30;yaw:25.44;fthr5.44;.44;fthr:0.00;
+hr:0.00.05;BRDI:0.30;BT1I:0.001;
+hdgd:25.44;deap:-0.19;pitc:1.12;roll:-4.31;yaw:2hdgd:25.44;deap:-0.19;pitc:1.12;roll:-4.31;yaw:25.41500;
+fmem:4369.00;vou996.29;temp:31.37;
+dlms:0|254161|66762|102663|99974|337415|220086|83977|1:-
+5.45;f5.45;fthr:0.00;
+32;yaw:25.45;fthT1I:0.6
+.32;yaw:25.45;fthr:0.00;
+erature in Degrees C is 31.35
+gd:25.45;deap:-0.19;pitc:motorAttached:
+fmem:430;atmp:0.00;ver:bca722.00;
+pres:996.56;temp:314.31;yaw:25.motors:1500,2000,1500;
+mtarg:15;yaw:25.45;fthr:0.00;
+Processing command. Input:default. controlmode:motion. Value:pos. dir:heave. Thruster: undefined
+Ordering thrust {surge, yaw, heave} : {0, 0, 0}
+Ordering thrust {thr1, thr2, thr3}: {1500, 1500, 1500}
+Control mode is : motion
+hdgd:25.45;deap:-0.19;pitc:1.10;roll:-4.31;yaw:25.45;fthr:0.00;
+:-4.30;yaw:25.45;0.00;
+:0fthr:0.00;
+BRDT:56.61;C1I:0.04;SC2I:0.66;SC3I:0.04;BRDI:;BRDV:11.20;AVCC:5001;
+.30;yaw:25.45;ft
+
+hdgd:25.45;deap:-0.19;pitc:1.085;fthr:0.00;
+motorAttached:1;
+;vout:11.40;iout:0.28;atmp:0.00;ver:bcac663b531e6c9c8ce2e37595a88f52b852bbbd  -;cmpd:J266|840;fthr:0.00;
+motors:1500,1508,1500;
+mtarg:1500,1500,1500;
+5;fthr:0.00;
+25.45;aw:25.45;fthr:
+:25.45;;f.28;yaw:25.-3.87;yaw:25.04;fthr:0.00;
+:0.05;BRDI:023.28;fthe in Degrees C is 3102servo:1500;starg:1500;
+fmem|67342hdgdoll:-5.10;yaw.49;fthr:0.00;
+w:7.35;fth.00;
+r:0.041;yaw:9.58;fthdgd:11.80;deap:-0.19;roll:-1.85;yaw:11.80;f31;BT1I:031.42
+Secon00;starg:1500;
+fmem:4369.00;vo4311|67512|102793|100084|339615|220hdgd:19.59;deap:-0.19;pitc:23.28;roll:-3.52;yaw:19.59;fthr:0.00;
+5.04;fthr:0.0:29.09;fth2.25;fthr:5.23;yaw:43.08;fthr:0.00;
+BRDI:0.29;B;roll:-2.76;y2
+Second-Ordhdgd:50.09;de:50.09;fthr:1500;starg:1500;
+fmem;
+pres:996.29;temp:31.36;
+dlms:0|254351|67732|102833|100114|340135|2204motors:1500yaw:52.74;fthr:0.00;
+;fthr:0.00;
+.20;fthr:2thr:0.
+.00;
+00;
+BRDT:56.61;T1I:0.31;BT2I:0.31;BRDV:-0.71;yaw:55.75;fthr:0.00;-Order Tw:54.06;fthr:0.00;
+motorAttached:137595a88f5
+pres:995.43;temp:31.36;
+dl;fthr:0.00;
+motor08;f;fthr:0.00;
+fthr::-3.46;yaw:38.27;SC3I:0.05;BRDIyaw:37.12;fs 31.40
+Secm:4369.00;vout:11.5c9c8ce2e3852bbbd  -;cmpd:Jun 29 20time:3269661|68202|102903|100144|341325|220626|84187|162858|44117;
+alps:470;
+hdgd:36.20;dea0;
+8;roll:-5.6aw:36.1;fthr;fthr:0.00;
+w:41.50;fthr:0.0.66;deap:-0.20;pitc:26.52hr:0.00;
+hdgd:45.57;deap:-0.20;pitc:22.36;roll:-3.57;yaw:4Td:47.08;deap:-0.19;pitc:19.93;Jun 29 2014, 18:37:48, 4.7.2
+.63;deap:-0.19;pitc:22.06;roll:-5.60;:0.00;
+1;fth.86;yaw:50.86;B1.52;AVCC:5001;
+0.00;
+d-Order Temperature in Degrees C isrvo:1500;starg:150000;vout:11.52;iout:0.29;atmp:0.00;ve8ce2e3759529 2014, 10826|84247|178568|44182;
+alps:464;
+w:47.motors:1500,1500,1546;yaw:46.50;f.00;
+.60;yaw:44.04I:5001;
+9;yaw:43.10;fthr:0.00;
+Order Temperature in Degrees C is 31.35
+;fthr:0.00;
+motorAttachem:4369.00;vout:ver:bcac663b531e6c9c8ce 1time:3272752.00;
+pres:997.13;temp:31.35;
+dlmsmotors:1500,1500,1500;
+mtarg:1500,1500,1500;
+;
+:0.00;
+
+88;fthr:0.00;
+;yaw:43.92;fthr17;yaw:44.81;fthr:0.00;
+BRDT:50.32;BRDV:11.52;AVCC:5001;
+83;yaw:45.89;fthr:0.00;
+:0.00;
+00;starg:1500;
+fmem:4369.00;vout:11.52;iout:0.28;atmp:0.00;ver:bcac663b51046|84327|194458|44246;
+alps:464;
+aw:47.49;ftrs:1500,1500,1500;
+mtarg:1500,1500,3.74;yaw:47.45;fthr:0w:47.17;fthr:3.78;yaw:46.41
+fthr:0.00;
+3.72;:43.41;fthr:0.00;
+B
+der Temperatuegrees C is 31.42
+Set:0.28f52b85014, 707.00;
+d:44.08;deap:-0.19;pitc:27.52;roll:-4.06;yaw:44.08;fthr:0.00;
+hdgd:44.14;deappitc:25.28;roll:-3.88;yaw:4.14;fthr:0.00;
+yaw:44.02;fthrfthr:0.00;
+aw:43.11;fthr:.00;
+2.16;fthr:0.00;
+p:-0.19;pitc:20.27;roll:-10.04;yaw:44.12I:0AVCC:5001;
+hdgd:48.65;deap:cond-Order ees C is 31.36
+h69.00;vout:11.52;ce2e37595a88f5bbd  -;cmpd:Jun 29 2018, 4.7.2
+;time3;
+hdgd:65.98;deap:-0.19;pitc:14.85;r0,1500;
+.53;f;
+dgd:77.54;deap:-0.19;pitc:15.20;roll:-5.72;yaw:77.54;f
+w:87.91;fthr:0.00;
+71;ya;fthr:0.1I:0.31;B3;yaw:40.00;fthrperature in Degrees C is 31.35
+hdgd:20.35;deap:-0.19;pitc:19.29;roll:-22.25;motor00;starg:1500;
+fn 29 2014, 18:37:48, 755.00;
+pres:996.85;temp:31.35;
+dlms:0|254721|69582|103103|100334|3.85;fthr:0.00;
+rg:1500,1500,1500;
+aw:35.65;fthrr:0w:64.15;fthr:0.074.84;0:0.05;SC2I0.30;BT1I:0.31;BT2I:0.32;BRDV:11.52;ACC:5001;
+:91.27;f.00;
+empehdgd:103.1760;yaw:103motorAttached:1;
+58;temp:31.37;
+dlms:0|2548fthr:0.00;
+motors:1500;
+;
+09.42
+hr:0.00;
+aw:81.80;f14.25;yaw:79.37;faw:79.28;fthr:0.00;
+hr:0.00;
+re in Degrees C is 31.35
+1500;
+fmem:4369.00414|346095|221326|84447|234258|44405;
+alps:463;
+hdgd:0;
+77.34;fthr:0.00;
+.58;yaw:76.77;fthr:0.00;
+00;r:0.00;
+75;yaw:76.43;f0.00;
+;AVCC:5001;
+cond-Order Temperature in Degrees C i3;deap:-0.21;phr:0.00;
+;vout:11.52;iout:0.28;atmp:0.00;ver:bcac663b58ce2e37595a88f52b852bbbd  29 2014, 18:37:994.85;temp:31.35;
+dlms:0|254871|70172|10.17;deap:-0.itc:-12.21;roll:53.99;yaw:7,1500;
+62.83;yaw:70.17;fr:0.00;
+w:73.75;aw:80.94;hdgd:104..92;roll:80.74;yaw:104.05;fthr:0.00;
+:0.00;
+2;BR.21;pi-Orderes C is 31.35
+hdgd:118.19;deap:-0.18;pitc:32.17;motorAttac500;starg:1500;.00;ver:bcac663b531e6c9c8ce2e37595a8Jun 29 2014, 18:37:48, 4.7.2
+;time:motors:1500,1500,1500;
+mta:126.43;fthr:0.r:.62;;
+25.;
+ll:83.54;yaw:125.4fthr:0BRDT:56;SC3I:0.05;BRDI:0.29;BT1I:0025.22;ftis 31.34
+motorAttached:1;
+s4s:996.26;temp:31.34;
+dlms:0|125.16;ft83.49;yaw:125.05;fthr7;fthr:0.00;
+:12thr:0.00;
+47;yaw:124.89;fthr:0.00;
+der Temperature in Degrees C econd-Order Tempera31.36
+00;starg:1500;
+fmem:4369.00;vout:11.55;ioutpres:996.57;temp:31.36;
+dlms:0|254991|70902|10331500;
+hdgd:124.82;deap:-0.19;pitc:38.9yaw:124.82;fthr:0.
+aw:124.85;fthr:0.00;
+8;fthr:0.00;
+ll:83.45;yaw:124.;fthr:0.00;
+thr:0.00;
+24.94;fthr:0.00;
+1;yaw:125.02;fthr:0.00;
+3I:0.05;BRDI:0.30;BT1I:0.31;Bhdgd:125.73;deap:-05.73;fthr:0.00;
+dgd:130.:81.35;yaw:130.15;fthr:0.00;
+1.52;iout:0.28;atmp:er:bcac663b531e6c9c8ce2e37595a88f52b852b;time:3283751.00;
+hdgd:132.74;deap:-ll:79.44;yaw:132.74;ft:0.00;
+thr:0.00;
+0;fthr:0.00;
+er Temperature in Degrees C is 31.350.31;BT2.52;AVCC:5001;
+:1500;
+fmem:4369.00;vo:Jun 29 2014, 18:37:48, 4.7.2
+;time:3284770yaw:134.500;
+500,1500,1500;
+mthr;pitc:35.06;roll:77.29;yaw:134.94;fthr:0.00;
+hdgd:131.83;deap:-0.19;pitc:31.85;roll:76.07;yaw:131.83;fthr:0.00;
+;
+;yaw:125.53;fth;pit0;
+12;SC2I:0.28;T1I:0.33;BT2I Degrees C hdgd:1c:22.43;roll:70.0:0.motorAttached:1;
+servo:114, 18:37:48, 4.74;
+dlms:0|25515rmotors:1500,1500,1500;
+mtayaw:127.7.87;yaw:131.49;fthr:0.00;
+0.00;
+128.31;fthr:0
+46;fthr:0.00;yaw:122.29;fthrBRDT:56.61;SC1I:0.09;SC2I:0.23;SC3I;:5001;
+:120.09;fmotorAttached:1;
+serb852bbbd  -;cmpd:Jun 29 2014, 18:37:48, 4.;time:3286739.00;
+pres:996.57;temp:30,1500;
+:73.46;yaw:125.15;fthr:00;
+.8.92;yaw:120.;fthr:0.00;
+11;yaw:1T:56.61;SC1I:0.05;SC2I:0.21;SC3I:0.05;BRD;
+;yaw:123.98;fthFirst-Order Tempe34
+fmem:4369.00;vout:11.52;iout1e6c9c8c-;cmpd:
+pres:997l:71.56;yaw122.61;fthr:0.00;
+;yaw:128.05;f00;
+w:140.w:126.33;fthr:030;BT15001;
+hdgd:120.81;deap:-0.18;pitc:22.75;rol:120.81;fthr:0.00;
+perature in Degrees C is 31.35
+hdgd:118.66;deap:-0..00;vout:11.e;cmpd:Jun 29 2014, 1003523|128hdgd:118.17;deap:-0.19;pitc:18.75;r00;
+r:0.0:125.84;fthr:0.00;r:0.00;
+9.22;yaw:140.0;fthr:0.00;
+w:1
+B2I:0.08;yaw:149.29hdgd:149.49;dea0.18;pitc:52.19;roll:80.0.00;
+;vo0;7 - 2014, 18:3
+;time:3289708.00;roll:80.14;yaw00;
+motors134.4523.76;ftyaw:118.09r:0.00;
+;yaw:110fthr:0.00;
+-0.18;l:52.16;yaw:103.83;86;SC1I:0.02;SC2I:0.89;S0;BT1I:0.457;fthr:0.0der Temperature in Dehdgd:94.18;yaw:94.17;fthr:0.00;
+ed:1;500;
+fmem:4369..2
+;time:32r:0.00;;
+0.BRDT:56.86;SC1I:0.00;SC2I:0.65;SC3I:0.14;BRDI:0BRDV:11.48;AVCC:5001;
+targ:1500;
+fmem:4369.00;vout:11.53;iout:0.27;atmp:s:0|255341|72762|103623|100784|353125|222516|84917|335368|44872;
+alps:463;
+hdgd:59.96;deap:-0:58.75;fthr:0.00;
+00;
+r::62.61;ft60;yaw:69;fthr:0.00;
+r:0.00;
+1I:0.08;SC2I:0.21;SC3I:0.06;BRDI:0.25;BT1I:0.29;BT2I:0.30;BRDV:11.55;ACC:4979;
+First-Orderees C is 31.3.34
+em:4369.00;vout:11.53;iout:0.26;atmp:0.00;ver:b5292800.00;
+8.90;deap:-0.19;pitc:-11.05;roll:50.59;yaw:68.90;fthr:0.00;
+1.76:72.472.49;f;
+w:72.53;0;
+:0.hdgd:72.33;deap:-0.19;pitc: 31.36
+hdgd:72.10;deaput:11.50;iout:0.28;atmp:0.00;ver:bcac663b531e6c9c8ce2e37595bbd  -;cmpd:Jun 29 2014;time:3293810.31.36;
+dlms:0|255441|73212hdgd:70.42roll:30.00;yaw::69.93;fthr:0.00;
+0.29;fthr:00;
+w:70.75;ft70.93:0.05;BI:0.31;BT2I:0.32;BRDV:11.52;Aa1.40
+Seco00;starg:1500;
+fmem:4369.00;v7|359278|44971;
+alps:462;
+yaw:71.00;fthr:0.00;
+motors:1500,1500;yaw:70.7thr:0.00;
+w:70.39;fthr:3;yaw:68.83;ft.74;yaw:67.73;f.00;
+06;SC2I:0.204;BRDI:0.30;BT1I:0.32;BT2VCC:5001;8.33;fthr:nd-Order Temperature in Degrees C is 31.36
+29.94;yaw:69.02;fth:0.00;
+00;starg:1500;
+fmem:4369.00;vout:11.46;io3295768.00;
+pres:997.14;temp:3mo00;
+mtarg:15:0thr:0.3;fthrroll:0.87;yaw:69.14;fthr:0.0;
+05;B:5;fth:66.41;fthr:0.00;
+hdgd:65.26;deap:-0.20;pitc:-5.72;roll:31.55;yaw:0;
+6;fthr:0.00;
+fthr:0.00;
+00;
+3.27hr:0.00;
+2.90;fthr:0.0;
+.;AVCC:5001;
+4.40;fthr:0egrees C is 31.3 C is 31.33
+g:1500;
+fmem:4369.00hdgd:66.65;fthrdgd:65.69;deap:-0.65.69;fthr:r:0.00;
+5;yaw:65.65.24;fthr:0.00;
+hdgd:64.92;deap:-0.20;pitc:-2.11;r0.00;
+ Degrees C is 31.36
+hdgd:64.75;deap:-0.20;pitc:-3.04;rol.27;atmp:0.007595a88f52b852bbbd  -;cm
+00964|356275|223026|85127|390788|45109;
+alps:459;
+ll:21.52;yaw:6aw:63.49;fthr:0.00;
+24.78;yaw:63.46;fthr:0.00;
+:63.57;fthr:0.00;
+6.99;yaw:63.77;fthr:0.00;
+;
+30;BT12;.04;fthr:0.00;
+Temperature in Dehdgd:64.07;deap:-0.19;pitc:-1.04;:64.07;fthr:0.00;
+;starg:1500;
+fmem:4hdgd:63.59;deap:-0.19;pitc:1.05;roll:-;fthr:0.00;
+targ:1500,1500,1500;
+63.31;fthr:0.00;0.00;
+aw:63.26;fthr:0.00;
+w:63.39;f0;
+r:0.0063.31;fthr:0.00;
+hdgd:63.7;fthr.05;BRDI:0.31;0.32;BT2I:0.33;BRDV:11.52;AVC1;fthr:0.00;
+rder Temperatur.36;fthr:0.00;
+ttached:1;
+servo:1500;starg:014, 18:3300786.00;
+pres:995.99;temp:3
+motors:-2.13;yaw:63.-6.29;yaw:63.10;fthr:0.0
+.09;fthr:0
+;
+c:0.78;roll:0.31;fthr:0.00;
+BRDT:BT2I:0.32;BRDV:11..18;fthr:0.00;
+w:63.10;fthmotorAttached:1;500;starg:15iout:0.30;at98.00;
+pres:996.55;temp:31.34;
+dlms:0|25
+hdgd:63.07;deap:-0.19;pitc:roll:-5.76;yaw:63.12;ft10;hdgd:63.08ap:-0.19;pitc:1.06;roll:-4.39;yaw:63.08;fthr:00;
+;fthr:0.00;BRDT:56.61;SC1I:0.05;SC2I:0.20;SC3I:0.05;BRDBT1I:0.31;BT2I r Temperature in Deg:1500;
+fmem:4369.00;voupres:996.26;temp:31.33;
+dlms:0|256061|75242|103993|101094|358195|223326|4.65;yaw:63.10;fthr:0.00;
+3.09;fthr:0.00;
+yaw:63.11;fthr:0.00;
+:08;fthr:0.00;
+w:63.08;fthr:0.00;
+29;BT1I:0.31;BT2:11.48;AVCC:5001hdgd:63.09;deap:-0.19;pi9;Temperature in Degreesdgd:63.09;deap:-0.20;pil:-4.44;yfthr:0.00;
+ut:0.27;atmp:0.00;ver:bcac6622;temp:31.35;
+dlms:0|256101|75402|10:1.00;roll0.00;
+00,1500,1500;
+hr:0.00;
+fthr:0.00;
+.00;hdgd:cond-Ordereap:-0.20;piftem:4369.00;vout:11.14;iout:0.31;atmp:0.00;ver:bc3b531e6c9c8ce2e37595a88f54, 18:37:48, 4.7.e:3304785.00;
+pres:995.68l:-4.41;ya.09;fthr:0.00;
+;
+mtarg:1500,1500,1500;
+.00;
+thr:0.00;
+3.09;fthr:0.00;
+hr:0.00;
+34;BT2I:0.34;BRDV:11.50;AVCC:5001;
+oll:-4.39;yaw:63.09;fthr:0.00;
+31.40
+SecomotorAstarg:1500;
+fmem:4369.00;vout:11.52;iout:0.29;atmp:0.00;v45345;
+alps:464;
+motors:1500,1500:-4.39;yaw:63.10;fthyaw:63.10;ft:0.00;
+w:63.10;fthr:0.00;
+d:63.10;deap:-0.19;pitc:0.99;roll:-4.39;yaw:63.10;fthr:0.00;
+BRDT:56.61;SC1I:0.13;SC2I:0.29;SC3I:0.08;BRDI:0.30;BT1I:0.32;BT2I:0.33;BRDV:11.50;AVCC:5001;
+hdgd:63.10;deap:-0.19;pitc:0.99;roll:-4.39;yaw:63.10;fthr:0.00;
+First-Order Temperature in Degrees C is 31.40
+Second-Order Temperature in Degrees C is 31.34
+hdgd:63.10;deap:-0.19;pitc:0.99;roll:-4.38;yaw:63.10;fthr:0.00;
+motorAttached:1;
+servo:1500;starg:1500;
+fmem:4369.00;vout:11.52;iout:0.30;atmp:0.00;ver:bcac663b531e6c9c8ce2e37595a88f52b852bbbd  -;cmpd:Jun 29 2014, 18:37:48, 4.7.2
+;time:3306815.00;
+pres:996.26;temp:31.34;
+dlms:0|256281|76002|104093|101184|360085|223676|85367|454108|45382;
+alps:465;
+,1500;
+hdgd:63.110;fthr.10;fth;yaw:63.10:63.10;fthr:0.00;
+.38;yaw:63.10BRDT:56.61;SC1I:0.11;SC2I:0.28;SC3I:.33;BRDV:11.50;AVCC;
+aw:63.10;fthr:0.00;
+First-Order Temperature in Degrees nd-Order Temperature in Degrees C 31.35
+atmp:03b531e6c9c8ce2e375un 29 2014, 18:37:48, 4.7
+;time:3307834.00;
+pres:w:63.10;fthr:0.00;
+ft10;ftc:0.99;roll:-4.37;yaw:63.10;fthr:0.00;
+:0.99:1500;starg:100;vout:11.53;iout:0.28;atmp:0.00;ver:bcac663b531e6c9 29 2014, 18:37:48, 4.7.2
+;time:3hdgd:63.10;deap:-0.20;pitc:0.99;roll:-4.38;
+0;
+00.00;63.10;fthr:0.00;
+eap:-0.20;pitc:0.99:63.11;fthr:0.00;
+DI:0.30;B.52;AVCC:5001;
+hdgd:63.11;deyaw:63.11ll:-4.38;ya69.tmp:0.00;ver:bcac663b531e6c92b852bbbd  -;cmpd:June:330980682|104193|101234|361625|223916|85487|477668|45490;
+alps:460motors:1500;
+8;ya:-4.38;yaw:63.11;fthrdgd:63.11;deap:-0.1:0.99;roll:-4.38;yaw:63.11;fthr:0.00;
+:-4.38;yaw:63.11;fthyaw:63.11;fthr:0.0BRDT:56.61;SC1I:03I:0.C:5001;
+2;yaw:63.15;fthr:0.00;
+31.39
+Second-Order Tehdgd:63.15;deap:-0.20;pitc:0l:-3.97;yaw:63;starg:1500;
+fmem:4369.00;vout:11.52;i:3310814.00;
+pres:995.40;temp:31.33;
+dlms:0|256421|7683motors:1500,1500,1500;
+mtarg:1500,1500,1500;
+fthw:63.14;;yaw:63.12;fthr:0.00;
+63.08;fthr:00.0.00;
+C1I:0.05;SC2I:0.20;SC3I:0.05;BRDI:0.29;BT59.96;fthr:0.00;
+-Order Temperature in Degrees C is 31.33
+.19;pitc:1.0;roll:-2.75;yaw:56.45;fthr:0.00;
+6;temp:31.33;95a88f52b852bbbd  -;cmpd:Jun 29 2014, 18:37:48, 4.7.2
+dlms:0|256521|77072;
+hdgd:52.99;deap:-0.19;p;roll:-4.450:BRDT:56.86;SC1I:0.05;SC2I:0.20;SC3I:0.05;B;yaw:36.97;fthr:0.00;
+egrees C is 31. Temperature in Degrees C is 31.35
+500;starg:1500;
+fmem:414, 18:37:48, 4.7.2
+;time:3312856.00;deap:-0.20;pitc:1.30;roll:-4.40;yaw:35.03;fthr:0.00;
+arg:1500,1500,1500;
+hdgd:33.41;deap:-0.20;p:0.00;
+r:0.00;
+
+24.34;.00;
+00;
+BRDT:56.61;SC1I:0.05;SC2I:0.20;SC3I:0.0RDI:0.31;BT1I:0.60;BT2I:DV:11.14;AVCC:5001;
+ond-Order Temperature in Degrees C is 31.33
+htarg:1500;
+fmem:4369.00;vout:11.c:1.38;rol0;
+mtarg:1500,13.2510.56;fthr:0.00;
+w:2.44;fthr:0.00;
+hdgd:0.33;deap:-0.16;pitc:1.31;roll:-3.15;yaw:0.33;fthr:0.00;
+l:-3.
+Second-hdgd:356.15;deap:-0.20;pitc:1.33;roll:-3.59;yaw:-3.85;fthr:0.00;
+69.00;vout:11.24;i63bd  -;cmpd:14806.00;
+pres:995.41;temp:31.roll:-3.89;yaw:-6.10;motors:1500,1500,1500;
+mtarg.00;
+r-15.29;fthr:0.fthr::-1.76;yaw:-2;fthr:0.00;
+21;SC3I:0.01;BRDI:0.30;B34;AVCC:5001;
+21.62;fthr:0.00;
+Second-Order Temperature in Degrees C is 31.35
+5.57;deap:-0.19;pitc:1.:-24.43;fthr:0.00;
+motorAttached:1;
+servo:1500;starg:1500;
+fmem:4369.00;vout:11.46;iout:0.24;atmp:0.00;ver:bcacaw:-25.76;fthr:0.00;:1500,1500,1500;
+mtarg:1500,1500,1500;
+6.f42;fthr:0.00;
+BRDT:56.61;SC1I:0.06;SC2I:0.20;SC3I:0.05;BRDI:0.28;BT1I:0.31;BT2I:0.31;BRDV:11.52;AVCC:5001;
+0.00;
+der Temperature in Degrees C is 31..20;fthr:0.00500;
+fmem:4369.00;vout:11.32;500;
+l:0.56;yaw:-42.20;f;yaw:-42.20;fthr:0.00;
+fthr:0.00;
+0;yaw:-42.08;fthr:0.00;
+00;
+.41;yaw:-42.05;0.T252;AVCC:5001;
+.07First-Or in Degrees C is 31.38
+Second-O
+fmem:4369.00;vo3b531e6c9ca88f52b852bbbd  -;cmp014, 18:37:48, 4..2
+;time:3317866.00;
+pres:996.25;temp:31.32;
+dlms:0|256911|7pitc:0.93;roll:fthr:0.yaw:-40.77;fthr:0..91;fthr:0.91;fthr:0.4;yaw:-28.21;23.18;fthr:0
+8;deap:-0.19;pitc:0.84;roll:-4.41;yaw:-18.42;fthr:0.00;
+Second-Orde6.59;deap:-0.19;pitc:0.81;roll:-4.17;yaw:-13.41;mp:0.00;ver:bcac663b531e6c9c8ce 4.e:3318776.00;
+pres:995.97hdgd:353.77;deap:-0.19;pitc:0.59;roll:-3.25;yaw:-6.23;fthr:0.0:0:0.00;
+11.94;fthr:0.0016.86;fthr:0;
+thr:0.00;
+hdgd:2740
+Secohdgd:32.44;deap:-0.19;pitc:0.78;roll:-4;fthr:0.00;
+.00;vout3b531e6c9cJun 29 201me:331|78802|104453|101454|367295|224526|85757|556048|ps:461;
+5;fmotors:1500,1500,1500;
+mtarg:1:39.89;fthdgd:43.74;deap:-0.19;pitc:0.91;roll:-3.93;yaw:43.74;fthr:0.00;
+hr:6.25;fthr:0.00;
+hr:0.00;
+aw:63.66;fthr:0.00;
+5;SC2I:0.21;SC3I:0.05;BRVCC:5001;
+91;yaw:660.00;
+31.39
+Secoeap:-0.20;pitc:000;vout:11.53;iout:0.27;atmp:0.00;ver:bcac663b531e6c9:Jun 29 2014,7.2
+;time:3320844.00;
+pres00;
+hdgd:70.42;.39;fthr:0.00;
+.37;fthr:0.00;
+35;fthr:0.00;
+35;fthr:0.00;
+ll:-4.07;yaw:70.34;fth:0.00;
+;fth;SC3I:0.05;BRDI:0.30;BT5001;
+grees C is 31.4econd-Order Temperature in Degrec8ce2e37595a88f52b852bbbd  -;cmpd:Jun 29 201448, 4.7.2
+;time:3321867.00;
+pre,1500;
+34;f0.00;
+70.17;fth;fthr:0.00;
+0.05;BRDI:;BT1I:0.32;BT2I:0.33;BRDV:11.52;AVC
+hdgd:69.06;deap:-0.20;pitc:0.17;roll:2.90;yaw:61.40
+Seco:1500;starg:1500;
+fmem:434786|85807|579538|45963;
+alps:460;
+hdgd:60.93;g:1500,1500,1500;
+50.58;fthr:0.00
+.00;
+4.72;fthr:0.00;
+27.27;yaw:43.30;fthr:0.00;
+:42.85;fthr:0.00;
+0.27;BT1I:0.32;BT2C:505.68;yaw:42.99;fthr Temperhdgd:42.97;deap:-0.19;pitc:-4.65;roll:25.19;yaarg:1500;
+fmem:4369.00;vout:11.533323796.00;
+pres:996.83;temp:31.33;
+dhdgd:41.98;deap:-0motors:1500,1500,1500:yaw:37.90;ft35.09;fthr:0.00;
+50.48;yaw:36w:36.79;27;SC3I:0.09;B;hdgd:36.C is 31;deap:-0.51.37;yaw:36.80;fthr:0.00;
+1500;Attached:1;
+fmem:4369.00hdgd:37.15;deap:-0.19;pitc:-11.12;roll:50.19;yaw:37.;fthr:0.00;
+09;fthr:0.00;
+;roll:39.97;yaw:39.41;fth:0.00;
+yaw:41.32;fthr:0.eap:-0.19;pitc:0.72;roll00;BRDT:56.61;SC1I:0.11;SC2I:0.25;SC3I:0.07;BR;AVCC:4979w:40.80;ftes C is 31cond-Order Temperature in Degrees C is 31.33
+0;
+fmem:4369.0me:3325858.00;
+pres:995.97;temp:31.33;
+dlms:0|257341|80142|104593|101624|37065hdgd:409;pitc87;fthr:0.00;
+w:40.73;fthr:0.00;
+yaw:40.73;.80;fthr:0.00;
+Second-Order Temper.48;deap:-0.20;pitc:0.73;roll:0.82;.00;-1.
+;
+f;temp:31.34;
+dlms:0|257411|80422|104613|101644|371235|225056|85907|61060.20;pitc:0.89;roll:-0.30.00;
+500,1500,150,1500,1500;
+;fthr:0.00;
+;roll:0.47;yaw::0.00;
+:0.00;
+BRDT:56.86.29;BT1I:0.3-0.08;yaw:20.86;fthr:0.00;
+1.38
+Second-hdgd:19.29;deap:-0.19;pitc:1.07;roll:0.32;yaw:1;
+500;
+fmem:4369.00;v:18.07;fthrmotors:1500,1500,1500;
+mtll:0.23;yaw:16.12;fthr:0.00;
+0;fthr:0.00;
+:7.86;fthr:0.00;
+BRDT:56.86;SC1I:0.05;SC2I:0.20;SC3I:09;BT1I:0.31;BT2Idgd:4.98;deap:-0.19;pitc:1.09;roll:0.55;yaw:4.98;fthr:0.00;
+40
+Second-Or.hr:0.00;
+motorAttached:1;
+servo:15000;vout:11.20;iout:0.28;atmp:0.00;ver:bcac663b531e6c9c8ce2e37595a88f52b852bbbd  -;cmpd:Jun 48, 4.7.2
+;time:3328806.00;
+7;yaw:-0.62;fth8;fthr:0.00
+yaw:-5.06;fthr:0.00;
+w:-6.63;fthr:0.fthr:0.00;
+.00BRDT:56.86;SC1I:0.06;SC2I:0.21;SC3RDV:11.52;AVCC:5001;
+.14;deap:-0.;
+re in Degreer Temperature in D9:1;
+servo:1500;se6c9c8ce2e37595a88f52b852bbbd  -;cmpd:Jun 29 2014, 18:37:48, 4.7.2
+;time:3329843.00;
+pres:995.68;temp:31.33;
+dlms:0|257hdgd:349.24;deap:-0.20;pitc:0.87;roll:0.45;yaw:-10.76;fthr:0.00;
+;yaw:-10.73.36;yaw:-10.65;fthr:0.00;
+w:-10hdgd:349.35;deap:-0.20;pitc:0.98;yaw:-10.65;fthr:0.00;
+BRDT:56hdgd:349.36;deap:-0.20;pitc:0.99;roll:-4.25;yaw:-10.64;fthr:0.00;
+First-Order Temperature in Degrees C is 31.42
+Second-Order Temperature in Degrees C is 31.36
+motorAttached:1;
+servo:1500;starg:1500;
+fmem:4369.00;vout:11.53;iout:0.26;atmp:0.00;ver:bcac663b531e6c9c8ce2e37595a88f52b852bbbd  -;cmpd:Jun 29 2014, 18:37:48, 4.7.2
+;time:3330861.00;
+pres:995.99;temp:31.36;
+dlms:0|257591|81332|104713|101754|373435|225336|85987|642298|46228;
+alps:462;
+hdgd:349.36;deap:motors:1500,1500,1500;
+mtarg00;
+0.95;roll:-4.21;yaw:-10.65;fthr:0.00;
+;fthr:0.0010.04;BRD;BRDV:11.24;AVCC:5001;
+nd-Order Temperature i9.35;deap:-0.19;pitc:0.9-4.19;yaw:-10.65;fthr:0.00;
+369.00;vout:11.52;iout:0.28;atmp:0.00;ver:bcac;cmpd:Jun 27.2
+;time:3331881.00;
+pres:996.26;temp:31.34;
+dlms:0|ap:-0.19;pityaw:-10.65;ft;
+motors:1500,1500,1500;
+mtarg:1500,15004.19;yaw:-10.63;fthr:0.00;
+;fthr:0.00;
+4.00;yaw:23.88;fthr:0.00;
+C1I:0.024;roll:-4.08w:35.29;fthr:0.00;
+s 31.38
+Secondhdgd:42.44;deap:-0.19;pitc:0.93;roll:-4.02;yaw:42.44;ftmotorAttached:1;
+|374485|225446|86037|2918|46294;
+alps:458;
+:0.00;
+motors::1500,1500,1500;
+0.003.93;yaw:48.33;fthr:02;fthr:0.00;
+r:0.00;
+aw:41.62;fthr:0.00;
+:0.00;
+;yaw:41.74;fthr:0.00;
+BRDT:56.86;SC1I:0.00;SC2I:0.56;SC3ID4;fthr:0.00;
+irst-Order Temperature in Degrees C is 31.39
+Second-Order Temperature in Degrees C is 31.33
+rvo:1500;starg:1500;
+fmem:4369.00;p:31.33;
+dlms:0|257751|82022|104883|101814|374945|2hdgd:41.73;deap:-0.20;pitc:0.77;roll:-4.12;yaw:41.73;fthr:0.00;
+motors:1500,1573;ft.7:41.72;fthr:0.00;
+.72;ft;fthr:0.00;
+BRDT:56.61;SC1I:0.14;SC2I:0.34;SC3I:0.10;BRDI:0.29;BT1I:0.32;B:41.72;fthr:0egrees C is 31.38
+Second-.72;fthr:0.00;
+motor531e6c9c8ce2e37595.7.2
+;timhdgd:41.72;deap:-0.19;pitc:0.84;roll:-4r:0.00;
+0.00;
+4.25;yaw:41.71;fthr:0.00;
+w:41.71;fth;yaw:41.71;thr:0.00;
+41.71;
+41.70;fthr:
+BRDT:56.86;SC1I:0.13;SC2I:0.3T1I:0.33;BT2I:0.33;BRDV:11.50;AVCC:5001;
+.27;yaw:41.70;ftFirst-Order Temperature in d-Order Temperature in Degrees C is 31.33
+9.00;vout:11.53;iout:0.27;atmp:0.00;ver:bcac663b53-;cmpd:Jun 29 2014, 257871|82462|104923|101884|375915|225686|86117|26788|46393;
+alps:470;
+hdgd:41.70;deap:-0.19;pit70;deap:-0.c:0.89;roll:-4.28;yaw:41.70;fthr:0.00;
+41.7hr:0.00;
+69;fthr:0.00;
+;ft;
+hdgd:41.69;deap:-0.19;pitc:0.89;roll:-4Order hdgd:41.69;deap:4.29;yaw:0;vout:11.53;iout:0.9c8c:37:48, 4.7.2
+;time:33hdgd:41.69;deap:-0.19;pitc:0.89;roll:-4.29;yaw:41.69;fthr:0.00;
+motors:1500,1500,15w:41.69;fthr:0.00;
+1.69;fthr:0.00;
+w:41.69;fthr:0.00;
+30;yaw:41.69:0.00;
+;fthr:0.00;
+.52;AVCC:5001;
+.68;deap:-0.19;pitcdhdll:-4.30;yaw:41.68;fthr:0.00;
+motorAttached:1;
+s96.54;temp:31.33;
+daw:4motors:1500,15arg:1500,1500,1500
+yaw:41.67;fr:0.00;
+41.67;fthr;BRDI:0.29;BT1I:0.31;BT3;BRDV:11.52;AVCC:5001;
+31;yaw:41.67;fthr:0.00;
+rder Temperature in Degrees C is 31.35
+yaw:41.67;f;
+motorA
+servo:1500;starg:15mem:4369.00;vout:11.44;iout:0.29;atmp:06c9c852bbbd  -;cmpd:Jun 29 2014,7.2
+;time:s:.67;fthr:07;fthr:0.00;
+w:41.67;fthr:0.00;
+BRDT:56.86;SC1I:0.05;SC2I:0.20;SC3I:0.05;BRDI:0.
+Second-O;
+servo:1500;starg:1500;
+fmem:4369.00500;
+9;pitc:0.91;roll:-4.31;yaw:41.66;fthr:0;fthr:0.00;
+w:41.66;fthr:0.00;
+fthr:0.00;
+I:0.20;SC3I:0.05;BRDI:0.29;BT1I:0.59;BT2I:0.68;BRDV:11.14;AVCC:5001;
+31;yaw:41.66;fthrFirst-Order Temperature in Degr40
+Second-Order Temperature in 500;starg:tmp:0.00;ver:bcac663b531e6c9c8ce2|105103|102084|378585|226016|846556;
+alps:467;.19;pitc:0.92;ro.32;yaw:41.65;fth00;
+31;yaw:41.65;ft.65;fthr:0.0.00;
+l:-4.31;yaw:41.65;ft:0.00;
+1I:0.61;BT2I:hdgd:41.6yaw:41.65;fthr:0.00;
+Order Temperature in Degrees C92;roll00;vout:11.53;iout:0.28;atmp:0.00;ver:bc:Jun 29 2me:3341922.00;
+pres:996.26;temp:31.33;
+dlms:0|258161|83712|g:1500,1500,1500aw:41.65;fthr:0.00;
+w:41.64;fththr:0.00;
+hdgd:41.64;deap:-0.19;pitc:0.92;roll:-4.32;yaw:41.64;fthr:0.0-Order Temperature in Degrees C is 31.35
+motorAttervo:1500;starg:1500;
+fmem:436hdgd:41.64;deap:-0.19;pitc:0.92;roll:-4.32;yaw:41.64;ftmotors:,1500,1500;
+00;
+;yaw:41.63;fthr:63;fthr:0.00;
+3;fthr:0.00;
+:-4.31;yaw:41.64;fthr:0.00;
+1.63;;fthr:0BRDT:56.86;38;BT2I:0.36;BRDV:11.46;AVCC:5001;
+Second-Order Temperature in Degrees C is 31.34
+hdgd:41.19;pitc:0.92;roll:-4.3r:0.00;
+mp:0.00;ver:bcac  -;cmpd:Jun 6.26;temp:31.34;
+dlms:0|258231|84082|105193|102151;yaw:41.60.00;
+motors:1500,1500,1500;
+w:41.64;fth61;fthr:0.00;
+41.60;fthr:0.00;BRDT:56.86;SC1I:0.05;SC2I:0.20;SC3I:0.05;BRDI:0.30;BT1I:0.31;BT2I:0.32;BRDV:11.52;AVCC:5001;
+00nd-Order Temperature in Degrees C is 31.33
+:0:4369.00;vout:11.52;iout:0.28;atmp:0.00;ver:bcac663b53un 29 2014, 18:37:48, 4.7.2
+;hdgd:41.57;deap:-0.20;pitc:0.91;roll:-4.31;yaw:41.57;ft-4.31;yaw:41.56;fthr:0.00;
+w:41.54;fthr:0.00;
+yaw:41.52;
+:01;SC1I:0.05;SC2I:0.20;SC3I:0.05;BRDI:First-Order TemperSecond-Order Temperature infmem:4369.00;vout:11.53;iout:0.27;atmp:0.00;ver:bcac663b531e6c9c8ce2e37595a88f52b852bbbd  -;cmpd:Jun dlms:0|258301|84602|105303|102244|381295|226366|86397|105558|46739;
+alhdgd:41.48;deap:-0.20;pitc:0.91;roll:-4.31;yaw:41.48;fthr:0.00;
+aw:41.47;fthr:0.07;fthr:0.-4.31;yaw:41.46;1.45;fthr:0.00;
+30;yaw:41.44fthr:0.00;
+.hdgd:41.43cond-Order Temperature in Degrees C is 31.32itc:0.92;roll:-4.31;yaw:41.42;fthr:0.00;
+.00;vout:11.53;iout:0.29c8ce2e37595a  4.7.2
+;time:334hdgd:41.41;deap:-0.18;pitc;fthr:0.00;
+40;deap:-0.18:41.40;fthr:0.00;aw:41.40;fthr:0.00;
+:41.39;fthr:0.00;
+0.91;roll:-4.30;yaw:41.38;fthr:0.00;
+-4.31;yaw:41.37;fthr:
+6;fthr:0.;yaw:41.35;fthr:0.00;
+servo:1500;smpde:3347891.00;.91;roll:-4.30:0.00;
+pr1.33;deap:-0.19;pitc:0.92;roll:-4.31;yaw:41.33;fthr:0.00;
+500;
+mtarg:1500,1500,1500;
+oll:-4.30;yaw:41.32;fdgd:41.31;deap:-0.11.29;ffthr:0.00;27;fthr:0.00;
+BRDT:56.86;SC1I:0.0;SC3I:0.05;BRDI:0.30;BT1I:0.32;BRDV:11.52;A91;roll:;
+-Order Temperature in Degrees C is 31.31
+motorAttached:1;
+servo:1500;starg:1500;
+25;deap:-0.19;pitc:0.91;roll:-4.30;yaw:41.25;fth;
+yaw:41.24;fth00;
+4.30;yaw:41.22;fthr:41.21;fthr:0.00;
+;yaw:41.20;fthaw:41.20;fthraw:41.19;fthr:0.00;
+ond-Order Temperature in Degrees C is 31.mp:0.00;ver:bcac663b531e6c9c8ce2e37595a88f52b852bbbd  -;cmpd:Jun 29 2.00;
+pres:996.27;temp:31.hdgd:41.17;deap:-0.19;pitc:0.911.16;fthr:0.00;
+roll:-4.31;yaw:41.15;fth1;yaw:41.14;fthraw:41.13;fthr:0.00;
+-4.31;yaw:41.13;fth:0.00;
+12;fthr:0.00;
+.05;BRDI:0.30;BT1I:VCC:5001;
+hdgd:41.11;deap:-0.19;pitc:0.1;roll:-4.31;yaw:41.11;fthr:0.00;
+e in Degrees C is 31.33
+hdg1.;cmpd:7.2
+;time:3350955.00;hdgd:41.09;deap:-0.19;pi:yaw:41.07;fthr:0.00;
+6;fth0.00;
+:41.05;fthr:0.00;
+;BT1IC:5001;
+pitc:0.90;roll:-4.32;3;fthr:0.00;
+Order Temperature in Degrees C is 31.33
+itc:0.8rg:1500;
+fmem:4369.00;vou3;
+0.00;fthr:0.00;w:41.03;fthrmotors:1500,1500,1500;
+2;f.32;yaw:41.02;fthr0.00;
+yaw:41.02;fthr:0.00;
+;0.05;BRDICC:5001;
+hdgd:motorAttached:1;
+sercmpd:Jun 29 2014, 18:37:48, 4.7.2
+;tim541|86142|105563|102414|385265|226856|86587|160888|46961;
+alps:464;
+motors:1500,1500,1500;
+mtarg:1:41.02;fthr:0.00;
+aw:41.02;ft0;1.01;fth
+BRDT:56.86;SC1I3I:0.05;BRDI:0.32;BT2I:0.31;BRDV:11.52;AVCC:5001;
+er Temperature in Degrees C is 3141.01;fthr:0.00;
+o:1500;starg:1500;
+fmem:4369.00;vout:11.53;iout:0.27;8|46999;
+alps:460;
+0,1500;
+mtarg:1500,1500,1500;
+hdgd:41.01;41.01;fthhdgd:41.01;deap:-0.18;pitc:0.90;roll:-4.31;yaw:41.01;fthr:0.00;
+hdgd:41.01;deap:-0.18;pitc:0.90;roll:-4.31;yaw:41.01;fthr:0.00;
+.00;
+41.01;fthr
+RDI:0.29;BT1I:0.31;BT2I:0.32;BRDV:11.52;AVCC:5001;
+First-Order Temperature i.39
+Seconem:4369.00;vout:11.53;iout:0r:bcac663b531e6c9c8c;cmpd:Jun 29 2014,me:3354956.00;
+pres:995.97;te0,1500;
+dgd:41.00;deap:-0.19;pit:-4.31;yaw:41.00;fthr:0.00;
+1.00;fthr:0.00;
+31;yaw:41.00;fthr
+41.00;fthr:41.00;fthr:0.031;BRDV:11.52;AVChdgd:41.00;deap:-0.19;pitc:0.91;roll:-4.32;yaw:41.00;fthr:0.00;
+:0.91;roll:-4.31;yaw:41.00;fthr:0.00;
+500;
+hdgd:41.00;l:-4.32;yaw:41.00;fthr:0.00;0,1500;
+41.00;fthr:;
+0.99;fth40.99;fthr:0.00;
+
+:0.00;
+w:;
+.28;BT1I:0.32;B.32;BRDV:11.52;AVCC:5001;
+;roll:-4.32;yaw:40.99;fthr:0.00;
+irst-Order Temperature in  Temperature in Degrees C is 31.32
+
+fmem:4369.00;vout:11.52;iout:0.30;atmp:0.08f52b852bbbd  -;cmpd:Jun 48, 4.7.2
+;time:3356915.00;
+preroll:-4.32;yw:40.99;fthr:0.00;
+mo,1500;
+yaw:40.98;ftthr:0.0
+:40.98;fthr:0.00;
+.12;SC2I:0.28;BT12;AVCC:5001;
+40.98;fthr:0.00;
+Order Temperature in Degrees C is 31.34
+32;yaw:fthr:0.00;
+motorAttached:1;
+servo:15bbd  -;cpres:995.98;temp:31.34;
+dlms:0|258811|8;fthrs:1500,1500,1500;
+mtarg:1500,1500,15:40.98;fthr:0.00;
+:0.00;
+aw:40.97;fthrfthr:0.00;
+40.97;fthr:0.00BRDT:56.86;SC1I:0.07;SC2I:0.22;SC3I:0.06;BRDI:0.28;BT1. C is 31.40
+Second-Order Temtarg:1500;
+fmem:4369 18:37:48, 4.7.2
+;time:3358949.00;
+pres:6;deap:-0.19;pitc:040.96;f
+hr:0.00;;t32;yaw:40.96;pitc:0.91;roll:-4.32;yaw:40.96;fthr:0.00;
+I:0.hdgd:40.96;deap:-0.19;pitc:0.91r:0.00;
+
+Second-Order Temeap:-0.19;pitc:0.91;roll:-4.32;yaw:40.96
+servo:1.7.2
+;time:3359969.00;
+hdgd:40.96;deap:-0.19;pitc:0.0.96;fthr:0.00;
+targ:1500,1500,1500;
+-4.32;yaw:40.96;fthr:0w:40.96l:-4.32;yaw:40.96;.91;roll:-4.32;yaw:40.96;fthr:00;
+;
+0.91;roll:-4.31;yaw:40.9rhdgd:40.96;deap:-0.19;pitc:0.90;4.32;yaw:40.96;fthr:0.ttached:1;
+ser:996.54;temp:31.33;
+dlms:0|259051|88072|10585395;deap:-0.19;p;
+motors:1500,1500,1500;
+mtarg:1500,1500,0.95;fthrl:-4.31;yaw:40.95;f5;fthr:0.0w:40.0;
+w:40.95;fthr:0.00;
+irst-Order Temperature in Degrees C is 31.41I:0.29;BDVfthr:0.00;
+Sechdgd:40.95;deap:-0.19;pitc:90;roll:-4.30;yaw:40.95;fthr:0.0motorAtta00;starg:1500;
+fmem:4369.time:3361942.00;
+pres:995.99;temp:31.35;
+dlms:5;fth:1500,1500,1500;
+mtarg:1500,1500,1500;
+hdgd:40.95;aw:40.95;fthr:0.00;
+w:40.95;fthr:0.00;
+BRDT:56.86;SC1I:0.05;SC2I:0.20;SC3BT1I:0.31;BT2I:0.32;BRDCC:5001;
+fthrecond-Order Temperature in DegreesotorAttached:1;
+servo:15000;ver:bcac663b531e6c9c8ce2e37595a88f52b852bbbd  -;cmpd:Ju95.68;temp:31.33;
+dlms:0|259131|88462|10586500,1500,1500;
+hdgd:40.95;deap;p0;roll:-4.32;yaw:40.95;fthr:0.00;
+1;yaw:40.95;fth00;
+00;
+0.95;fthr:0.00;
+thr:0.00;
+RDT:56.86;SC1I:0.05;SC2I:0.21;SC3I:0.05;BRDI:0.29;BT1I:0.31;BT2I:0.32;BRDV:11.52;AVCC:5001;
+hdgd:40.95;deap:-0.20;pitc:0.90;roll:-4.32;yaw0;
+
+Second-
+fmem:4369.0
+pres:996.54;temp:31.33;
+ditc:0.90;roll:-4.32;yaw:40.9.95.95;fthr:0.00;
+00;
+6;BT2I:0.61;BRDV:11.20;AVCC:5001;
+hdgd:40.95;deap:-0.19;pitc:0.90;roll:-4.32;yaw:40.95;fthr:0.00;
+mperature in19;pitc:0.90;rol:0.00;
+mem:4369.00;vout:11.52;iout:0.29;531e6c9c8ce2e37595a88f52b85res:995.96;temp:31.32;
+dlms:0|259211|88842|1hdgd:40.95;deap:-0.19;pitc;yaw:40.95;fthr:0.00;10;
+;roll:-4.32;yaw:40.95;fthr:0.00;
+9:0.00;
+ll:-4.32;yaw:40.95;fthr:.00;
+0.95;fthr:0.00;
+45;BRDV:11.32;AVCC:5001;
+pitc:0.90;rolhdgd:40.95;deap:-0.19;pitc:0.90;roll:-4.31;ymotorAg:1500;
+fmem:4369.00;vout:11.53.33;
+dlms:0|259241|8l:-4.31;yawmotors:1500,1500,1500;
+mtarg:150.40.95;fthr:0.00;
+r:0.00;
+I:0.39;BT2Ifthr:0.00;
+
+Second-Ohdgd:40.95;dap:-0.20;pitc:0.89;roll:-4.31;yaw:
+motorAttached:1;
+servo:150037595a88f52b852bbbd  -;cmpd:Jun 29 200;
+pres:995.39;temp:500;
+mtarg:1500,1500,1500;
+fthr:0.00;
+f5;fthr:gd:40.95;deap:-0.20;pitc:0.90;roll:-4.31;yaw:40.95;fthr:0.00;
+.94;fthr:0.00;
+:40.94;fthrBRDT:56.86;SC1I:0.10.36;SC3I:0.10;BRDI:0.31;BT1I:0.311.50;AVCC:5001;
+aw:40.94;fthr00;
+1.42
+Second-Or0;rolmotorAttached:1;
+servo:1500;starg:167977.00;
+pres:996.00;temp:31.36;
+dlms:0|259271|89542|100,1500;
+.94;fthr:0.00;
+hdgd:40.94;deap:-0.19;pitc:0.90;roll:-4.32;fthr:0.00;
+:40.94;fthr:0.00;
+4.32;yaw:40.940.00;
+32;yaw:40.90.00;
+00;
+hr:0.00;
+BRDT:w:40.93;First-Order Temperature i
+Second-Order Temperature in ut:153193;
+hdgdroll:-4.32;yaw:40.93;fthr0.00;
+.32;yaw:43;fthr:0.00;
+.00;
+:40.94;fth:0.00;
+w:40.94;fthr:0.00;
+0;
+RDI:0.30;BT.31;BT2I:0.32;BRDV:11.52VCC:5001;
+.90;roll:-4.32;yaw:40cond-Or
+hdgd:40.:1500;starg:1500;
+fmem:4369.time:3369910.00;
+pres:997.12;temp:31.hdgd:40.93;deap:-0.18;pitc:0.90;roll93;fthr:0.00;
+500,1500,150thr:0.00;
+.9w:40.93;fthr:0.00;
+:4.31;yaw:40.93;fthr:0.00;
+fthr5;BRDI:0.29;BT1I:0V:11.52;AVCC:5001;
+0.00;
+rder Temperature in Degrees C is 31.33
+hdgd:40.93;deap:-0.21;pitc:0motorAtt0;ver:bcac663b531e6c,951.00;
+p396|87157|301748|47604;
+alps:461;
+;yaw:40.93;fthr;
+mftf-4.31;yaw:40.93;yaw:40.93;fthr:0.00;
+.93;fthr:0.00;
+.93
+.05;SC2I:0.19;SCDI:0.29;BT1I:0.31;BT2I:0.32;BRD
+fthr:0.0
+Second-O34
+hdgd:40.93;deap:-0.19;piw:4motorAttached:1;
+servo:15002014, 18:37:48, 4.7.2.31;yaw:40.93;fthr:00yaw:40.9:0.00;
+;yaw:40.93;.00;
+h2;yaw:40.93;r:0.00;
+yaw:40.93;fthr:0.00;
+BRDT:56.61;SC1I:0.05;SC2I:0.2BT2I:0.56;BRDV:11.14;AVCC:5001;
+.9
+Secon-4.32;yaw:40.93;fthr00;
+motorAttached:1;
+sem:4369.00;vout:11.53;iout:0.28;atmp:0.00;ver:bcac663b531e6c9c8ce2e37595a88f52b852bb;
+pres:995.68;temp:31.33hdgd:40.92;deap:-0.20;pitc:0.90;roll:-4.32.00;
+;yaw:40.92;fthr:0.00;
+4.31;yaw:40.93;fth0.00;
+aw:40.93;fth0;
+;yaw:40.92;ft
+:86;SC1I:0.05;SC2I:0.74;SC3I:0.00;BRDI:0.29;BT1I:0.41;BT2I:0.37;BRDV:11.42;AVCC:5001;
+First-Order Temperature in er Temperature in tmp:0.00;ver:bcac663b531e6c9c8ce2e37595a88f52b852bbbd  -;8, 4.7.2
+7717;
+alps:465;
+hdgd:40.92;deap:-0;yaw:40.920;
+;yw:40.92;f.92;fthr:0.00;
+r:0.0w:40.92;f92;fthr:0.00;
+5;BT2I:0.hdgd:40.92;deap:-0.20;pityaw:40.92;fthr
+d:rg:1500;
+fmem:4369.00;vo00;
+pres:9960;roll:-4.31;yaw:40.92;fthr:0.00;
+,1500;
+mtarg:1500aw:40.92;fthr:0.00;
+92;fthr:0.00;
+0.91;fthr:0.00;
+0.91;fthr:w:40.91;fthr:0.yaw:40.91;fthr:0.00;
+DI:0.29;BT1I:0.32;BT2I:0:40.91emperature in Degrees C is 31.38
+Second-Order eap:-0.20;m:4369.00;vout:19c8ce2, 75966.00;
+pres:995.10;te.30thr:0.00;
+00,1500;
+1;f91;fthr:0.00;
+31;yaw:40.91;fthr:0.00
+40yaw:40.91;ftw:40.91;ftfthr:0.BRDT:56.86;SC1I:0BRDI:0.3050;AVCC:5001;
+aw:40.91;fthr:0.00;
+hdgd:40.91;deap:-0.19;pit;yaw:40.91;motorAttached:1;
+servo:1es:996.26;temp:31.33;
+dlms:0|259751|91502|106183|500;
+mtar
+.91;fthr:0.00;
+r:hdgd:40.91;deap:-0.19;pitc:0.91;roll:-4.31;yaw:40.91;fthr:0.00;
+hdgd:40.91;deap:-0.19;pitc:0.90;roll:-4.31;yaw:40.91;fthr:0.00;
+.91;fthr91;fthrBRDT:56.86;SC1I:0.05;SC2I:0.20;SC3I:DI:0.30;BT1I:0.31;B2;AVCC:5001;
+38
+Second-0;pitc:0.90;roll:-4.31;ya9.00;vout:11.52;iout:0.28;atmp:0.0ce2e37595a88fun 29 2014, 18:37:48, 4.7.2
+;time:337825|228936|87417|356798|47867;
+alps:462;
+hdgd:40.91;deap:-0.20;pihdgd:40.91;deap:-0.20;pitc:0.90;roll:-4.31;yaw:40.91;fthr:0.00;
+hdgd:40.91;deap:-0.20;pitc:0.90;roll:-4.31;yaw:400;fthr:0.40.91;fthr:;
+r:0.00;
+.52;AVCC
+m:4369.00;vout:11.53;iout:0.28;atmp:0.00;ver:bcac663b531e6c9c8ce2e37595a88f52b85
+;t4|399265|229026|87447|364778|47900;
+alps:470;
+hdgd:40.91rg:1500,1500,1500;
+91;fthr:0.00;
+thr:0.0;yaw:40.91;fthr:0.00;
+.00;
+;
+;roll:-4
+Second-Ore in Degrees C is 31.35
+4369er:bcaf52b852bbbd 92062|106273|103154|399775|229086|87487|372708|47935;
+alps:462;
+91;deap:-0.20;pitc:0.91;romotors:1500,15000.91;fthr2;yaw:40.9r:0.00;
+hr:0.00;
+05;BRDI:0.29;BT1I:0.67;BTVCC:5001;
+rees C is 31.34
+hdgd:40.9motorAttached:1;
+servo:1500;sta595a88f52b852bbbd  -;cmpd:Jun 29 2.2
+;time:3380972.00;
+pres:9motors:1500,1500,1500;
+mtaw:40.90;ft0.00;
+00;
+aw:40.90;ft0.9.90;fthr:0.00;
+BRDT:56.86;SC1I:0.05;SC2I:0.39;SC3I::0.31;BT1I:0w:40.90;fthr31.39
+hdgd:40.90;deap:-0.19;pitc:0.90;roll:-4.33;yaw:40.90;fthr:0.0motorAttached:1;
+serv:0|259971|92522|106333|103254|400875|229196|87537|388528|47998;
+alps:461;
+00,1500;
+hdgd:40.90;deap:-0.19;pitc:0.90;roll:-4.32;yaw:40.90c:0.90;2;yaw:40.90;fthr:0.00;
+.19;pitc:thr:0.00;.3oll:-4.33;yaw:40.90;fthr:0:40.96.86;SC1I:0.04;S8;BRDV:115001;
+rees C is 31.38econd-Order Temperature in Degrees C is ut:11.53;iout:0.27;atmp:0.00;ver:bca5a88f52b852bbbd  -;cmpd:Jun 48, 4.7.2
+;tim;yaw:40.90;fthr:0.00;
+;yaw:40.90;fth:0.00;
+aw:40.90;fthr:0.00;
+;
+3;yaw:40.90;w00;
+40.90;fthr:0.00;
+DI:0.291;BT2I:0.32;BRDV:11.52;AVCC:5001;
+hdgd:9
+Second-Or6433|103334|402075|229366|87627|404168|48061;
+hdgd:40.91;deap:-0.19;pitc:0.90:000,1500,15g:1500,1500,1500;
+9aw:40.90;fthr:0.090;fthr:0.
+fth4.32;yaw:40.91;f0.00;
+0;BT0.32;BRDV:11.52;AVCC:5001;
+der Temperature in Degrees C is 31.34
+hdgd:4:.90;fthr:0.00;
+motorAttached:1;
+servo:1500;7595a88f52b852bbbd  -;cmpd:Jun 29 2014, 18:37:48, 4.7.2
+awmotors:1500,1500,1500;
+mtarg:1;ft32;yaw:40.90;fthr:0.00;
+.90;fthr:0.00;
+yaw:40.90;ft05;SC2I:0.21;SC3I:0.05I:0.30;BT1I:0.31;BT2I:0.32;BRDV:11.52;Aw:40.89;fthr:0.00;
+motorAttached:1;erature in Degrees C is 3:thr:0.00;
+servo:1500;starg:1581|93332|106503|103374|403085|229546|87657|420138|48128;
+alps:464;
+yaw:40.89;fthr500,1500,1500;
+mtarg:1500,15thyaw:40.89;w:40.89;fthr:0.00;
+89;fthr:0.00;
+w:40.89;fthr:0.00;
+BRDT:56.86;SC1I:0.050.27;BT1I:0.31;BT2I:0.31;BRDV:11001;
+r:0.00;
+econd-Order Tyaw:40.88;fthr:0.00;
+motorAttached.28;atmp:0.00;ver:bcac663b531e6c9c8ce 7027.00;
+pres:998.55;temp:31.34;
+dlms:0|260131|93552|106523|103414|403585|229636|87707|427918|48167;
+alps:46;
+hdgd:40.88;deap:-0.17;pitc:0.9;fthr:0.00;
+aw:40.88;fthr:0.88;f0;
+thr:0.00r:0thr:0.00;
+fthr:0B20;SC3I:0.05;BT2I:0.32;BRDV:11.52;AVCC:5001;
+.31;yaw:40.88;fthr:0.00;
+ emperature in Degrees C is 31.34
+0;
+fmem:4369.00;re|229676|87717|435868|48204;
+alps:466;
+hdgd:40.88;deap:-0.19;pitcmotor,1500;
+40.87;fthr:0.00;1500;
+w:40.87;fthr:0.00;
+87;fthr:0.00;
+.05;BRDI:0.30;BT1I1hdgd:40.87;deap:-0.19;pitc:0.9d-Odgd:40.87;deap:-0w:40.87;fthbbbd  -;cmpde:3388961.00;
+hdgd:40.87;deap:-0.18;pitc:0.90;roll:-4.32;yaw:40.87;fthr:0.00;
+.87;ftaw:40.87;f0.18;pitc:0.90;roll:-4.387;fthr:0.00;
+1.38
+Second-Order Tempp:-0.19;pitc:0.90;roll:-4.31;yaw:40.r:0.00;
+0;vout:11.52;iout:0.29;atmp:0.00;ver:bcacf52b8e:3390001.00;
+pres:996.53;temp:31;roll:-4.motors:1500,1500,1500;
+mtarg:1500,1500,1500;
+40.87;fthr:0.00;
+f0;
+40.86;fthr:0;
+-Order Temperature in egrees C is 31.33
+roll:-4.32;yaw:40.86fthr:0.00;
+starg:1500;
+fmem:4369.00;vout:117.2
+;time:3391022.00;
+pres:997.4hdgd:40.86;deap:-0.18;pitc:0.90;roll:-4.32;yaw:40.86;fthr:0.00;
+motors:1500,1500,1500;
+mtarg:1500,1500,1500;
+40.86;fthr:0.000.85;fthr:040.85;fthr:0.00;
+aw:40.85;fthr:2;yaw:40.8:0.00;
+SC2I:0.20;SC3I:0.05;BRDI:05001;
+:40.85;fthr:0.00;
+in Degrees C is 31.34
+00;
+motorAttached:1;
+servo:15;cmpd:Jun 29 2014, 18:37:48, 4.7.2
+;time:31500,1500,1500;
+:0.90;roll:-4.33;yaw:0.0.20;:40.84;deap:-0.19;pitc:0.90;roll:-4.32;yaw:40.84;fthr:0.00;
+Temperature ees C is 31.33
+:4369.00;voutmp:0.00;ver:bcac663b531e62e37595a88f52bpd:Jun 29
+hdgd:40.84;deap:-0.19;pitc:0.90;rollmotors:1:40.84;f84;deap:-0.19;pityaw:40.84;fthr:0.00;
+0-4.31;yaw:40.83;ft0;BT1I:0.hdgd:40.83;deap:-0.19;pitc:0.91;roll:-4.31;yaw:40.8Second-Order Temperature in Degrees C is 31.33
+hdgd:4m:4369.00;vou318f52b852bbbd  -;cmpd:Jun 29 2014, 18:37:48, 4.7
+;time:3393975.00;
+prhdgd:40.83;deap:-0.19;pitc:0.91;roll:-4.31;yaw:40.83;00;
+targ:1500,1500,1500
+3.00;
+-4.32;yaw:40.82;f.32;yaw:40fthr:0.00;
+;r:0.00;
+nd-Order Temperature in Degrees C is 31.35
+2;deap:-0.20;pitc:0.90;roll:-4.33;yaw:40.;fthr:0.00;
+4369.00;vout:11.53;ioaime:3395015.00;
+pres:995.70;temp:31.35;
+dlms:0|26090;roll:-4.33;yaw:4000;
+motors:1500,1500,1500;,1500,1500;
+4.33;yaw:40.thr:0.00;
+;yaw:40.82;fthr:0.00;
+0.82;fthr:0.00;
+thr:0.00;
+81;fthr:0.00;
+rature in Degrees C is 31.35:0.00;
+hdgd:4.90;roll:81;fthr:0.00;
+:1500;starg:1500;
+fmem:4369.00;vout:11997.13;temp:31.35;
+dlms:0|260551|95342|106783|103634;fthr:0.ors:1500,1500,1500;
+mtarg:1500,1500hr:0.00;
+hrhr:0.00:0.00;
+aw:40.80;fthr:0.00;
+:0.00;
+BRDT:56.C3I:0.0652;AVCC:;
+w:40.80;fth
+ure in Degrees C is 31.33
+aw:motorAttached:1;
+ser|95572|106833|103674|408865|230256|8792mtarg:1500,1500,1500;
+hdgd:40.80;deap:-0.19;;roll:-4.31;yaw:40.8thr:r:0.00;
+:40.80;fthr:0.00;
+40.80;fthr:0.00;fthr:0.00;
+:-4.32;yaw:40.79;BRDT:56.86;SC1I:0.06;SC2I:0.21;.28;BT1I:0der Temperature in Degrees C is 31.35
+m:4369.00;vout:11.465a88f57:48, 4.7.16|87967|514deap:-0.19;pitc:0.90.00;
+hdgd:40r80;w:40.80;ft
+aw:40.80;fthr:0.00;
+:40.80;fthr0.00;
+aw:40.80;fthr:0.01I:2;AVCC:5001;
+:0.90;roll:-4.32;yaw:40.80cond-Order Temperature in Degrees C is 31.33
+hdgd:40.80;deap:-0.19;p6;ver:bcac695a88  -;cmpd:Jun 29 2014, 18989.00;
+pres:996.25;temphdgd:40.80;deap:-0.19;pit:40.80;fth:40.80;fth
+.79;fth4.32;yaw:40.80;fthr91;roll:-4.1;BT2I:0.32;BRDV:11.52;AVCC:5001;
+4.32;yaw:40.;fthr:0.00;
+rder Temperature in Degrees C is 31.3hdgd:40.80;deap:-0.21;pitc:0.90;oll:-4.32;yaw:40.80;fthr:0.00;
+iout:0.29;atmp:0.00;ver:bb8e2;
+d.90;roll:-4.3motors:1500,1500,1500;
+mtarg:.2;yaw:40.80:0.00;
+ap:-r:0.00;
+2;yaw:40.81;fthr:0.00;
+fthr:0.00;
+4.32;yaw:40.81;fthr:0..33;BRDV:11.52;AVll:-4.32;yaw:40.81;fder Temperatus C is 31.34
+:40.motorAttached:1;
+servo: 29 2014,;
+mthfthr:0.00;
+.00;
+0.82;fthr:0.00;
+82;fthr:0.00;
+BRDT:56.86;S5;BRDI:0.30;BT1I;BRDV:11.52;40.82;fthr:0.00;
+s 31.40
+Second-Order Te;deap:-0.19;pitc:0.9ll:-4.31;yaw:40.82;fthr:0.00;
+motorAttached:1;
+se65.00;
+pres:996.26;temp:31.34;
+dlms:0|260861|9670;
+yaw:40.82;fthw:40.82;f2;ft82;fthr:0.00;
+82;fthr:0.00;
+ftBRDT:56.86;SC1I:0.06;SC2I:0.21;SC3I:0.
+2;fthr:0.0First-Order Tempeecond-Order TC is 31.33
+ervo:1500;st9.00;vout:11.28;iout:0.27;atp:0.00;ver:bcac663b531e6c9c8340308ms:0|260891|96972|106983|103824|4125|230736|88237|55384dgd:40.82;l:-4.32;yaw:40.8:40.82;deap:-0.19;pitc:0.91;roll:-4.32;yaw:40.82;fthr:0.00;
+ll:-4.32;yaw:40.8;yaw:40.83;fthr:0r:0.00;
+;yaw:40.83;fthr:0.00;
+40.8300;
+l:-4.32;yaw:40.83;fthr:
+;BT2I11.40;AVCC:5001;
+hdgd:40.83;deap:-0.19;pitc:yaw:40.31.39
+Second-500;
+fmem:4369.00e:3404041.00;
+pres:995.68;temp:31.33;
+dlms:hdgd:40.84;deap:-0.20;pitc:0.91;roll:-4.32;yaw:4000;
+mtarg:1500,1500,1500;
+83;deap:-0.20;pitc:0.91hr:0.00;
+thr:0.00;
+
+aw:40.830.122I:0.3C:5001;
+;iout:0.283b531e6c9c8ce2e3 -;cmpd:Jun 29 2014, 1;40.83;fthr:0.00;
+;pitc:0.91;;yaw:40.83;fthr:0.00;
+0;
+raw:40.84;ft:0.00;
+;C32;BRDV:11.5Second-Order Temperature in Degree3;yaw:40motorAttached:1;
+lms:0|261021|97682|107113|103954|413675|230956|88297|577548|48832;
+alps:462;
+hd.00;
+ll:-4.33;yaw:40.83;fthr:0.00;
+.83w:40.83;fth83;fthr:0.00;
+aw:40.82;ftBRDT:56.86;SC1I:0.09;SC2I:0.24;SC3I:0.07;BRDI:4979;
+w:40.82;fthr:0.00;
+Temperature in Degrees C is 382;fthr:0.00;
+00;
+fmem:436hdgd:40.82;deap:-0.19;pitc:0.90;roll:-4.33;yaw:403;yaw:40.82;fthr:3;yaw:40.hdgd:40.82;deap:-0.19;pitc:0.91;roll:-4.33;yaw:40.82;fthr:0.00;
+:40.82;fthr:;yaw:40.82;ft2;fthr:0.00;
+w:40.82;SC2I:0.21;SC3I:0.0.82;First-Order Temperature in Dd-Order Temperature in Degrees C is 31.34
+00;starg:1500;
+fmem:4369
+dlms:0|261131|98152|107213|104004|414835|231116|88347|593108|48896;
+alps:463;
+hdgd:40.82;deap:-0.19;pitc:0.90;roll:-4.33;yaw:40.82;fthr:0.00;
+-4.33;yaw:40.82;f.00;
+81;deap:-0.19;pitc:0.91;roll:-4.34;yaw:40;fthr:0.00;
+0.81;fthr:0.00;
+;fthr:0.0.81;fthr;
+0.32;BRDV:11.52;AVCC:5001;
+eap:-0.19;pitc:0.90;rOrder Tempera:40.81;deap:-0.19;pitc:0.90;roll:-4
+1500;starg:1500;
+fmem:4369.00;vo014, 18:37:48, 4.7.2
+;time:3409064.00;
+motors:140.81;deap:-0.1hr:0.00;
+mttc:0.90;roll:thr:0.00;
+00;
+40.80;fthr:40.80;fthr:0.00;
+hr:0.00;
+32;yaw:40.80;f.00;
+2;yaw:40.80;fthr
+0.29;BT1I:T2I:0.31;BRDV:11.52;AVCC:5001;
+.32;yaw:40.80;fthr:0.00;
+9
+Second-Ordl63b531e6c9c8cc
+;time:3410082.emp:31.33;
+dlms:0|261261|985.19;pitc:0.90;roll:-4.32;yaw:40.80;fhr:0.00;
+0;fth2;yaw:40.8hr:0.00;
+hr:0.00;
+32;yaw:40.79;00;B2;yaw:40.71.39
+Secon;deoll:-4.32;yaw:40.79;fthr:0.00motorAttached:1;
+sJun 29 2014, 18:37:48, 4.7.2
+;timeg:1500,1500,1500;
+hw:40.79;fthr:0.00;
+-4.32;yaw:40.79;
+40.79;fthr:0.00;
+aw:40.79;fth.33;yaw:40.79;ft0;
+4.32;yaw:40.7fthr:0.00;
+rBRDT:56.86;SC1I:0.04;SC2I:0.35;SC3I:0.00;BRDI:0.30;BT1I:0.47.41;BRDV001;
+ -Order TemperatumotorAttached:1;
+servo:1500;st;time:34emp:31.33;
+dlms:0|261341|9targ:1500,1500,1500;
+-4.32;yaw:40.78;32;yaw:40.78;fthr:0.0r:0
+;yaw:40.782I:0.27;SC3I:0.08;BRD:0.00;
+First-Order Temperature in Degrees der T8f52b8me:3413057.00;
+;res:995.41;temp:31.34;
+hdgd:40.78;deap:-0.20;pitc:0.90;roll:-4.32;yaw:40.70,1500;
+.78;fthr:fthr;fthr:0.00;
+
+0.77;fth;
+2;yaw:40.77;fthr:0.00DI:0.28;BT1.32;BRDV:11.52;AVCC:4979;
+32;yaw:40.77;fthr:0.00;
+is 31.38
+Second-m:4369.00;vout:11.52;iout:0.29;atmbcac663b531e6c9c8ce2e37595a88f 29 201414083.00;
+pres:995.68;temp:3hdgd:40.77;deap:-0.20;pitc:0.9motors:1500,1500,1500;
+yaw:40.77;ft.00;
+aw:40.77;ftroll:-4.31;yaw:40.77;ft:0.00;
+fw:40.77;fthr:0BT1I:;BRDV:11.52;AVCC:5001;
+;roll:-4.31;yaw:40.7;fthr:0.00;
+.39
+Second-;pitc:0.9:-4.31;yaw:40.77;fth:4369.00;vout:11.53;io6;atmp:0.00;ver:bcac663ba88f52b852bbbd  -;cmpd:Jun 29 201
+;pres:995.97;temp:31.34;
+hdgd:40.77;deap:-0.1;roll:-4.31;yaw:40.77;fth00;
+500,1500;
+:-4.31;yaw:40.77;.00hdgd:47aw:40.76;0;
+fthr:0.00;
+yaw:40.76.00;
+1;yaw:40.
+Seconhdgd:40.76;deap:-0.motorAttached:1;
+servo:1500;cmpd:Jun 29 2014, 18
+alps:458;
+00,1500;
+
+75;fthr:0.00
+4.31;yaw:40.75;fthr:0.00;
+1;yaw:40.75;ftaw:40.75;fthBRDT:56.86;SC1I:0.05;SC2I:0.20;SC3I:0.05;BRD;BT1I:0.31;BT2I:0.32;BRDV;;mperature in Degreer Temperature in Degrees rAttached:0;vout:11.52;iout:0.28;atmp:0.00;ver:bcac37595a88f52b852bbbd 4, 18:37:48, 4.7.2
+;time:3417042hdgd:40.7;f1;yaw:40.74;fth.00;
+r:0.00;
+th40.73;fthr:0.SC2I:0.20;SC3I:0.05;BRDI:0.30;BT1I:0.32;BT2I:0.32;BRDV:11.48;AVCC:5001;
+First-Order TDegrees C is 31.39
+Se52b852bbb18073.;
+dlmarg:1500,1500,1500;
+r1;yaw:40.73;fthr:0.0yaw:40.7thr:0.00;
+BRDI:0.3024;AVCC:5001;
+hdgd:490;roll:-4
+Second-Or500;
+fmem:4369.00;vout:11.582|107563|104494|420815|231896|88667|24598|49260;
+alpshdgd:40.72;deap:w:40.72motors:1500,1500,1500;
+mtarg72;deap:-0.19;pitc:0.90;roll:-4.32;yaw:40.72;fthr:0.00;
+thr:0.00;
+aw:40.700;
+aw:40.72;f:0.00;
+:40.72;r:0.00;
+DI:0.28;BTfthr:0.00;
+d-Order Temperature in Degrees C is 31.34
+hdgd:40.71;deap:-0.19;pitc:09.00;vout:11.53;bcac663b531e6c9c52bbbd  -;cmpd:J:342lms:0|261761|100822|107573|104514|421435|231976|886s:462;
+thr:0.00,1500;
+mtarg:1pitc:0.91;roll:-4.33;ya71;fthr:0.00;
+aw:40.71;fthr:0.00;
+hdgd:40.71;deap:-0.19;pitc:0.91;roll:-4.33;yaw:40.71;fthr:0.00;w:40.71;fthr:0.00;
+2;yaw:40.71;fthr:0.00;
+BRDT:56.86;SC1I:0.04;SC2Il:-4.33;yaw:40.71;fthr:0.00;
+rmotorAttached:1;
+serv8;atmp:0.00;ver:bcac663b5310;
+pres:996.55;temp:31500,1500,1500;
+;fthr:0.00;
+:-4.33;yaw:40.71;fthr:r:0.19;pitc:0.91;roll:-
+BRDT:56.86;SC1I:0.05;SC2I:0.20;SC3I:0.05;BRDI:0.29;BT1I:0.31DV:;yaw:40.71;fthr:0.00 in De5
+fmem:4369.00;vout6c9c8ce2e37598f52b852bbbd  -;cm014, 18:37:48,00;
+pres:995.99;temp:;yaw:40.71;fthr:0.00;
+hr:0.0040.71;fthr:0.00;
+RDI:0.30;BT5001;
+hdgd:40.71;deap:-0.19;pitc:0.91;roll:-0.00;

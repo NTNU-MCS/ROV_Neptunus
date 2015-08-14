@@ -1,0 +1,266 @@
+<html>
+
+<head>
+	<title>Neptunus</title>
+
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+
+
+	<!-- styles needed by jScrollPane -->
+	<link type="text/css" href="libraryes/jquery.jscrollpane.css" rel="stylesheet" media="all" >
+	<link type="text/css" rel="stylesheet" href="libraryes/jquery_ui_11_4/jquery-ui.css">
+
+
+	<link href="styles.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+
+		<!-- Background video -->
+		<div class="videoDiv">
+			<div  id="video_container" class="video_container">
+						<img id="videostream" class="videostream">
+			</div>
+		</div>
+
+		<!-- Div with neptunus and compass 3d models -->
+		<div class="animation_model" id="animation_model">	</div>
+
+		<!-- Div with heading "wheel" -->
+		<div class="heading_box" id="heading_box">
+			<table class="heading_table" id="heading_table">
+				<td class="heading_1 heading_inni" id="heading_1"> </td>
+				<td class="heading_2 heading_inni" id="heading_2"> </td>
+				<td class="heading_3 heading_inni" id="heading_3"> </td>
+				<td class="heading_4 heading_inni" id="heading_4"> </td>
+				<td class="heading_5 heading_inni" id="heading_5"> </td>
+				<td class="heading_6 heading_inni" id="heading_6"> </td>
+				<td class="heading_7 heading_inni" id="heading_7"> </td>
+				<td class="heading_8 heading_inni" id="heading_8"> </td>
+				<td class="heading_9 heading_inni" id="heading_9"> </td>
+				<td class="heading_10 heading_inni" id="heading_10"> </td>
+				<td class="heading_11 heading_inni" id="heading_11"> </td>
+			</table>
+		</div>
+
+		<!-- Div with depth wheel -->
+		<div class="depth_box" id="depth_box" style="display: table;">
+			<div style="display: table-cell; vertical-align: middle;">
+	       <div>
+					<p class="depth_1 depth_p" id="depth_1"> </p>
+					<p class="depth_2 depth_p" id="depth_2"> </p>
+					<p class="depth_3 depth_p" id="depth_3"> </p>
+					<p class="depth_4 depth_p" id="depth_4"> </p>
+					<p class="depth_5 depth_p" id="depth_5"> </p>
+					<p class="depth_6 depth_p" id="depth_6"> </p>
+					<p class="depth_7 depth_p" id="depth_7"> </p>
+	       </div>
+	     </div>
+		</div>
+
+		<!-- Heading and depth arrow pictures -->
+		<div class="depth_arrow_rigth arrow_div" id="depth_arrow_rigth">
+			<img class="arrow_img" src="images/arrow-right.png">
+		</div>
+		<div class="depth_arrow_left arrow_div" id="depth_arrow_left">
+			<img class="arrow_img" src="images/arrow-left.png">
+		</div>
+		<div class="heading_arrow_up arrow_div" id="heading_arrow_up">
+			<img class="arrow_img" src="images/arrow-up.png">
+		</div>
+		<div class="heading_arrow_down arrow_div" id="heading_arrow_down">
+			<img class="arrow_img" src="images/arrow-down.png">
+		</div>
+
+		<!-- Div with Thruster info -->
+		<div class="Thruster_info" id="Thruster_info">
+				<p id="Port_thrust"> Port: 0% </p>
+				<p id="Strb_thrust"> Strb: 0% </p>
+				<p id="Heave_thrust"> Heave: 0% </p>
+		</div>
+
+		<!-- Top bar with info -->
+		<div class="top-bar" id="top-bar">
+			<table class="top-table">
+				<td class="td_top_bar"> battery left: ?? </td>
+				<td class="td_top_bar"> info bar: ?? </td>
+				<td class="td_top_bar lights_info" id="lights_info"> Light OFF </td>
+				<td class="td_top_bar"> info bar: ?? </td>
+				<td class="td_top_bar"> info bar: ?? </td>
+				<td class="td_top_bar controlMode_info" id="controlMode_info"> Control Mode: joystick</td>
+			</table>
+		</div>
+
+		<!-- Dissapering bottom bar with buttons -->
+		<div class="bottom_box" id="bottom_box">
+			<div class="bottom_inni" id="bottom_inni">
+
+				<button id="lights_button">Light OFF</button>
+
+				<button id="dev_page_button"> Dev Page</button>
+
+				<!-- Placeholder, easy to imlement new buttons -->
+
+				<!--button id="imu_button"> IMU ON </button>
+
+	      <button id="dvl_button"> DVL ON </button>
+
+	      <button id="pressure_button"> Pressure ON </button-->
+
+				<button id="hide_show_panels"> Hide Panels </button>
+
+				<button id="hide_show_info">Hide Info</button>
+
+				<label for="controlMode_selecter">Control mode: </label>
+				<select name="controlMode_selecter" id="controlMode_selecter" class="controlMode_selecter">
+					<option value="default">keyboard</option>
+					<option value="joystick" selected="selected">X-box controller</option>
+					<!--option value="default">touchpad</option--> <!-- Not implemented -->
+				</select>
+			</div>
+		</div>
+
+		<!-- Dev mode container -->
+		<div id="devModeContainer">
+				<button id="return_button" class="return_button"> Hide </button>
+
+				<h2>Dev mode :</h2>
+
+			<div class="first-half">
+
+				<p>
+				Plot measurement:
+				<select id="measurementDropdown">
+					<option>Depth [m]</option>
+					<option>Roll [deg]</option>
+					<option>Pitch [deg]</option>
+					<option>Heading [deg]</option>
+					<option>Voltage [V]</option>
+					<option>Current [mA]</option>
+				</select>
+
+				Plot command:
+				<select id="commandsDropdown">
+					<option>Port thruster [1000, 2000]</option>
+					<option>Vertical thruster [1000, 2000]</option>
+					<option>Starboard thruster [1000, 2000]</option>
+					<option>Surge [-1, 1]</option>
+					<option>Yaw [-1, 1]</option>
+					<option>Heave [-1, 1]</option>
+				</select>
+
+				Plot estimated state:
+				<select id="estimatedStatesDropdown">
+					<option>Estimated Depth</option>
+					<option>Estimated Roll</option>
+					<option>Estimated Pitch</option>
+					<option>Estimated Heading</option>
+				</select>
+
+				</p>
+
+				<button id="deleteGraphs">Remove graphs</button>
+				<button id="resetGraphs">Reset graphs</button>
+
+				Plot simulated eta:
+				<select id="etaDropdown">
+					<option>Simulated x [m]</option>
+					<option>Simulated y [m]</option>
+					<option>Simulated depth [m]</option>
+					<option>Simulated heading [rad]</option>
+				</select>
+
+				Plot simulated nu:
+				<select id="nuDropdown">
+					<option>Simulated u [m/s]</option>
+					<option>Simulated w [m/s]</option>
+					<option>Simulated r [rad/s]</option>'
+				</select>
+
+			</div>
+
+			<div class="second-half">
+
+				Add to logger: <select id="scrollPaneContentDropdown"></select>
+
+				Remove: <select id="scrollPaneRemoveDropdown"></select>
+
+
+				<ul id="scrollPaneContent">
+
+				</ul>
+
+			</div>
+
+
+			<div class="chartBox">
+
+
+				<div id="chartContainer1" class="chartContainer">
+				</div>
+
+				<div id="chartContainer2" class="chartContainer">
+				</div>
+
+				<div id="chartContainer3" class="chartContainer">
+				</div>
+
+				<div id="chartContainer4" class="chartContainer">
+				</div>
+
+
+				<div id="chartContainer5" class="chartContainer">
+				</div>
+
+				<div id="chartContainer6" class="chartContainer">
+				</div>
+
+				<div id="chartContainer7" class="chartContainer">
+				</div>
+
+				<div id="chartContainer8" class="chartContainer">
+				</div>
+
+				<div id="chartContainer9" class="chartContainer">
+				</div>
+
+				<div id="chartContainer10" class="chartContainer">
+				</div>
+
+			</div>
+
+
+			<div class="scroll-pane">
+				<p>
+					Log:
+				</p>
+			</div>
+		</div>
+
+
+
+
+
+	<!-- Load packages and js files -->
+
+	<script src="libraryes/jquery.min.js"></script>
+	<script src="libraryes/jquery_ui_11_4/jquery-ui.min.js"></script>
+	<script src="libraryes/three.min.js"></script>
+	<script type="text/javascript" src="libraryes/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="libraryes/jquery.jscrollpane.min.js"></script>
+	<script type="text/javascript" src="libraryes/canvasjs.min.js"></script>
+
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="libraryes/gamepad.js"></script>
+	<script src="animasjon.js"></script>
+	<script src="dev_client.js"></script>
+	<script src="client.js"></script> <!-- This should be the last script to be executed -->
+
+
+
+</body>
+
+</html>

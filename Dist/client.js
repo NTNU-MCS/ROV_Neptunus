@@ -1,4 +1,4 @@
-var inputMode = "default"; // {"default", "joystick", "oculus"}. default is keyboard or touchpad. 
+var inputMode = "default"; // {"default", "joystick", "oculus"}. default is keyboard or touchpad.
 var controlMode = "motion"; // {"motion", "manual", "DP"}
 var runMode = "normal"; // {"normal", "simulation"};
 var keysPressed = [false, false, false, false, false, false];
@@ -9,13 +9,12 @@ var epsilon = 0.1;
 
 
 
-
 // ########################
-//							
+//
 // Handle the panel to the bot left;
-// forms, buttons, measurement etc. 
-// 
-// ######################## 
+// forms, buttons, measurement etc.
+//
+// ########################
 
 function handleRunModeChange(){
 	var form = document.runModeForm;
@@ -45,7 +44,7 @@ function handleInputModeChange(){
 	form.elements[0].onclick = function(){
 		if(inputMode != "default"){
 			inputMode = "default";
-			
+
 			io.emit("command", {type:"stop"});
 			displayInScrollWindow({logType:"Stop", data: "Input mode changed. Stopping."});
 		}
@@ -54,7 +53,7 @@ function handleInputModeChange(){
 	form.elements[1].onclick = function(){
 		if(inputMode != "joystick"){
 			inputMode = "joystick";
-			
+
 			io.emit("command", {type:"stop"});
 			displayInScrollWindow({logType:"Stop", data: "Input mode changed. Stopping."});
 		}
@@ -64,7 +63,7 @@ function handleInputModeChange(){
 	form.elements[2].onclick = function(){
 		if(inputMode != "oculus"){
 			inputMode = "oculus";
-			
+
 			io.emit("command", {type:"stop"});
 			displayInScrollWindow({logType:"Stop", data: "Input mode changed. Stopping."});
 		}
@@ -77,7 +76,7 @@ function handleControlModeChange(){
 	form.elements[0].onclick = function(){
 		if(controlMode != "motion"){
 			controlMode = "motion";
-			
+
 			willEnableMotionControlFunctions(true);
 			setControlImages("motion");
 			io.emit("command", {type:"stop"});
@@ -88,7 +87,7 @@ function handleControlModeChange(){
 	form.elements[1].onclick = function(){
 		if(controlMode != "manual"){
 			controlMode = "manual";
-			
+
 			willEnableMotionControlFunctions(false);
 			setControlImages("manual");
 			io.emit("command", {type:"stop"});
@@ -99,7 +98,7 @@ function handleControlModeChange(){
 	form.elements[2].onclick = function(){
 		if(controlMode != "DP"){
 			controlMode = "DP";
-			
+
 			willEnableMotionControlFunctions(false);
 			setControlImages("motion");
 			io.emit("command", {type:"stop"});
@@ -217,25 +216,26 @@ function handleGainButton(){
 
 
 function displayMeasurement(data){
-	if(!isNaN(parseFloat(data.deap/1))){
+
+	if(data.deap){
 			var depthValueElement = document.getElementById("depthValue");
 			depthValueElement.innerHTML = ("Depth value is : "+ data.deap);
 	}
 
-	if(!isNaN(parseFloat(data.hdgd/1))){
+	if(data.hdgd){
 		var headingValueElement = document.getElementById("headingValue");
 		headingValueElement.innerHTML = ("Heading value is : "+ data.hdgd);
 	}
 }
 
 // ########################
-//							
+//
 // Handle touch screen control
-// 
-// ######################## 
+//
+// ########################
 
 function makeTouchEventHandlers(){
-	document.body.style.webkitTouchCallout='none'; // By default, a popup will appear to "save image" when pressing on image on tablet. 
+	document.body.style.webkitTouchCallout='none'; // By default, a popup will appear to "save image" when pressing on image on tablet.
 
 	handleTouch("forward", "pos", "surge", "port");
 	handleTouch("backward", "neg", "surge", "port");
@@ -267,7 +267,7 @@ function handleTouch(element, value, direction, thruster){
 
 function handleTouchStart(element, val, dir, thruster){
 	if(controlMode == "motion"){
-		sendTouchPress(val, dir, "keydown");	
+		sendTouchPress(val, dir, "keydown");
 	}
 	else if (controlMode == "manual"){
 		handleManualTouchPress(element, val, thruster, "keydown");
@@ -276,7 +276,7 @@ function handleTouchStart(element, val, dir, thruster){
 
 function handleTouchEnd(element, val, dir, thruster){
 	if(controlMode == "motion"){
-		sendTouchPress(val, dir, "keyup");	
+		sendTouchPress(val, dir, "keyup");
 	}else if(controlMode == "manual"){
 		handleManualTouchPress(element, val, thruster, "keyup");
 	}
@@ -291,11 +291,11 @@ function handleManualTouchPress(element, val, thruster, keypress){
 			sendTouchPressManualControl("pos", thruster, keypress);
 			break;
 		case "up":
-			sendTouchPressManualControl("pos", thruster, keypress); 
+			sendTouchPressManualControl("pos", thruster, keypress);
 			break;
 		case "down":
 			sendTouchPressManualControl("neg", thruster, keypress);
-			break;	
+			break;
 		default:
 			sendTouchPressManualControl(val, thruster, keypress);
 			break;
@@ -305,14 +305,14 @@ function handleManualTouchPress(element, val, thruster, keypress){
 function sendTouchPress(val, dir, keyPress){
 	var command = {type: "thrust-command", input: "default", controlmode: controlMode, val: val, keypress: keyPress, dir: dir};
 	io.emit("command", command);
-	displayInScrollWindow({logType:"Thrust command (client)", data:"Thrust command from client. Input: default (touch). controlmode (expected:motion):" + 
+	displayInScrollWindow({logType:"Thrust command (client)", data:"Thrust command from client. Input: default (touch). controlmode (expected:motion):" +
 				controlMode + ". Value:" + val + ". Keypress:" + keyPress + ". Direction:" + dir + "."});
 }
 
 function sendTouchPressManualControl(val, thruster, keyPress){
 	var command = {type: "thrust-command", input: "default", controlmode: controlMode, val: val, keypress: keyPress, thruster: thruster};
 	io.emit("command", command);
-	displayInScrollWindow({logType:"Thrust command (client)", data:"Thrust command from client. Input: default (touch). controlmode (expected:manual):" + 
+	displayInScrollWindow({logType:"Thrust command (client)", data:"Thrust command from client. Input: default (touch). controlmode (expected:manual):" +
 				controlMode + ". Value:" + val + ". Keypress:" + keyPress + ". thruster:" + thruster + "."});
 }
 
@@ -340,7 +340,7 @@ function initXBOXControllerHandler(){
 
     gamepad.bind(Gamepad.Event.BUTTON_DOWN, function(e) {
         // e.control of gamepad e.gamepad pressed down
-        console.log("button down. control: " + e.control); 
+        console.log("button down. control: " + e.control);
         if(inputMode == "joystick"){
         	if(controlMode == "manual"){
         		handleShoulderButtons(e, 1);
@@ -362,8 +362,8 @@ function initXBOXControllerHandler(){
         // e.axis changed to value e.value for gamepad e.gamepad
         console.log("axis changed. axis: " + e.axis + ". value : " + e.value);
         if(inputMode == "joystick"){
-        	checkIfInitialized(e);	
-        	if(e.value > epsilon || e.value < -epsilon){ // Avoid sending thrust commands when not using. 
+        	checkIfInitialized(e);
+        	if(e.value > epsilon || e.value < -epsilon){ // Avoid sending thrust commands when not using.
         		processStickInput(e);
         	}else{
         		checkPrevious(e, epsilon);
@@ -383,8 +383,8 @@ function initXBOXControllerHandler(){
     }
 }
 
-function processStickInput(e){ 
-	
+function processStickInput(e){
+
 	if(controlMode == "motion"){
 		var dir;
 		switch(e.axis){
@@ -394,7 +394,7 @@ function processStickInput(e){
 				break;
 			case "RIGHT_STICK_Y":
 				dir = "surge";
-				sendJoystickCommandMotion(-e.value, dir); // Y axis is positive downwards. 
+				sendJoystickCommandMotion(-e.value, dir); // Y axis is positive downwards.
 				break;
 			case "LEFT_STICK_Y":
 				dir = "heave";
@@ -403,7 +403,7 @@ function processStickInput(e){
 			default:
 				return;
 		}
-		displayInScrollWindow({logType:"Thrust command (client)", data:"Thrust command from client. Input: joystick. controlmode (expected:motion):" + 
+		displayInScrollWindow({logType:"Thrust command (client)", data:"Thrust command from client. Input: joystick. controlmode (expected:motion):" +
 				controlMode + ". Value:" + e.value + ". Direction:" + dir + "."});
 
 	}else if(controlMode == "manual"){
@@ -411,7 +411,7 @@ function processStickInput(e){
 		switch(e.axis){
 			case "RIGHT_STICK_Y":
 				thruster = "starboard";
-				sendJoystickCommandManual(-e.value, thruster); // Y axis is positive downwards. 
+				sendJoystickCommandManual(-e.value, thruster); // Y axis is positive downwards.
 				break;
 			case "LEFT_STICK_Y":
 				thruster = "port";
@@ -429,13 +429,13 @@ function processStickInput(e){
 				return;
 		}
 
-		displayInScrollWindow({logType:"Thrust command (client)", data:"Thrust command from client. Input: joystick. controlmode (expected:manual):" + 
+		displayInScrollWindow({logType:"Thrust command (client)", data:"Thrust command from client. Input: joystick. controlmode (expected:manual):" +
 				controlMode + ". Value:" + e.value + ". Thruster:" + thruster + "."});
-	}	
+	}
 }
 
 function sendJoystickCommandManual(value, thruster){
-	var command = {type: "thrust-command", input: "joystick", controlmode: controlMode, val: value, thruster: thruster}; 
+	var command = {type: "thrust-command", input: "joystick", controlmode: controlMode, val: value, thruster: thruster};
 	io.emit("command", command);
 }
 
@@ -505,26 +505,26 @@ function checkIfInitialized(e){
 
 function handleShoulderButtons(e, keydown){
 	if(e.control == "LEFT_BOTTOM_SHOULDER"){
-		var command = {type: "thrust-command", input: "joystick", controlmode: controlMode, val: -1*keydown, thruster: "vertical"}; 
+		var command = {type: "thrust-command", input: "joystick", controlmode: controlMode, val: -1*keydown, thruster: "vertical"};
 		io.emit("command", command);
-		displayInScrollWindow({logType:"Thrust command (client)", data:"Thrust command from client. Input: joystick. controlmode (expected:manual):" 
+		displayInScrollWindow({logType:"Thrust command (client)", data:"Thrust command from client. Input: joystick. controlmode (expected:manual):"
 			+ controlMode + ". Value:" + (-1*keydown).toString() + ". Thruster: starboard"});
 		console.log("left shoulder, keydown:" + keydown)
 	}
 	else if(e.control == "RIGHT_BOTTOM_SHOULDER"){
 		var command = {type: "thrust-command", input: "joystick", controlmode: controlMode, val: 1*keydown, thruster: "vertical"};
 		io.emit("command", command);
-		displayInScrollWindow({logType:"Thrust command (client)", data:"Thrust command from client. Input: joystick. controlmode (expected:manual):" 
+		displayInScrollWindow({logType:"Thrust command (client)", data:"Thrust command from client. Input: joystick. controlmode (expected:manual):"
 			+ controlMode + ". Value:" + (keydown).toString() + ". Thruster: starboard"});
 	}
 }
 
 
 // ########################
-//							
+//
 // Handle keyboard input
-// 
-// ######################## 
+//
+// ########################
 
 
 function initKeyPressHandler(){
@@ -548,7 +548,7 @@ function initKeyPressHandler(){
 				}
 			}
 		}
-	});	
+	});
 }
 
 
@@ -591,7 +591,7 @@ function handleKeyPress(keyValue, pressType){
 
 		var command = {type: "thrust-command", input: "default", controlmode: controlMode, val: value, keypress: pressType, dir: direction};
 		io.emit("command", command);
-		displayInScrollWindow({logType:"Thrust command (client)", data:"Thrust command from client. Input: default (keyboard). controlmode (expected:motion):" 
+		displayInScrollWindow({logType:"Thrust command (client)", data:"Thrust command from client. Input: default (keyboard). controlmode (expected:motion):"
 			+ controlMode  + ". Value: " + value + ". Keypress: " + pressType + ". Direction:" + direction});
 
 	}else if(controlMode == "manual"){
@@ -628,7 +628,7 @@ function handleKeyPress(keyValue, pressType){
 
 		var command = {type: "thrust-command", input: "default", controlmode: controlMode, val: value, keypress: pressType, thruster: thruster};
 		io.emit("command", command);
-		displayInScrollWindow({logType:"Thrust command (client)", data:"Thrust command from client. Input: default (keyboard). controlmode (expected:manual):" 
+		displayInScrollWindow({logType:"Thrust command (client)", data:"Thrust command from client. Input: default (keyboard). controlmode (expected:manual):"
 			+ controlMode  + ". Value: " + value + ". Keypress: " + pressType + ". Thruster:" + thruster});
 	}
 }
@@ -663,7 +663,7 @@ function initIOHandle(){
 		switch(data.type){
 			case "measurement":
 				displayMeasurement(data.content);
-				saveMeasurements(data.content); 
+				saveMeasurements(data.content);
 				break;
 			case "command":
 				saveCommand(data.content);
@@ -677,33 +677,33 @@ function initIOHandle(){
 			case "log":
 				displayInScrollWindow(data.content);
 				break;
-		}	
+		}
 	});
 }
 
 
 
 // ########################
-//							
+//
 // Initialize
-// 
-// ######################## 
+//
+// ########################
 
 
 
 
 function handleVideo(){
-	
+
 	io.on("started", function(){
 		var videoElement = document.getElementById('sourcevid');
 		var adress = "http://192.168.0.12:3031/?action=stream";
 		videoElement.setAttribute("src", adress);
-		
+
 		var videoContainer = document.getElementById("container");
 		videoContainer.style.MozTransform = "rotate(270deg)";
 		videoContainer.style.WebkitTransform ="rotate(270deg)";
 		videoContainer.style.oTransform = "rotate(270deg)";
-		videoContainer.style.transform = "rotate(270deg)";	
+		videoContainer.style.transform = "rotate(270deg)";
 		videoContainer.style.msTransform = "rotate(270deg)";
 	});
 }
@@ -718,7 +718,7 @@ function initTransferOfControl(){
 	io.on("requesting-control", function(data){
 		if(confirm("Do you want to give control to machine with IP : " + data)){
 			io.emit("giving-control");
-			displayInScrollWindow({logType:"Transfer of control", data: "[Transfer of control] Giving control."});	
+			displayInScrollWindow({logType:"Transfer of control", data: "[Transfer of control] Giving control."});
 		}else{
 			displayInScrollWindow({logType:"Transfer of control", data: "[Transfer of control] Denied request for control."});
 		}
@@ -770,10 +770,9 @@ window.onload = function(){
 	io.emit('clientloaded');
 
 	initialized = 1;
-};	
+};
 
 io = io.connect();
 
 // Send the ready event.
-io.emit('clientconnected'); 	// Det er denne som triggerer routen i server. 
-
+io.emit('clientconnected'); 	// Det er denne som triggerer routen i server.
