@@ -50,6 +50,7 @@ a {
     width: 60%;
     color: black;
     text-shadow: 0 0 black, 0 0 black, 0 0 black, 0 0 black;
+    font-size: 15px;
 }
 
 .second-half {
@@ -57,6 +58,7 @@ a {
     width: 40%;
     color: black;
     text-shadow: 0 0 black, 0 0 black, 0 0 black, 0 0 black;
+    font-size: 15px;
 }
 
 .chartBox{
