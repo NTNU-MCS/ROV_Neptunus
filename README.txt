@@ -9,3 +9,5 @@ installing it with npm. This requires an internet connection, see the thesis app
 Work from Torkil Eide Solstad:
 Some bugfixes in the code from Jostein Munz
 Completly new HMI. 
+
+We now changed something.
